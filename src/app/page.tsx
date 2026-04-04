@@ -51,7 +51,7 @@ export default function Home() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-light opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
               </span>
-              Plus de 200 professionnels nous font confiance
+              Plus de 300 professionnels nous font confiance
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-gray-900 leading-tight">
               Votre métier mérite
@@ -285,6 +285,62 @@ export default function Home() {
                 href: "/realisations/cave-a-vin",
                 gradient: "from-rose-950 via-red-900 to-amber-800",
                 emoji: "🍷",
+              },
+              {
+                name: "Fleurs & Jardins Rossi",
+                metier: "Fleuriste",
+                href: "/realisations/fleuriste",
+                gradient: "from-green-600 via-emerald-400 to-pink-300",
+                emoji: "💐",
+              },
+              {
+                name: "Élec-Pro Savoy",
+                metier: "Électricien",
+                href: "/realisations/electricien",
+                gradient: "from-slate-900 via-blue-900 to-yellow-500",
+                emoji: "⚡",
+              },
+              {
+                name: "Clinique Vétérinaire des Alpes",
+                metier: "Vétérinaire",
+                href: "/realisations/veterinaire",
+                gradient: "from-teal-600 via-teal-400 to-emerald-300",
+                emoji: "🐾",
+              },
+              {
+                name: "Helvetia Immobilier",
+                metier: "Agent immobilier",
+                href: "/realisations/immobilier",
+                gradient: "from-slate-900 via-slate-800 to-amber-600",
+                emoji: "🏠",
+              },
+              {
+                name: "La Vera Pizza",
+                metier: "Pizzeria",
+                href: "/realisations/pizzeria",
+                gradient: "from-red-900 via-red-700 to-orange-500",
+                emoji: "🍕",
+              },
+              {
+                name: "Black Ink Studio",
+                metier: "Tatoueur",
+                href: "/realisations/tatoueur",
+                gradient: "from-zinc-950 via-zinc-900 to-red-700",
+                emoji: "🎨",
+              },
+              {
+                name: "PhysioVita",
+                metier: "Physiothérapeute",
+                href: "/realisations/physiotherapeute",
+                gradient: "from-blue-500 via-blue-400 to-sky-300",
+                emoji: "🦴",
+              },
+              {
+                name: "Sécuri-Clé Müller",
+                metier: "Serrurier",
+                href: "/realisations/serrurier",
+                gradient: "from-stone-900 via-stone-700 to-orange-600",
+                emoji: "🔑",
               },
             ].map((realisation) => (
               <a
