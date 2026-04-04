@@ -21,6 +21,9 @@ export default function Home() {
               >
                 Comment ça marche
               </a>
+              <a href="#realisations" className="hover:text-primary transition-colors">
+                Réalisations
+              </a>
               <a href="#tarifs" className="hover:text-primary transition-colors">
                 Tarifs
               </a>
@@ -235,6 +238,132 @@ export default function Home() {
                 </h3>
                 <p className="text-gray-600 leading-relaxed">{item.desc}</p>
               </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Nos réalisations */}
+      <section id="realisations" className="py-20 sm:py-28 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">
+              Nos <span className="text-primary">réalisations</span>
+            </h2>
+            <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
+              Découvrez des exemples de sites créés pour nos clients
+            </p>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
+            {[
+              {
+                name: "Le Comptoir du Lac",
+                metier: "Restaurant",
+                href: "/realisations/restaurant",
+                gradient: "from-red-900 via-red-700 to-amber-800",
+                emoji: "🍽️",
+              },
+              {
+                name: "Salon Élégance",
+                metier: "Coiffeur",
+                href: "/realisations/coiffeur",
+                gradient: "from-pink-400 via-rose-300 to-yellow-300",
+                emoji: "✂️",
+              },
+              {
+                name: "Plomberie Müller & Fils",
+                metier: "Plombier",
+                href: "/realisations/plombier",
+                gradient: "from-blue-600 via-blue-400 to-orange-400",
+                emoji: "🔧",
+              },
+              {
+                name: "Cabinet Renaud & Associés",
+                metier: "Avocat",
+                href: "/realisations/avocat",
+                gradient: "from-blue-950 via-blue-900 to-blue-800",
+                emoji: "⚖️",
+              },
+              {
+                name: "Centre Dentaire du Léman",
+                metier: "Dentiste",
+                href: "/realisations/dentiste",
+                gradient: "from-sky-300 via-cyan-400 to-blue-400",
+                emoji: "🦷",
+              },
+              {
+                name: "Boulangerie Artisanale Favre",
+                metier: "Boulangerie",
+                href: "/realisations/boulangerie",
+                gradient: "from-amber-100 via-yellow-200 to-amber-700",
+                emoji: "🥖",
+              },
+              {
+                name: "Garage Central Steiner",
+                metier: "Garage",
+                href: "/realisations/garage",
+                gradient: "from-gray-600 via-gray-500 to-red-600",
+                emoji: "🚗",
+              },
+              {
+                name: "FitPulse Coaching",
+                metier: "Coach sportif",
+                href: "/realisations/coach",
+                gradient: "from-green-500 via-emerald-600 to-gray-900",
+                emoji: "💪",
+              },
+              {
+                name: "Studio Lumière",
+                metier: "Photographe",
+                href: "/realisations/photographe",
+                gradient: "from-gray-900 via-gray-800 to-yellow-500",
+                emoji: "📸",
+              },
+              {
+                name: "Atelier Bonvin Architecture",
+                metier: "Architecte",
+                href: "/realisations/architecte",
+                gradient: "from-white via-gray-200 to-gray-900",
+                emoji: "🏛️",
+              },
+            ].map((realisation) => (
+              <a
+                key={realisation.metier}
+                href={realisation.href}
+                className="group relative flex flex-col justify-end rounded-2xl overflow-hidden h-48 sm:h-56 shadow-md hover:shadow-xl hover:scale-[1.03] transition-all duration-300"
+              >
+                <div
+                  className={`absolute inset-0 bg-gradient-to-br ${realisation.gradient}`}
+                />
+                <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors" />
+                <div className="relative p-4 sm:p-5">
+                  <span className="text-2xl sm:text-3xl mb-2 block">
+                    {realisation.emoji}
+                  </span>
+                  <h3 className="text-white font-bold text-sm sm:text-base leading-tight">
+                    {realisation.name}
+                  </h3>
+                  <p className="text-white/80 text-xs sm:text-sm mt-1">
+                    {realisation.metier}
+                  </p>
+                  <span className="inline-flex items-center gap-1 text-white/70 text-xs mt-2 group-hover:text-white transition-colors">
+                    Voir le site
+                    <svg
+                      className="w-3 h-3 group-hover:translate-x-1 transition-transform"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M17 8l4 4m0 0l-4 4m4-4H3"
+                      />
+                    </svg>
+                  </span>
+                </div>
+              </a>
             ))}
           </div>
         </div>
@@ -529,6 +658,14 @@ export default function Home() {
                     className="hover:text-white transition-colors"
                   >
                     Comment ça marche
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#realisations"
+                    className="hover:text-white transition-colors"
+                  >
+                    Réalisations
                   </a>
                 </li>
                 <li>
