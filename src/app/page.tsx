@@ -326,6 +326,20 @@ export default function Home() {
                 gradient: "from-white via-gray-200 to-gray-900",
                 emoji: "🏛️",
               },
+              {
+                name: "Barber House",
+                metier: "Barbier",
+                href: "/realisations/barbier",
+                gradient: "from-neutral-950 via-neutral-800 to-amber-700",
+                emoji: "💈",
+              },
+              {
+                name: "Cave du Valais",
+                metier: "Cave à vin",
+                href: "/realisations/cave-a-vin",
+                gradient: "from-rose-950 via-red-900 to-amber-800",
+                emoji: "🍷",
+              },
             ].map((realisation) => (
               <a
                 key={realisation.metier}
