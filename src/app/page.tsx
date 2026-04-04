@@ -399,7 +399,7 @@ export default function Home() {
             {[
               {
                 name: "Starter",
-                price: "29",
+                price: "49",
                 desc: "L'essentiel pour être visible en ligne",
                 features: [
                   "Site vitrine 1 page",
@@ -414,7 +414,7 @@ export default function Home() {
               },
               {
                 name: "Pro",
-                price: "59",
+                price: "69",
                 desc: "La solution complète pour se démarquer",
                 features: [
                   "Site jusqu'à 5 pages",
