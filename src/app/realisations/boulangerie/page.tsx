@@ -122,7 +122,7 @@ export default function BoulangeriePage() {
               <div className="relative">
                 <div className="w-full aspect-[3/4] rounded-[2rem] overflow-hidden shadow-2xl shadow-amber-200/40">
                   <img
-                    src="https://images.unsplash.com/photo-1556217477-d325251ece38?w=800&q=80"
+                    src="https://images.unsplash.com/photo-1608198093002-ad4e005484ec?w=800&q=80"
                     alt="Boulanger au travail dans la Boulangerie Favre"
                     className="w-full h-full object-cover"
                   />
@@ -298,7 +298,7 @@ export default function BoulangeriePage() {
               { label: "Croissants du matin", img: "https://images.unsplash.com/photo-1555507036-ab1f4038024a?w=800&q=80", span: "" },
               { label: "Baguettes tradition", img: "https://images.unsplash.com/photo-1549931319-a545753467c8?w=800&q=80", span: "" },
               { label: "Patisseries fines", img: "https://images.unsplash.com/photo-1483695028939-5bb13f8648b0?w=800&q=80", span: "" },
-              { label: "Le boulanger a l'oeuvre", img: "https://images.unsplash.com/photo-1556217477-d325251ece38?w=800&q=80", span: "" },
+              { label: "Le boulanger a l'oeuvre", img: "https://images.unsplash.com/photo-1608198093002-ad4e005484ec?w=800&q=80", span: "" },
             ].map((item, i) => (
               <div
                 key={i}
