@@ -137,7 +137,7 @@ export default function GaragePage() {
               <img src="https://images.unsplash.com/photo-1530046339160-ce3e530c7d2f?w=800&q=80" alt="Reparation automobile" className="w-full h-full object-cover" />
             </div>
             <div className="rounded-xl overflow-hidden aspect-[4/3]">
-              <img src="https://images.unsplash.com/photo-1613214150384-b8d370a88ff3?w=800&q=80" alt="Mecanicien au travail" className="w-full h-full object-cover" />
+              <img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=800&q=80" alt="Mecanicien au travail" className="w-full h-full object-cover" />
             </div>
           </div>
         </div>

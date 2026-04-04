@@ -514,7 +514,7 @@ export default function CaveAVinDemo() {
             </div>
             <div className="relative">
               <div className="w-full aspect-[4/5] rounded-3xl border border-[#E8D5C0] overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1516594915307-8f71568f218d?w=800&q=80" alt="Cave voutee historique de la Cave du Valais" className="w-full h-full object-cover" />
+                <img src="https://images.unsplash.com/photo-1504279577054-acfeccf8fc52?w=800&q=80" alt="Cave voutee historique de la Cave du Valais" className="w-full h-full object-cover" />
               </div>
               <div className="absolute -bottom-4 -right-4 bg-[#2D0A1F] rounded-2xl p-6 shadow-xl">
                 <p className="text-[#D4A853] font-serif text-lg italic">

@@ -231,7 +231,7 @@ export default function CoiffeurDemo() {
               { label: "Balayage blond", aspect: "aspect-square", img: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=800&q=80" },
               { label: "Coupe courte moderne", aspect: "aspect-[3/4]", img: "https://images.unsplash.com/photo-1562322140-8baeececf3df?w=800&q=80" },
               { label: "Coloration cuivré", aspect: "aspect-square", img: "https://images.unsplash.com/photo-1560066984-138dadb4c035?w=800&q=80" },
-              { label: "Chignon de mariée", aspect: "aspect-[3/4]", img: "https://images.unsplash.com/photo-1521590832167-7228f0d3e8ad?w=800&q=80" },
+              { label: "Chignon de mariée", aspect: "aspect-[3/4]", img: "https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?w=800&q=80" },
               { label: "Ombré hair", aspect: "aspect-square", img: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=800&q=80" },
               { label: "Coupe homme tendance", aspect: "aspect-square", img: "https://images.unsplash.com/photo-1562322140-8baeececf3df?w=800&q=80" },
             ].map((item, i) => (

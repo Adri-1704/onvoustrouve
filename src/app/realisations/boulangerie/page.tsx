@@ -90,7 +90,7 @@ export default function BoulangeriePage() {
                       ["Pain au levain", "Pain de seigle", "Pain aux noix"].includes(item.name)
                         ? "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=800&q=80"
                         : ["Croissant pur beurre", "Tresse au beurre"].includes(item.name)
-                        ? "https://images.unsplash.com/photo-1555507036-ab1f4038024a?w=800&q=80"
+                        ? "https://images.unsplash.com/photo-1530610476181-d83430b64dcd?w=800&q=80"
                         : "https://images.unsplash.com/photo-1517433670267-08bbd4be890f?w=800&q=80"
                     }
                     alt={item.name}
