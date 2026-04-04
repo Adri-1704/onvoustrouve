@@ -138,18 +138,22 @@ export default function PlombierDemo() {
             </div>
             <div className="hidden lg:grid grid-cols-2 gap-4">
               {[
-                { icon: "🔧", title: "Dépannage", desc: "Intervention rapide" },
-                { icon: "🚿", title: "Salle de bain", desc: "Rénovation complète" },
-                { icon: "🔥", title: "Chauffage", desc: "Installation & entretien" },
-                { icon: "💧", title: "Fuite d'eau", desc: "Urgence 24h/24" },
+                { img: "https://images.unsplash.com/photo-1585704032915-c3400ca199e7?w=800&q=80", title: "Dépannage", desc: "Intervention rapide" },
+                { img: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&q=80", title: "Salle de bain", desc: "Rénovation complète" },
+                { img: "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&q=80", title: "Chauffage", desc: "Installation & entretien" },
+                { img: "https://images.unsplash.com/photo-1585704032915-c3400ca199e7?w=800&q=80", title: "Fuite d'eau", desc: "Urgence 24h/24" },
               ].map((item) => (
                 <div
                   key={item.title}
-                  className="bg-white/5 backdrop-blur-sm border border-blue-500/10 rounded-2xl p-6 hover:border-orange-500/30 transition-colors"
+                  className="bg-white/5 backdrop-blur-sm border border-blue-500/10 rounded-2xl overflow-hidden hover:border-orange-500/30 transition-colors"
                 >
-                  <div className="text-3xl mb-3">{item.icon}</div>
-                  <h3 className="text-white font-bold">{item.title}</h3>
-                  <p className="text-blue-300/50 text-sm mt-1">{item.desc}</p>
+                  <div className="h-28 overflow-hidden">
+                    <img src={item.img} alt={item.title} className="w-full h-full object-cover" />
+                  </div>
+                  <div className="p-4">
+                    <h3 className="text-white font-bold">{item.title}</h3>
+                    <p className="text-blue-300/50 text-sm mt-1">{item.desc}</p>
+                  </div>
                 </div>
               ))}
             </div>
@@ -290,17 +294,12 @@ export default function PlombierDemo() {
                 ))}
               </div>
             </div>
-            <div className="h-80 rounded-2xl bg-gradient-to-br from-blue-50 to-blue-100 border border-blue-200 flex items-center justify-center">
-              <div className="text-center">
-                <svg className="w-16 h-16 text-blue-300 mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
-                </svg>
-                <p className="text-blue-400/60 text-sm">
-                  Carte de la zone d&apos;intervention
-                  <br />
-                  Rayon de 30 km autour de Fribourg
-                </p>
-              </div>
+            <div className="h-80 rounded-2xl border border-blue-200 overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&q=80"
+                alt="Salle de bain moderne renovee par Plomberie Muller et Fils"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>

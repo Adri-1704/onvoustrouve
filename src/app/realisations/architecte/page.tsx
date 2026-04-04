@@ -58,11 +58,10 @@ export default function ArchitectePage() {
               </a>
             </div>
             <div className="hidden md:block">
-              <div className="bg-neutral-100 rounded-sm aspect-[4/5] flex items-center justify-center border border-neutral-200">
-                <div className="text-center">
-                  <div className="w-24 h-32 border-2 border-neutral-300 mx-auto mb-4" />
-                  <div className="w-40 h-24 border-2 border-neutral-300 mx-auto mb-4" />
-                  <p className="text-neutral-400 text-xs tracking-widest uppercase">Villa Edelweiss, Crans-Montana</p>
+              <div className="bg-neutral-100 rounded-sm aspect-[4/5] overflow-hidden border border-neutral-200 relative">
+                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80" alt="Villa Edelweiss, Crans-Montana" className="w-full h-full object-cover" />
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/50 to-transparent p-6">
+                  <p className="text-white text-xs tracking-widest uppercase">Villa Edelweiss, Crans-Montana</p>
                 </div>
               </div>
             </div>
@@ -86,6 +85,7 @@ export default function ArchitectePage() {
                 year: "2024",
                 desc: "Villa contemporaine de 280m2 intégrée dans la pente alpine. Grandes baies vitrées offrant une vue panoramique sur les Alpes. Matériaux : béton brut, bois de mélèze local, pierre naturelle.",
                 tags: ["Résidentiel", "Neuf", "280m²"],
+                img: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
               },
               {
                 num: "02",
@@ -94,6 +94,7 @@ export default function ArchitectePage() {
                 year: "2023",
                 desc: "Transformation d'un ancien entrepôt vinicole en loft de standing. Conservation des éléments patrimoniaux (charpente en chêne, murs en pierre) tout en apportant confort moderne et luminosité.",
                 tags: ["Rénovation", "Loft", "180m²"],
+                img: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80",
               },
               {
                 num: "03",
@@ -102,6 +103,7 @@ export default function ArchitectePage() {
                 year: "2023",
                 desc: "Aménagement intérieur d'un cabinet médical pluridisciplinaire. Atmosphère apaisante grâce aux matériaux naturels, circulation fluide des patients, acoustique soignée.",
                 tags: ["Commercial", "Aménagement", "350m²"],
+                img: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&q=80",
               },
               {
                 num: "04",
@@ -110,13 +112,14 @@ export default function ArchitectePage() {
                 year: "2022",
                 desc: "Ensemble résidentiel de 12 appartements avec terrasses généreuses. Architecture bioclimatique, panneaux solaires intégrés, certifié Minergie-P.",
                 tags: ["Résidentiel", "Collectif", "Minergie-P"],
+                img: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=800&q=80",
               },
             ].map((project) => (
               <div key={project.num} className="grid md:grid-cols-2 gap-12 items-center group">
-                <div className="bg-neutral-100 aspect-[4/3] rounded-sm flex items-center justify-center border border-neutral-200 group-hover:border-neutral-300 transition-colors">
-                  <div className="text-center">
-                    <div className="text-6xl font-extralight text-neutral-300 mb-2">{project.num}</div>
-                    <p className="text-neutral-400 text-xs tracking-widest uppercase">{project.title}</p>
+                <div className="bg-neutral-100 aspect-[4/3] rounded-sm overflow-hidden border border-neutral-200 group-hover:border-neutral-300 transition-colors relative">
+                  <img src={project.img} alt={project.title} className="w-full h-full object-cover" />
+                  <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-sm">
+                    <span className="text-sm font-light text-neutral-500">{project.num}</span>
                   </div>
                 </div>
                 <div>

@@ -84,8 +84,18 @@ export default function BoulangeriePage() {
               { name: "Petit pain au lait", desc: "Doux et moelleux, idéal pour les enfants. Également disponible aux pépites de chocolat.", price: "CHF 1.80" },
             ].map((item) => (
               <div key={item.name} className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow border border-amber-100">
-                <div className="w-full h-40 bg-gradient-to-br from-amber-200 to-amber-100 rounded-xl mb-4 flex items-center justify-center">
-                  <span className="text-5xl">🍞</span>
+                <div className="w-full h-40 rounded-xl mb-4 overflow-hidden">
+                  <img
+                    src={
+                      ["Pain au levain", "Pain de seigle", "Pain aux noix"].includes(item.name)
+                        ? "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=800&q=80"
+                        : ["Croissant pur beurre", "Tresse au beurre"].includes(item.name)
+                        ? "https://images.unsplash.com/photo-1555507036-ab1f4038024a?w=800&q=80"
+                        : "https://images.unsplash.com/photo-1517433670267-08bbd4be890f?w=800&q=80"
+                    }
+                    alt={item.name}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <h3 className="text-lg font-bold text-amber-900 mb-2">{item.name}</h3>
                 <p className="text-amber-700 text-sm leading-relaxed mb-3">{item.desc}</p>
@@ -111,8 +121,12 @@ export default function BoulangeriePage() {
               { name: "Meringues à la double crème", desc: "Meringues cuites lentement, servies avec la double crème de la Gruyère.", price: "CHF 8.– / portion" },
             ].map((item) => (
               <div key={item.name} className="flex gap-6 bg-amber-50 rounded-2xl p-6 border border-amber-100">
-                <div className="w-24 h-24 shrink-0 bg-gradient-to-br from-pink-200 to-amber-200 rounded-xl flex items-center justify-center">
-                  <span className="text-4xl">🎂</span>
+                <div className="w-24 h-24 shrink-0 rounded-xl overflow-hidden">
+                  <img
+                    src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=800&q=80"
+                    alt={item.name}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <div>
                   <h3 className="text-lg font-bold text-amber-900 mb-1">{item.name}</h3>

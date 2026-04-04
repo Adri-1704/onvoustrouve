@@ -119,13 +119,12 @@ export default function CoiffeurDemo() {
             </div>
             <div className="hidden lg:block">
               <div className="relative">
-                <div className="w-full aspect-[3/4] rounded-[2rem] bg-gradient-to-br from-rose-200/60 to-pink-300/40 border border-rose-200/50 flex items-center justify-center overflow-hidden shadow-2xl shadow-pink-200/30">
-                  <div className="text-center p-8">
-                    <div className="text-8xl mb-4 opacity-30">✂️</div>
-                    <p className="text-rose-400/60 text-sm italic">
-                      Photo du salon
-                    </p>
-                  </div>
+                <div className="w-full aspect-[3/4] rounded-[2rem] border border-rose-200/50 overflow-hidden shadow-2xl shadow-pink-200/30">
+                  <img
+                    src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=800&q=80"
+                    alt="Intérieur moderne du Salon Élégance"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <div className="absolute -bottom-4 -right-4 w-32 h-32 rounded-2xl bg-gradient-to-br from-amber-200 to-amber-300/50 border border-amber-200/50 flex items-center justify-center shadow-xl">
                   <div className="text-center">
@@ -229,20 +228,25 @@ export default function CoiffeurDemo() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             {[
-              { label: "Balayage blond", aspect: "aspect-square" },
-              { label: "Coupe courte moderne", aspect: "aspect-[3/4]" },
-              { label: "Coloration cuivré", aspect: "aspect-square" },
-              { label: "Chignon de mariée", aspect: "aspect-[3/4]" },
-              { label: "Ombré hair", aspect: "aspect-square" },
-              { label: "Coupe homme tendance", aspect: "aspect-square" },
+              { label: "Balayage blond", aspect: "aspect-square", img: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=800&q=80" },
+              { label: "Coupe courte moderne", aspect: "aspect-[3/4]", img: "https://images.unsplash.com/photo-1562322140-8baeececf3df?w=800&q=80" },
+              { label: "Coloration cuivré", aspect: "aspect-square", img: "https://images.unsplash.com/photo-1560066984-138dadb4c035?w=800&q=80" },
+              { label: "Chignon de mariée", aspect: "aspect-[3/4]", img: "https://images.unsplash.com/photo-1521590832167-7228f0d3e8ad?w=800&q=80" },
+              { label: "Ombré hair", aspect: "aspect-square", img: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=800&q=80" },
+              { label: "Coupe homme tendance", aspect: "aspect-square", img: "https://images.unsplash.com/photo-1562322140-8baeececf3df?w=800&q=80" },
             ].map((item, i) => (
               <div
                 key={i}
-                className={`${item.aspect} rounded-2xl bg-gradient-to-br from-rose-100 to-pink-100 border border-rose-200/50 flex items-center justify-center overflow-hidden hover:shadow-lg transition-shadow cursor-pointer`}
+                className={`${item.aspect} rounded-2xl border border-rose-200/50 overflow-hidden hover:shadow-lg transition-shadow cursor-pointer relative group`}
               >
-                <p className="text-rose-400/60 text-sm text-center px-4">
-                  {item.label}
-                </p>
+                <img
+                  src={item.img}
+                  alt={item.label}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent flex items-end p-4">
+                  <p className="text-white text-sm font-medium">{item.label}</p>
+                </div>
               </div>
             ))}
           </div>

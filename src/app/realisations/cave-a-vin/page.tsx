@@ -107,13 +107,8 @@ export default function CaveAVinDemo() {
             </div>
             <div className="hidden lg:block">
               <div className="relative">
-                <div className="w-full aspect-[3/4] rounded-3xl bg-gradient-to-br from-[#4A1530]/60 to-[#2D0A1F]/60 border border-[#D4A853]/10 flex items-center justify-center overflow-hidden">
-                  <div className="text-center p-8">
-                    <div className="text-8xl mb-4 opacity-30">🍷</div>
-                    <p className="text-[#D4A853]/40 text-sm italic">
-                      Photo de la cave voutee
-                    </p>
-                  </div>
+                <div className="w-full aspect-[3/4] rounded-3xl border border-[#D4A853]/10 overflow-hidden">
+                  <img src="https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?w=800&q=80" alt="Selection de vins de la Cave du Valais" className="w-full h-full object-cover" />
                 </div>
                 <div className="absolute -bottom-6 -left-6 bg-[#2D0A1F] border border-[#D4A853]/20 rounded-2xl p-6 shadow-2xl">
                   <div className="flex items-center gap-4">
@@ -264,10 +259,8 @@ export default function CaveAVinDemo() {
                 key={vin.name}
                 className="bg-white rounded-2xl border border-[#E8D5C0] p-6 hover:shadow-md transition-shadow group"
               >
-                <div className="w-full h-40 rounded-xl bg-gradient-to-b from-[#2D0A1F]/5 to-[#2D0A1F]/10 flex items-center justify-center mb-4">
-                  <div className="text-5xl opacity-30 group-hover:opacity-50 transition-opacity">
-                    🍾
-                  </div>
+                <div className="w-full h-40 rounded-xl overflow-hidden mb-4">
+                  <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=800&q=80" alt="Verre de vin" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                 </div>
                 <div className="flex items-center justify-between mb-2">
                   <span
@@ -520,13 +513,8 @@ export default function CaveAVinDemo() {
               </div>
             </div>
             <div className="relative">
-              <div className="w-full aspect-[4/5] rounded-3xl bg-gradient-to-br from-[#2D0A1F]/10 to-[#8B1A4A]/5 border border-[#E8D5C0] flex items-center justify-center">
-                <div className="text-center p-8">
-                  <div className="text-8xl mb-4 opacity-20">🏛️</div>
-                  <p className="text-[#8B1A4A]/40 text-sm italic">
-                    Photo de la cave historique
-                  </p>
-                </div>
+              <div className="w-full aspect-[4/5] rounded-3xl border border-[#E8D5C0] overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1516594915307-8f71568f218d?w=800&q=80" alt="Cave voutee historique de la Cave du Valais" className="w-full h-full object-cover" />
               </div>
               <div className="absolute -bottom-4 -right-4 bg-[#2D0A1F] rounded-2xl p-6 shadow-xl">
                 <p className="text-[#D4A853] font-serif text-lg italic">

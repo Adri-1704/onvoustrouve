@@ -78,13 +78,18 @@ export default function PhotographePage() {
             <h3 className="text-2xl font-bold mb-2">Mariages</h3>
             <p className="text-neutral-500 mb-8 text-sm italic">L&apos;amour, capturé dans sa plus belle lumière</p>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-              {["Cérémonie", "Préparatifs", "Couple", "Réception"].map((cat, i) => (
-                <div key={cat} className={`${i === 0 ? "md:col-span-2 md:row-span-2" : ""} bg-neutral-900 rounded-lg overflow-hidden group relative`}>
-                  <div className={`${i === 0 ? "h-80 md:h-full" : "h-40 md:h-48"} bg-gradient-to-br from-amber-900/30 to-neutral-900 flex items-center justify-center`}>
-                    <span className="text-5xl opacity-50 group-hover:opacity-100 transition-opacity">📸</span>
+              {[
+                { cat: "Cérémonie", img: "https://images.unsplash.com/photo-1519741497674-611481863552?w=800&q=80" },
+                { cat: "Préparatifs", img: "https://images.unsplash.com/photo-1554048612-b6a482bc67e5?w=800&q=80" },
+                { cat: "Couple", img: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=800&q=80" },
+                { cat: "Réception", img: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80" },
+              ].map((item, i) => (
+                <div key={item.cat} className={`${i === 0 ? "md:col-span-2 md:row-span-2" : ""} bg-neutral-900 rounded-lg overflow-hidden group relative`}>
+                  <div className={`${i === 0 ? "h-80 md:h-full" : "h-40 md:h-48"}`}>
+                    <img src={item.img} alt={item.cat} className="w-full h-full object-cover" />
                   </div>
                   <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
-                    <span className="text-white text-sm font-medium">{cat}</span>
+                    <span className="text-white text-sm font-medium">{item.cat}</span>
                   </div>
                 </div>
               ))}
@@ -96,13 +101,18 @@ export default function PhotographePage() {
             <h3 className="text-2xl font-bold mb-2">Portraits</h3>
             <p className="text-neutral-500 mb-8 text-sm italic">Révéler la personnalité de chacun</p>
             <div className="grid grid-cols-3 md:grid-cols-6 gap-3">
-              {["Studio", "Extérieur", "Famille", "Grossesse", "Nouveau-né", "Artistique"].map((cat) => (
-                <div key={cat} className="bg-neutral-900 rounded-lg overflow-hidden group relative aspect-[3/4]">
-                  <div className="h-full bg-gradient-to-br from-neutral-800 to-neutral-900 flex items-center justify-center">
-                    <span className="text-3xl opacity-40 group-hover:opacity-100 transition-opacity">📷</span>
-                  </div>
+              {[
+                { cat: "Studio", img: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=800&q=80" },
+                { cat: "Extérieur", img: "https://images.unsplash.com/photo-1554048612-b6a482bc67e5?w=800&q=80" },
+                { cat: "Famille", img: "https://images.unsplash.com/photo-1519741497674-611481863552?w=800&q=80" },
+                { cat: "Grossesse", img: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=800&q=80" },
+                { cat: "Nouveau-né", img: "https://images.unsplash.com/photo-1554048612-b6a482bc67e5?w=800&q=80" },
+                { cat: "Artistique", img: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80" },
+              ].map((item) => (
+                <div key={item.cat} className="bg-neutral-900 rounded-lg overflow-hidden group relative aspect-[3/4]">
+                  <img src={item.img} alt={`Portrait ${item.cat}`} className="w-full h-full object-cover" />
                   <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-3">
-                    <span className="text-white text-xs font-medium">{cat}</span>
+                    <span className="text-white text-xs font-medium">{item.cat}</span>
                   </div>
                 </div>
               ))}
@@ -114,13 +124,15 @@ export default function PhotographePage() {
             <h3 className="text-2xl font-bold mb-2">Corporate</h3>
             <p className="text-neutral-500 mb-8 text-sm italic">Valoriser votre image professionnelle</p>
             <div className="grid md:grid-cols-3 gap-3">
-              {["Portraits professionnels", "Événements d'entreprise", "Architecture & Intérieur"].map((cat) => (
-                <div key={cat} className="bg-neutral-900 rounded-lg overflow-hidden group relative h-56">
-                  <div className="h-full bg-gradient-to-br from-amber-900/20 to-neutral-900 flex items-center justify-center">
-                    <span className="text-4xl opacity-40 group-hover:opacity-100 transition-opacity">🏢</span>
-                  </div>
+              {[
+                { cat: "Portraits professionnels", img: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=800&q=80" },
+                { cat: "Événements d'entreprise", img: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80" },
+                { cat: "Architecture & Intérieur", img: "https://images.unsplash.com/photo-1554048612-b6a482bc67e5?w=800&q=80" },
+              ].map((item) => (
+                <div key={item.cat} className="bg-neutral-900 rounded-lg overflow-hidden group relative h-56">
+                  <img src={item.img} alt={item.cat} className="w-full h-full object-cover" />
                   <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
-                    <span className="text-white text-sm font-medium">{cat}</span>
+                    <span className="text-white text-sm font-medium">{item.cat}</span>
                   </div>
                 </div>
               ))}
@@ -133,11 +145,11 @@ export default function PhotographePage() {
       <section id="apropos" className="py-24 bg-neutral-900">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-16 items-center">
-            <div className="bg-neutral-800 rounded-2xl aspect-square flex items-center justify-center">
-              <div className="text-center">
-                <span className="text-8xl block mb-4">👩‍🎨</span>
+            <div className="bg-neutral-800 rounded-2xl aspect-square overflow-hidden relative">
+              <img src="https://images.unsplash.com/photo-1554048612-b6a482bc67e5?w=800&q=80" alt="Claire Bonvin, photographe professionnelle" className="w-full h-full object-cover" />
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-neutral-900 to-transparent p-6">
                 <p className="text-amber-400 font-bold">Claire Bonvin</p>
-                <p className="text-neutral-500 text-sm">Photographe</p>
+                <p className="text-neutral-400 text-sm">Photographe</p>
               </div>
             </div>
             <div>

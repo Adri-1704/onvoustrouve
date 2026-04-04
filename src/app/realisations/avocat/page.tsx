@@ -300,15 +300,12 @@ export default function AvocatDemo() {
                 ))}
               </div>
             </div>
-            <div className="h-96 rounded-lg bg-gradient-to-br from-[#0B1A2E] to-[#132B4A] border border-gray-200 flex items-center justify-center">
-              <div className="text-center p-8">
-                <div className="w-16 h-16 border-2 border-amber-500/30 rounded flex items-center justify-center mx-auto mb-4">
-                  <span className="text-amber-400/40 font-serif font-bold text-2xl">R</span>
-                </div>
-                <p className="text-gray-500 text-sm italic">
-                  Photo du cabinet
-                </p>
-              </div>
+            <div className="h-96 rounded-lg border border-gray-200 overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80"
+                alt="Bureau professionnel du Cabinet Renaud et Associes"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>

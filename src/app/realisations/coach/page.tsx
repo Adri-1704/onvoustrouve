@@ -75,12 +75,8 @@ export default function CoachPage() {
             </div>
             <div className="hidden md:block">
               <div className="relative">
-                <div className="w-full aspect-[3/4] bg-gradient-to-br from-emerald-900/50 to-black rounded-3xl flex items-center justify-center border border-emerald-800/30">
-                  <div className="text-center">
-                    <span className="text-8xl block mb-4">💪</span>
-                    <p className="text-emerald-400 font-bold text-lg">Marco Steiner</p>
-                    <p className="text-gray-500 text-sm">Fondateur FitPulse</p>
-                  </div>
+                <div className="w-full aspect-[3/4] rounded-3xl overflow-hidden border border-emerald-800/30">
+                  <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800&q=80" alt="Salle de sport FitPulse" className="w-full h-full object-cover" />
                 </div>
                 <div className="absolute -bottom-4 -left-4 bg-emerald-500 text-black px-6 py-3 rounded-2xl font-bold text-sm">
                   +200 clients transformés
@@ -157,13 +153,13 @@ export default function CoachPage() {
             ].map((t) => (
               <div key={t.name} className="bg-gray-900 rounded-2xl overflow-hidden border border-gray-800">
                 <div className="grid grid-cols-2 gap-px bg-gray-800">
-                  <div className="bg-gray-900 h-48 flex flex-col items-center justify-center">
-                    <span className="text-4xl mb-2">😐</span>
-                    <span className="text-xs text-gray-500 font-bold uppercase">Avant</span>
+                  <div className="bg-gray-900 h-48 relative overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=800&q=80" alt="Entrainement personnel" className="w-full h-full object-cover opacity-50" />
+                    <span className="absolute bottom-2 left-1/2 -translate-x-1/2 text-xs text-gray-500 font-bold uppercase">Avant</span>
                   </div>
-                  <div className="bg-gray-900 h-48 flex flex-col items-center justify-center">
-                    <span className="text-4xl mb-2">😁</span>
-                    <span className="text-xs text-emerald-500 font-bold uppercase">Après</span>
+                  <div className="bg-gray-900 h-48 relative overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=800&q=80" alt="Resultat fitness" className="w-full h-full object-cover" />
+                    <span className="absolute bottom-2 left-1/2 -translate-x-1/2 text-xs text-emerald-500 font-bold uppercase">Après</span>
                   </div>
                 </div>
                 <div className="p-6">

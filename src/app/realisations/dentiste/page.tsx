@@ -125,13 +125,12 @@ export default function DentisteDemo() {
             </div>
             <div className="hidden lg:block">
               <div className="relative">
-                <div className="w-full aspect-square rounded-[2.5rem] bg-gradient-to-br from-sky-100 to-cyan-50 border border-sky-200/50 flex items-center justify-center overflow-hidden shadow-2xl shadow-sky-200/30">
-                  <div className="text-center p-8">
-                    <div className="text-8xl mb-4 opacity-30">🦷</div>
-                    <p className="text-sky-400/60 text-sm italic">
-                      Photo du cabinet dentaire
-                    </p>
-                  </div>
+                <div className="w-full aspect-square rounded-[2.5rem] border border-sky-200/50 overflow-hidden shadow-2xl shadow-sky-200/30">
+                  <img
+                    src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=800&q=80"
+                    alt="Cabinet dentaire moderne du Centre Dentaire du Leman"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <div className="absolute -top-4 -right-4 bg-white rounded-2xl p-4 shadow-xl border border-sky-100">
                   <div className="flex items-center gap-2">

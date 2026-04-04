@@ -47,6 +47,9 @@ export default function GaragePage() {
 
       {/* Hero */}
       <section className="relative bg-gray-950 overflow-hidden">
+        <div className="absolute inset-0">
+          <img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=800&q=80" alt="Garage automobile professionnel" className="w-full h-full object-cover" />
+        </div>
         <div className="absolute inset-0 bg-gradient-to-r from-gray-950 via-gray-950/90 to-transparent z-10" />
         <div className="absolute inset-0 bg-gradient-to-br from-red-950/30 to-transparent" />
         <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 sm:py-36">
@@ -115,6 +118,27 @@ export default function GaragePage() {
                 <p className="text-red-500 font-bold text-sm">{service.price}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Galerie */}
+      <section className="py-20 bg-gray-950">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl font-black text-white">Notre atelier</h2>
+            <p className="text-gray-500 mt-3">Un apercu de nos installations</p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-4">
+            <div className="rounded-xl overflow-hidden aspect-[4/3]">
+              <img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=800&q=80" alt="Atelier du garage" className="w-full h-full object-cover" />
+            </div>
+            <div className="rounded-xl overflow-hidden aspect-[4/3]">
+              <img src="https://images.unsplash.com/photo-1530046339160-ce3e530c7d2f?w=800&q=80" alt="Reparation automobile" className="w-full h-full object-cover" />
+            </div>
+            <div className="rounded-xl overflow-hidden aspect-[4/3]">
+              <img src="https://images.unsplash.com/photo-1613214150384-b8d370a88ff3?w=800&q=80" alt="Mecanicien au travail" className="w-full h-full object-cover" />
+            </div>
           </div>
         </div>
       </section>

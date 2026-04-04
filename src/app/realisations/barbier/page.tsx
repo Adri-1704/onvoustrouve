@@ -126,13 +126,8 @@ export default function BarbierDemo() {
             </div>
             <div className="hidden lg:block">
               <div className="relative">
-                <div className="w-full aspect-[3/4] bg-gradient-to-br from-neutral-800 to-neutral-900 border border-neutral-800 flex items-center justify-center overflow-hidden">
-                  <div className="text-center p-8">
-                    <div className="text-7xl mb-4 opacity-20 grayscale">💈</div>
-                    <p className="text-neutral-600 text-sm uppercase tracking-widest">
-                      Photo du barbershop
-                    </p>
-                  </div>
+                <div className="w-full aspect-[3/4] border border-neutral-800 overflow-hidden relative">
+                  <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=800&q=80" alt="Barber House Lausanne" className="w-full h-full object-cover" />
                   {/* Cadre doré décoratif */}
                   <div className="absolute inset-3 border border-amber-800/30 pointer-events-none" />
                 </div>
@@ -301,21 +296,23 @@ export default function BarbierDemo() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             {[
-              { label: "Fade classique", gradient: "from-amber-900/40 to-neutral-900" },
-              { label: "Barbe sculptée", gradient: "from-neutral-800 to-amber-950/30" },
-              { label: "Pompadour moderne", gradient: "from-amber-800/30 to-neutral-900" },
-              { label: "Rasage au coupe-chou", gradient: "from-neutral-900 to-amber-900/20" },
-              { label: "Undercut texturé", gradient: "from-amber-950/40 to-neutral-800" },
-              { label: "Buzz cut design", gradient: "from-neutral-800 to-amber-800/20" },
+              { label: "Fade classique", img: "https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=800&q=80" },
+              { label: "Barbe sculptée", img: "https://images.unsplash.com/photo-1622286342621-4bd786c2447c?w=800&q=80" },
+              { label: "Pompadour moderne", img: "https://images.unsplash.com/photo-1599351431202-1e0f0137899a?w=800&q=80" },
+              { label: "Rasage au coupe-chou", img: "https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=800&q=80" },
+              { label: "Undercut texturé", img: "https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=800&q=80" },
+              { label: "Buzz cut design", img: "https://images.unsplash.com/photo-1599351431202-1e0f0137899a?w=800&q=80" },
             ].map((item, i) => (
               <div
                 key={i}
-                className={`aspect-square bg-gradient-to-br ${item.gradient} border border-neutral-800 hover:border-amber-700/50 flex items-center justify-center overflow-hidden transition-all cursor-pointer group relative`}
+                className="aspect-square border border-neutral-800 hover:border-amber-700/50 overflow-hidden transition-all cursor-pointer group relative"
               >
-                <p className="text-neutral-500 group-hover:text-amber-500/80 text-sm text-center px-4 uppercase tracking-wider font-semibold transition-colors">
-                  {item.label}
-                </p>
-                <div className="absolute inset-0 bg-amber-500/0 group-hover:bg-amber-500/5 transition-colors" />
+                <img src={item.img} alt={item.label} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors flex items-center justify-center">
+                  <p className="text-white/80 group-hover:text-amber-500 text-sm text-center px-4 uppercase tracking-wider font-semibold transition-colors">
+                    {item.label}
+                  </p>
+                </div>
               </div>
             ))}
           </div>

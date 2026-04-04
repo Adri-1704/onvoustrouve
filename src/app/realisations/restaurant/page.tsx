@@ -99,13 +99,12 @@ export default function RestaurantDemo() {
             </div>
             <div className="hidden lg:block">
               <div className="relative">
-                <div className="w-full aspect-[4/5] rounded-3xl bg-gradient-to-br from-amber-800/40 to-red-900/40 border border-amber-500/10 flex items-center justify-center overflow-hidden">
-                  <div className="text-center p-8">
-                    <div className="text-8xl mb-4 opacity-40">🍽️</div>
-                    <p className="text-amber-300/50 text-sm italic">
-                      Photo d&apos;ambiance du restaurant
-                    </p>
-                  </div>
+                <div className="w-full aspect-[4/5] rounded-3xl border border-amber-500/10 overflow-hidden">
+                  <img
+                    src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&q=80"
+                    alt="Intérieur élégant du restaurant Le Comptoir du Lac"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <div className="absolute -bottom-6 -left-6 bg-[#2C0A0A] border border-amber-500/20 rounded-2xl p-6 shadow-2xl">
                   <div className="flex items-center gap-3">
@@ -566,10 +565,12 @@ export default function RestaurantDemo() {
                 </div>
               </div>
               {/* Map placeholder */}
-              <div className="mt-6 h-48 rounded-2xl bg-gradient-to-br from-amber-100 to-amber-50 border border-amber-200 flex items-center justify-center">
-                <p className="text-amber-600/50 text-sm">
-                  Google Maps — Quai d&apos;Ouchy 12, 1006 Lausanne
-                </p>
+              <div className="mt-6 h-48 rounded-2xl border border-amber-200 overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=800&q=80"
+                  alt="Ambiance chaleureuse du restaurant avec vue sur le lac"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </div>
