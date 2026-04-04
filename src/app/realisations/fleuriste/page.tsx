@@ -2,21 +2,21 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Fleurs & Jardins Rossi | Fleuriste Artisanale - Neuch\u00e2tel",
+  title: "Fleurs & Jardins Rossi | Fleuriste Artisanale - Neuchâtel",
   description:
-    "Fleuriste artisanale \u00e0 Neuch\u00e2tel. Bouquets sur mesure, compositions florales pour mariages, \u00e9v\u00e9nements et deuil. Livraison \u00e0 domicile.",
+    "Fleuriste artisanale à Neuchâtel. Bouquets sur mesure, compositions florales pour mariages, événements et deuil. Livraison à domicile.",
 };
 
 export default function FleuristeDemo() {
   return (
     <div className="flex flex-col min-h-screen bg-white font-sans">
-      {/* Bandeau d\u00e9mo */}
+      {/* Bandeau démo */}
       <div className="bg-gray-900 text-white text-center text-sm py-2 px-4">
-        Ceci est une d\u00e9monstration{" "}
+        Ceci est une démonstration{" "}
         <Link href="/" className="underline font-semibold hover:text-blue-300">
           OnVousTrouve.ch
         </Link>{" "}
-        &mdash; Ce site n&apos;est pas r\u00e9el
+        &mdash; Ce site n&apos;est pas réel
       </div>
 
       {/* Navigation */}
@@ -32,19 +32,19 @@ export default function FleuristeDemo() {
                   Fleurs &amp; Jardins Rossi
                 </span>
                 <p className="text-[11px] text-green-500/70 tracking-[0.25em] uppercase">
-                  Neuch\u00e2tel
+                  Neuchâtel
                 </p>
               </div>
             </div>
             <div className="hidden md:flex items-center gap-10 text-sm text-gray-500">
               <a href="#creations" className="hover:text-green-600 transition-colors duration-300">
-                Cr\u00e9ations
+                Créations
               </a>
               <a href="#galerie" className="hover:text-green-600 transition-colors duration-300">
                 Galerie
               </a>
               <a href="#equipe" className="hover:text-green-600 transition-colors duration-300">
-                L&apos;\u00c9quipe
+                L&apos;Équipe
               </a>
               <a href="#avis" className="hover:text-green-600 transition-colors duration-300">
                 Avis
@@ -80,12 +80,12 @@ export default function FleuristeDemo() {
                 <br />
                 au service de
                 <br />
-                <span className="text-green-600">vos \u00e9motions</span>
+                <span className="text-green-600">vos émotions</span>
               </h1>
               <p className="mt-8 text-lg text-gray-500 max-w-lg leading-relaxed">
-                Des cr\u00e9ations florales uniques, confectionn\u00e9es avec passion au
-                coeur de Neuch\u00e2tel. Bouquets sur mesure, d\u00e9corations
-                \u00e9v\u00e9nementielles et livraison \u00e0 domicile.
+                Des créations florales uniques, confectionnées avec passion au
+                coeur de Neuchâtel. Bouquets sur mesure, décorations
+                événementielles et livraison à domicile.
               </p>
               <div className="mt-12 flex flex-wrap gap-5">
                 <a
@@ -98,18 +98,18 @@ export default function FleuristeDemo() {
                   href="#creations"
                   className="inline-flex items-center px-9 py-4 rounded-full border border-green-200 text-green-700 font-semibold hover:border-green-400 transition-colors duration-300"
                 >
-                  Nos cr\u00e9ations
+                  Nos créations
                 </a>
               </div>
               <div className="mt-20 flex items-center gap-10">
                 <div className="text-center">
                   <p className="text-3xl font-bold text-gray-900">15+</p>
-                  <p className="text-xs text-gray-400 mt-1">Ann\u00e9es d&apos;exp\u00e9rience</p>
+                  <p className="text-xs text-gray-400 mt-1">Années d&apos;expérience</p>
                 </div>
                 <div className="w-px h-10 bg-gray-200" />
                 <div className="text-center">
                   <p className="text-3xl font-bold text-gray-900">8k+</p>
-                  <p className="text-xs text-gray-400 mt-1">Bouquets livr\u00e9s</p>
+                  <p className="text-xs text-gray-400 mt-1">Bouquets livrés</p>
                 </div>
                 <div className="w-px h-10 bg-gray-200" />
                 <div className="text-center">
@@ -134,7 +134,7 @@ export default function FleuristeDemo() {
                     </svg>
                     <div>
                       <p className="text-sm font-bold text-gray-900">Livraison</p>
-                      <p className="text-xs text-gray-500">Neuch\u00e2tel & environs</p>
+                      <p className="text-xs text-gray-500">Neuchâtel & environs</p>
                     </div>
                   </div>
                 </div>
@@ -144,16 +144,16 @@ export default function FleuristeDemo() {
         </div>
       </section>
 
-      {/* Cr\u00e9ations & Tarifs */}
+      {/* Créations & Tarifs */}
       <section id="creations" className="py-24 sm:py-32 bg-white">
         <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="text-center mb-20">
             <div className="w-12 h-px bg-green-500 mx-auto mb-8" />
             <p className="text-green-600/80 text-sm tracking-[0.3em] uppercase mb-4">
-              Nos sp\u00e9cialit\u00e9s
+              Nos spécialités
             </p>
             <h2 className="text-3xl sm:text-4xl font-serif font-bold text-gray-900">
-              Cr\u00e9ations & Tarifs
+              Créations & Tarifs
             </h2>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -167,31 +167,31 @@ export default function FleuristeDemo() {
                   </svg>
                 ),
                 items: [
-                  { name: "Bouquet de mari\u00e9e", price: "CHF 180.\u2014" },
-                  { name: "Boutonniere mari\u00e9", price: "CHF 25.\u2014" },
-                  { name: "D\u00e9co table (par pi\u00e8ce)", price: "CHF 65.\u2014" },
-                  { name: "Arche florale", price: "D\u00e8s CHF 450.\u2014" },
+                  { name: "Bouquet de mariée", price: "CHF 180.—" },
+                  { name: "Boutonniere marié", price: "CHF 25.—" },
+                  { name: "Déco table (par pièce)", price: "CHF 65.—" },
+                  { name: "Arche florale", price: "Dès CHF 450.—" },
                   { name: "Forfait mariage complet", price: "Sur devis" },
                 ],
               },
               {
                 title: "Deuil & Hommage",
-                subtitle: "Avec respect et d\u00e9licatesse",
+                subtitle: "Avec respect et délicatesse",
                 icon: (
                   <svg className="w-8 h-8 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
                   </svg>
                 ),
                 items: [
-                  { name: "Gerbe de fleurs", price: "D\u00e8s CHF 80.\u2014" },
-                  { name: "Coussin de deuil", price: "D\u00e8s CHF 120.\u2014" },
-                  { name: "Couronne mortuaire", price: "D\u00e8s CHF 200.\u2014" },
-                  { name: "Croix fleurie", price: "D\u00e8s CHF 150.\u2014" },
-                  { name: "Composition personnalis\u00e9e", price: "Sur devis" },
+                  { name: "Gerbe de fleurs", price: "Dès CHF 80.—" },
+                  { name: "Coussin de deuil", price: "Dès CHF 120.—" },
+                  { name: "Couronne mortuaire", price: "Dès CHF 200.—" },
+                  { name: "Croix fleurie", price: "Dès CHF 150.—" },
+                  { name: "Composition personnalisée", price: "Sur devis" },
                 ],
               },
               {
-                title: "\u00c9v\u00e9nements",
+                title: "Événements",
                 subtitle: "Sublimez vos occasions",
                 icon: (
                   <svg className="w-8 h-8 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -199,27 +199,27 @@ export default function FleuristeDemo() {
                   </svg>
                 ),
                 items: [
-                  { name: "D\u00e9co soir\u00e9e priv\u00e9e", price: "D\u00e8s CHF 250.\u2014" },
-                  { name: "D\u00e9co entreprise", price: "Sur devis" },
-                  { name: "Anniversaire / bapt\u00eame", price: "D\u00e8s CHF 150.\u2014" },
-                  { name: "Abonnement hebdo bureau", price: "CHF 45.\u2014/sem." },
-                  { name: "S\u00e9minaire / conf\u00e9rence", price: "Sur devis" },
+                  { name: "Déco soirée privée", price: "Dès CHF 250.—" },
+                  { name: "Déco entreprise", price: "Sur devis" },
+                  { name: "Anniversaire / baptême", price: "Dès CHF 150.—" },
+                  { name: "Abonnement hebdo bureau", price: "CHF 45.—/sem." },
+                  { name: "Séminaire / conférence", price: "Sur devis" },
                 ],
               },
               {
                 title: "Plantes & Cadeaux",
-                subtitle: "V\u00e9g\u00e9talisez votre quotidien",
+                subtitle: "Végétalisez votre quotidien",
                 icon: (
                   <svg className="w-8 h-8 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 003 12c0-1.605.42-3.113 1.157-4.418" />
                   </svg>
                 ),
                 items: [
-                  { name: "Orchid\u00e9e en pot", price: "D\u00e8s CHF 35.\u2014" },
-                  { name: "Plante verte d\u2019int\u00e9rieur", price: "D\u00e8s CHF 25.\u2014" },
-                  { name: "Terrarium artisanal", price: "CHF 55.\u2014" },
-                  { name: "Coffret fleurs s\u00e9ch\u00e9es", price: "CHF 45.\u2014" },
-                  { name: "Bouquet du jour", price: "D\u00e8s CHF 39.\u2014" },
+                  { name: "Orchidée en pot", price: "Dès CHF 35.—" },
+                  { name: "Plante verte d’intérieur", price: "Dès CHF 25.—" },
+                  { name: "Terrarium artisanal", price: "CHF 55.—" },
+                  { name: "Coffret fleurs séchées", price: "CHF 45.—" },
+                  { name: "Bouquet du jour", price: "Dès CHF 39.—" },
                 ],
               },
             ].map((category) => (
@@ -269,10 +269,10 @@ export default function FleuristeDemo() {
             {[
               { label: "Bouquet champetre", img: "https://images.unsplash.com/photo-1487530811176-3780de880c2d?w=800&q=80", span: "" },
               { label: "Roses anciennes", img: "https://images.unsplash.com/photo-1490750967868-88aa4f44baee?w=800&q=80", span: "row-span-2" },
-              { label: "D\u00e9coration de table", img: "https://images.unsplash.com/photo-1455659817273-f96807779a8a?w=800&q=80", span: "" },
+              { label: "Décoration de table", img: "https://images.unsplash.com/photo-1455659817273-f96807779a8a?w=800&q=80", span: "" },
               { label: "Composition de deuil", img: "https://images.unsplash.com/photo-1561181286-d3fee7d55364?w=800&q=80", span: "" },
-              { label: "Bouquet de mari\u00e9e", img: "https://images.unsplash.com/photo-1487530811176-3780de880c2d?w=800&q=80", span: "" },
-              { label: "Plantes d\u2019int\u00e9rieur", img: "https://images.unsplash.com/photo-1455659817273-f96807779a8a?w=800&q=80", span: "" },
+              { label: "Bouquet de mariée", img: "https://images.unsplash.com/photo-1487530811176-3780de880c2d?w=800&q=80", span: "" },
+              { label: "Plantes d’intérieur", img: "https://images.unsplash.com/photo-1455659817273-f96807779a8a?w=800&q=80", span: "" },
             ].map((item, i) => (
               <div
                 key={i}
@@ -292,34 +292,34 @@ export default function FleuristeDemo() {
         </div>
       </section>
 
-      {/* \u00c9quipe */}
+      {/* Équipe */}
       <section id="equipe" className="py-24 sm:py-32 bg-white">
         <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="text-center mb-20">
             <div className="w-12 h-px bg-green-500 mx-auto mb-8" />
             <p className="text-green-600/80 text-sm tracking-[0.3em] uppercase mb-4">
-              Des artisans passionn\u00e9s
+              Des artisans passionnés
             </p>
             <h2 className="text-3xl sm:text-4xl font-serif font-bold text-gray-900">
-              Notre \u00c9quipe
+              Notre Équipe
             </h2>
           </div>
           <div className="grid sm:grid-cols-3 gap-10">
             {[
               {
                 name: "Elena Rossi",
-                role: "Fondatrice & Ma\u00eetre Fleuriste",
-                exp: "20 ans d\u2019exp\u00e9rience",
+                role: "Fondatrice & Maître Fleuriste",
+                exp: "20 ans d’expérience",
               },
               {
                 name: "Julie Favre",
-                role: "Fleuriste Cr\u00e9ative",
-                exp: "10 ans d\u2019exp\u00e9rience",
+                role: "Fleuriste Créative",
+                exp: "10 ans d’expérience",
               },
               {
                 name: "Marc-Antoine Blanc",
                 role: "Fleuriste & Paysagiste",
-                exp: "8 ans d\u2019exp\u00e9rience",
+                exp: "8 ans d’expérience",
               },
             ].map((member) => (
               <div key={member.name} className="text-center group">
@@ -355,19 +355,19 @@ export default function FleuristeDemo() {
             {[
               {
                 name: "Sophie L.",
-                text: "Elena a r\u00e9alis\u00e9 le bouquet de mari\u00e9e de mes r\u00eaves. Chaque d\u00e9tail \u00e9tait parfait, les couleurs sublimes. Toute la d\u00e9coration florale de notre mariage \u00e9tait magique. Merci infiniment !",
+                text: "Elena a réalisé le bouquet de mariée de mes rêves. Chaque détail était parfait, les couleurs sublimes. Toute la décoration florale de notre mariage était magique. Merci infiniment !",
                 stars: 5,
                 date: "Mars 2026",
               },
               {
-                name: "Pierre-Andr\u00e9 M.",
-                text: "Je commande r\u00e9gulierement des bouquets pour ma compagne. La qualit\u00e9 est toujours au rendez-vous, les fleurs sont fra\u00eeches et les compositions originales. Un vrai plaisir \u00e0 chaque fois.",
+                name: "Pierre-André M.",
+                text: "Je commande régulierement des bouquets pour ma compagne. La qualité est toujours au rendez-vous, les fleurs sont fraîches et les compositions originales. Un vrai plaisir à chaque fois.",
                 stars: 5,
-                date: "F\u00e9vrier 2026",
+                date: "Février 2026",
               },
               {
                 name: "Nathalie B.",
-                text: "Dans un moment difficile, l\u2019\u00e9quipe a su cr\u00e9er une composition de deuil d\u2019une grande d\u00e9licatesse. Merci pour votre sensibilit\u00e9 et votre professionnalisme. Service impeccable.",
+                text: "Dans un moment difficile, l’équipe a su créer une composition de deuil d’une grande délicatesse. Merci pour votre sensibilité et votre professionnalisme. Service impeccable.",
                 stars: 5,
                 date: "Janvier 2026",
               },
@@ -409,8 +409,8 @@ export default function FleuristeDemo() {
             Commandez vos fleurs
           </h2>
           <p className="mt-5 text-lg text-green-100/80 max-w-xl mx-auto">
-            Livraison \u00e0 Neuch\u00e2tel et environs du lundi au samedi.
-            Commandez avant 14h pour une livraison le jour m\u00eame.
+            Livraison à Neuchâtel et environs du lundi au samedi.
+            Commandez avant 14h pour une livraison le jour même.
           </p>
           <div className="mt-12 bg-white/10 backdrop-blur-sm border border-white/15 rounded-2xl p-8 sm:p-12">
             <div className="grid sm:grid-cols-2 gap-6">
@@ -426,7 +426,7 @@ export default function FleuristeDemo() {
               </div>
               <div>
                 <label className="block text-sm font-medium text-white/80 mb-2.5 text-left">
-                  T\u00e9l\u00e9phone
+                  Téléphone
                 </label>
                 <input
                   type="tel"
@@ -436,20 +436,20 @@ export default function FleuristeDemo() {
               </div>
               <div>
                 <label className="block text-sm font-medium text-white/80 mb-2.5 text-left">
-                  Type de cr\u00e9ation
+                  Type de création
                 </label>
                 <select className="w-full px-4 py-3.5 rounded-xl bg-white/10 border border-white/15 text-white focus:outline-none focus:border-white/40 transition-colors duration-300">
-                  <option value="">Choisir une cr\u00e9ation</option>
+                  <option value="">Choisir une création</option>
                   <option value="bouquet">Bouquet sur mesure</option>
                   <option value="mariage">Mariage</option>
                   <option value="deuil">Deuil & Hommage</option>
-                  <option value="evenement">\u00c9v\u00e9nement</option>
+                  <option value="evenement">Événement</option>
                   <option value="plante">Plante / Cadeau</option>
                 </select>
               </div>
               <div>
                 <label className="block text-sm font-medium text-white/80 mb-2.5 text-left">
-                  Date de livraison souhait\u00e9e
+                  Date de livraison souhaitée
                 </label>
                 <input
                   type="date"
@@ -468,7 +468,7 @@ export default function FleuristeDemo() {
               </div>
               <div className="sm:col-span-2">
                 <label className="block text-sm font-medium text-white/80 mb-2.5 text-left">
-                  Message \u00e0 joindre (optionnel)
+                  Message à joindre (optionnel)
                 </label>
                 <textarea
                   rows={3}
@@ -509,24 +509,24 @@ export default function FleuristeDemo() {
                 </span>
               </div>
               <p className="text-sm leading-relaxed max-w-md">
-                Votre fleuriste artisanale au coeur de Neuch\u00e2tel. Bouquets sur
-                mesure, d\u00e9corations \u00e9v\u00e9nementielles et livraison \u00e0 domicile
+                Votre fleuriste artisanale au coeur de Neuchâtel. Bouquets sur
+                mesure, décorations événementielles et livraison à domicile
                 depuis 2009.
               </p>
             </div>
             <div>
               <h4 className="text-white font-semibold mb-5 text-sm tracking-wide uppercase">Horaires</h4>
               <ul className="space-y-3 text-sm">
-                <li>Lundi : 13h30 \u2013 18h30</li>
-                <li>Mar-Ven : 8h30 \u2013 18h30</li>
-                <li>Samedi : 8h30 \u2013 17h00</li>
-                <li>Dimanche : Ferm\u00e9</li>
+                <li>Lundi : 13h30 – 18h30</li>
+                <li>Mar-Ven : 8h30 – 18h30</li>
+                <li>Samedi : 8h30 – 17h00</li>
+                <li>Dimanche : Fermé</li>
               </ul>
             </div>
             <div>
               <h4 className="text-white font-semibold mb-5 text-sm tracking-wide uppercase">Contact</h4>
               <ul className="space-y-3 text-sm">
-                <li>Rue des Moulins 12, 2000 Neuch\u00e2tel</li>
+                <li>Rue des Moulins 12, 2000 Neuchâtel</li>
                 <li>+41 32 722 15 40</li>
                 <li>info@fleurs-rossi.ch</li>
               </ul>
@@ -549,7 +549,7 @@ export default function FleuristeDemo() {
           <div className="border-t border-gray-800 mt-16 pt-8 text-sm text-center text-gray-500">
             <p>
               &copy; {new Date().getFullYear()} Fleurs &amp; Jardins Rossi &mdash; Tous droits
-              r\u00e9serv\u00e9s.
+              réservés.
             </p>
           </div>
         </div>

@@ -2,21 +2,21 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "\u00c9lec-Pro Savoy | \u00c9lectricien Agr\u00e9\u00e9 - Yverdon-les-Bains",
+  title: "Élec-Pro Savoy | Électricien Agréé - Yverdon-les-Bains",
   description:
-    "\u00c9lectricien agr\u00e9\u00e9 \u00e0 Yverdon-les-Bains. Installation, d\u00e9pannage, domotique, panneaux solaires. Devis gratuit.",
+    "Électricien agréé à Yverdon-les-Bains. Installation, dépannage, domotique, panneaux solaires. Devis gratuit.",
 };
 
 export default function ElectricienDemo() {
   return (
     <div className="flex flex-col min-h-screen bg-[#0F172A] font-sans">
-      {/* Bandeau d\u00e9mo */}
+      {/* Bandeau démo */}
       <div className="bg-gray-900 text-white text-center text-sm py-2 px-4">
-        Ceci est une d\u00e9monstration{" "}
+        Ceci est une démonstration{" "}
         <Link href="/" className="underline font-semibold hover:text-blue-300">
           OnVousTrouve.ch
         </Link>{" "}
-        &mdash; Ce site n&apos;est pas r\u00e9el
+        &mdash; Ce site n&apos;est pas réel
       </div>
 
       {/* Navigation */}
@@ -31,7 +31,7 @@ export default function ElectricienDemo() {
               </div>
               <div>
                 <span className="text-xl font-bold text-white tracking-wide">
-                  \u00c9lec-Pro Savoy
+                  Élec-Pro Savoy
                 </span>
                 <p className="text-[11px] text-yellow-500/70 tracking-[0.25em] uppercase">
                   Yverdon-les-Bains
@@ -46,7 +46,7 @@ export default function ElectricienDemo() {
                 Certifications
               </a>
               <a href="#equipe" className="hover:text-yellow-500 transition-colors duration-300">
-                L&apos;\u00c9quipe
+                L&apos;Équipe
               </a>
               <a href="#avis" className="hover:text-yellow-500 transition-colors duration-300">
                 Avis
@@ -79,17 +79,17 @@ export default function ElectricienDemo() {
             <div>
               <div className="w-12 h-px bg-yellow-500 mb-8" />
               <p className="text-yellow-500/80 text-sm tracking-[0.3em] uppercase mb-6">
-                \u00c9lectricien agr\u00e9\u00e9 depuis 2011
+                Électricien agréé depuis 2011
               </p>
               <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-[1.1]">
                 Votre expert
                 <br />
-                <span className="text-yellow-500">\u00e9lectricit\u00e9</span>
+                <span className="text-yellow-500">électricité</span>
                 <br />
                 de confiance
               </h1>
               <p className="mt-8 text-lg text-gray-400 max-w-lg leading-relaxed">
-                Installation, r\u00e9novation, d\u00e9pannage et solutions \u00e9nerg\u00e9tiques
+                Installation, rénovation, dépannage et solutions énergétiques
                 durables. Intervention rapide dans tout le Nord Vaudois.
               </p>
               <div className="mt-12 flex flex-wrap gap-5">
@@ -109,12 +109,12 @@ export default function ElectricienDemo() {
               <div className="mt-20 flex items-center gap-10">
                 <div className="text-center">
                   <p className="text-3xl font-bold text-white">13+</p>
-                  <p className="text-xs text-gray-500 mt-1">Ann\u00e9es d&apos;exp\u00e9rience</p>
+                  <p className="text-xs text-gray-500 mt-1">Années d&apos;expérience</p>
                 </div>
                 <div className="w-px h-10 bg-gray-700" />
                 <div className="text-center">
                   <p className="text-3xl font-bold text-white">2k+</p>
-                  <p className="text-xs text-gray-500 mt-1">Chantiers r\u00e9alis\u00e9s</p>
+                  <p className="text-xs text-gray-500 mt-1">Chantiers réalisés</p>
                 </div>
                 <div className="w-px h-10 bg-gray-700" />
                 <div className="text-center">
@@ -124,7 +124,7 @@ export default function ElectricienDemo() {
                 <div className="w-px h-10 bg-gray-700" />
                 <div className="text-center">
                   <p className="text-3xl font-bold text-white">24h</p>
-                  <p className="text-xs text-gray-500 mt-1">D\u00e9lai d\u2019intervention</p>
+                  <p className="text-xs text-gray-500 mt-1">Délai d’intervention</p>
                 </div>
               </div>
             </div>
@@ -133,7 +133,7 @@ export default function ElectricienDemo() {
                 <div className="w-full aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl shadow-yellow-500/10 border border-gray-800">
                   <img
                     src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=800&q=80"
-                    alt="\u00c9lectricien au travail - \u00c9lec-Pro Savoy"
+                    alt="Électricien au travail - Élec-Pro Savoy"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -146,7 +146,7 @@ export default function ElectricienDemo() {
                     </div>
                     <div>
                       <p className="text-sm font-bold text-white">Urgences 7j/7</p>
-                      <p className="text-xs text-gray-400">D\u00e9pannage rapide</p>
+                      <p className="text-xs text-gray-400">Dépannage rapide</p>
                     </div>
                   </div>
                 </div>
@@ -171,30 +171,30 @@ export default function ElectricienDemo() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                title: "Installation \u00e9lectrique",
-                desc: "Installations neuves et r\u00e9novations compl\u00e8tes pour particuliers et entreprises. Conformit\u00e9 NIBT garantie.",
+                title: "Installation électrique",
+                desc: "Installations neuves et rénovations complètes pour particuliers et entreprises. Conformité NIBT garantie.",
                 icon: (
                   <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3H21m-3.75 3H21" />
                   </svg>
                 ),
                 items: [
-                  "Tableau \u00e9lectrique",
-                  "C\u00e2blage complet",
+                  "Tableau électrique",
+                  "Câblage complet",
                   "Prises & interrupteurs",
-                  "\u00c9clairage int\u00e9rieur/ext\u00e9rieur",
+                  "Éclairage intérieur/extérieur",
                 ],
               },
               {
-                title: "D\u00e9pannage urgent",
-                desc: "Intervention rapide en cas de panne, court-circuit ou probl\u00e8me \u00e9lectrique. Disponibilit\u00e9 7j/7 pour les urgences.",
+                title: "Dépannage urgent",
+                desc: "Intervention rapide en cas de panne, court-circuit ou problème électrique. Disponibilité 7j/7 pour les urgences.",
                 icon: (
                   <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M11.42 15.17l-5.1-5.1m0 0L3.75 12.63m2.57-2.56L3.75 7.5M11.42 8.83l5.1 5.1m0 0l2.57-2.56m-2.57 2.56l2.57 2.57" />
                   </svg>
                 ),
                 items: [
-                  "Pannes \u00e9lectriques",
+                  "Pannes électriques",
                   "Courts-circuits",
                   "Remplacement disjoncteur",
                   "Recherche de panne",
@@ -202,7 +202,7 @@ export default function ElectricienDemo() {
               },
               {
                 title: "Domotique",
-                desc: "Maison intelligente : automatisez \u00e9clairage, chauffage, volets et s\u00e9curit\u00e9 pour plus de confort et d\u2019\u00e9conomies.",
+                desc: "Maison intelligente : automatisez éclairage, chauffage, volets et sécurité pour plus de confort et d’économies.",
                 icon: (
                   <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8.288 15.038a5.25 5.25 0 017.424 0M5.106 11.856c3.807-3.808 9.98-3.808 13.788 0M1.924 8.674c5.565-5.565 14.587-5.565 20.152 0M12.53 18.22l-.53.53-.53-.53a.75.75 0 011.06 0z" />
@@ -210,44 +210,44 @@ export default function ElectricienDemo() {
                 ),
                 items: [
                   "KNX / Loxone",
-                  "Volets automatis\u00e9s",
-                  "\u00c9clairage intelligent",
-                  "Contr\u00f4le \u00e0 distance",
+                  "Volets automatisés",
+                  "Éclairage intelligent",
+                  "Contrôle à distance",
                 ],
               },
               {
                 title: "Panneaux solaires",
-                desc: "Installation photovolta\u00efque cl\u00e9 en main. Produisez votre propre \u00e9lectricit\u00e9 et r\u00e9duisez vos factures \u00e9nerg\u00e9tiques.",
+                desc: "Installation photovoltaïque clé en main. Produisez votre propre électricité et réduisez vos factures énergétiques.",
                 icon: (
                   <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
                   </svg>
                 ),
                 items: [
-                  "\u00c9tude de faisabilit\u00e9",
-                  "Installation compl\u00e8te",
+                  "Étude de faisabilité",
+                  "Installation complète",
                   "Batterie de stockage",
                   "Suivi de production",
                 ],
               },
               {
-                title: "Contr\u00f4le & S\u00e9curit\u00e9",
-                desc: "Contr\u00f4les p\u00e9riodiques obligatoires (OIBT), mises aux normes et certifications pour votre s\u00e9curit\u00e9 \u00e9lectrique.",
+                title: "Contrôle & Sécurité",
+                desc: "Contrôles périodiques obligatoires (OIBT), mises aux normes et certifications pour votre sécurité électrique.",
                 icon: (
                   <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
                   </svg>
                 ),
                 items: [
-                  "Contr\u00f4le OIBT",
+                  "Contrôle OIBT",
                   "Mise aux normes NIBT",
-                  "Rapport de s\u00e9curit\u00e9",
+                  "Rapport de sécurité",
                   "Thermographie infrarouge",
                 ],
               },
               {
                 title: "Bornes de recharge",
-                desc: "Installation de bornes de recharge pour v\u00e9hicules \u00e9lectriques. Solutions pour particuliers, copropri\u00e9t\u00e9s et entreprises.",
+                desc: "Installation de bornes de recharge pour véhicules électriques. Solutions pour particuliers, copropriétés et entreprises.",
                 icon: (
                   <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
@@ -296,17 +296,17 @@ export default function ElectricienDemo() {
           <div className="text-center mb-16">
             <div className="w-12 h-px bg-yellow-500 mx-auto mb-8" />
             <p className="text-yellow-500/80 text-sm tracking-[0.3em] uppercase mb-4">
-              Gage de qualit\u00e9
+              Gage de qualité
             </p>
             <h2 className="text-3xl sm:text-4xl font-bold text-white">
-              Certifications & Agr\u00e9ments
+              Certifications & Agréments
             </h2>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               {
                 title: "ESTI",
-                desc: "Autorisation d\u2019installer agr\u00e9\u00e9e par l\u2019Inspection f\u00e9d\u00e9rale des installations \u00e0 courant fort",
+                desc: "Autorisation d’installer agréée par l’Inspection fédérale des installations à courant fort",
                 icon: (
                   <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z" />
@@ -315,7 +315,7 @@ export default function ElectricienDemo() {
               },
               {
                 title: "NIBT",
-                desc: "Toutes nos installations respectent la Norme sur les installations \u00e0 basse tension",
+                desc: "Toutes nos installations respectent la Norme sur les installations à basse tension",
                 icon: (
                   <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M11.35 3.836c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m8.9-4.414c.376.023.75.05 1.124.08 1.131.094 1.976 1.057 1.976 2.192V16.5A2.25 2.25 0 0118 18.75h-2.25m-7.5-10.5H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V18.75m-7.5-10.5h6.375c.621 0 1.125.504 1.125 1.125v9.375m-8.25-3l1.5 1.5 3-3.75" />
@@ -324,7 +324,7 @@ export default function ElectricienDemo() {
               },
               {
                 title: "Pronovo",
-                desc: "Installateur certifi\u00e9 pour les installations solaires photovolta\u00efques en Suisse",
+                desc: "Installateur certifié pour les installations solaires photovoltaïques en Suisse",
                 icon: (
                   <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
@@ -333,7 +333,7 @@ export default function ElectricienDemo() {
               },
               {
                 title: "SuisseEnergie",
-                desc: "Partenaire du programme f\u00e9d\u00e9ral pour l\u2019efficacit\u00e9 \u00e9nerg\u00e9tique et les \u00e9nergies renouvelables",
+                desc: "Partenaire du programme fédéral pour l’efficacité énergétique et les énergies renouvelables",
                 icon: (
                   <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12.75 3.03v.568c0 .334.148.65.405.864l1.068.89c.442.369.535 1.01.216 1.49l-.51.766a2.25 2.25 0 01-1.161.886l-.143.048a1.107 1.107 0 00-.57 1.664c.369.555.169 1.307-.427 1.605L9 13.125l.423 1.059a.956.956 0 01-1.652.928l-.679-.906a1.125 1.125 0 00-1.906.172L4.5 15.75l-.612.153M12.75 3.031a9 9 0 00-8.862 12.872M12.75 3.031a9 9 0 016.69 14.036m0 0l-.177-.529A2.25 2.25 0 0017.128 15H16.5l-.324-.324a1.453 1.453 0 00-2.328.377l-.036.073a1.586 1.586 0 01-.982.816l-.99.282c-.55.157-.894.692-.8 1.258l.108.646c.032.188.013.38-.049.557l-.16.468m-5.127-7.04A11.96 11.96 0 013.75 12c0-.691.058-1.369.17-2.028" />
@@ -356,39 +356,39 @@ export default function ElectricienDemo() {
         </div>
       </section>
 
-      {/* \u00c9quipe */}
+      {/* Équipe */}
       <section id="equipe" className="py-24 sm:py-32 bg-[#1E293B]">
         <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="text-center mb-20">
             <div className="w-12 h-px bg-yellow-500 mx-auto mb-8" />
             <p className="text-yellow-500/80 text-sm tracking-[0.3em] uppercase mb-4">
-              Des professionnels qualifi\u00e9s
+              Des professionnels qualifiés
             </p>
             <h2 className="text-3xl sm:text-4xl font-bold text-white">
-              Notre \u00c9quipe
+              Notre Équipe
             </h2>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
             {[
               {
                 name: "Jean-Marc Savoy",
-                role: "Fondateur & Ma\u00eetre \u00e9lectricien",
-                exp: "22 ans d\u2019exp\u00e9rience",
+                role: "Fondateur & Maître électricien",
+                exp: "22 ans d’expérience",
               },
               {
                 name: "David Rochat",
-                role: "\u00c9lectricien Chef de chantier",
-                exp: "14 ans d\u2019exp\u00e9rience",
+                role: "Électricien Chef de chantier",
+                exp: "14 ans d’expérience",
               },
               {
                 name: "Thierry Bonvin",
-                role: "Sp\u00e9cialiste Domotique",
-                exp: "10 ans d\u2019exp\u00e9rience",
+                role: "Spécialiste Domotique",
+                exp: "10 ans d’expérience",
               },
               {
                 name: "Amine Khadiri",
                 role: "Technicien Solaire",
-                exp: "6 ans d\u2019exp\u00e9rience",
+                exp: "6 ans d’expérience",
               },
             ].map((member) => (
               <div key={member.name} className="text-center group">
@@ -424,19 +424,19 @@ export default function ElectricienDemo() {
             {[
               {
                 name: "Philippe T.",
-                text: "R\u00e9novation \u00e9lectrique compl\u00e8te de notre villa. Travail impeccable, propre et dans les d\u00e9lais. Jean-Marc et son \u00e9quipe sont de vrais professionnels. Je recommande sans h\u00e9sitation.",
+                text: "Rénovation électrique complète de notre villa. Travail impeccable, propre et dans les délais. Jean-Marc et son équipe sont de vrais professionnels. Je recommande sans hésitation.",
                 stars: 5,
                 date: "Mars 2026",
               },
               {
                 name: "Christine W.",
-                text: "Installation de panneaux solaires parfaitement r\u00e9alis\u00e9e. Amine nous a tout expliqu\u00e9 clairement. Apr\u00e8s 6 mois, nous produisons 80% de notre \u00e9lectricit\u00e9. Excellent investissement !",
+                text: "Installation de panneaux solaires parfaitement réalisée. Amine nous a tout expliqué clairement. Après 6 mois, nous produisons 80% de notre électricité. Excellent investissement !",
                 stars: 5,
-                date: "F\u00e9vrier 2026",
+                date: "Février 2026",
               },
               {
-                name: "R\u00e9gis M.",
-                text: "Panne un dimanche soir, \u00c9lec-Pro est intervenu en moins de 2 heures. Probl\u00e8me r\u00e9solu rapidement et prix tr\u00e8s correct pour un d\u00e9pannage urgent. Merci pour votre r\u00e9activit\u00e9 !",
+                name: "Régis M.",
+                text: "Panne un dimanche soir, Élec-Pro est intervenu en moins de 2 heures. Problème résolu rapidement et prix très correct pour un dépannage urgent. Merci pour votre réactivité !",
                 stars: 5,
                 date: "Janvier 2026",
               },
@@ -478,7 +478,7 @@ export default function ElectricienDemo() {
             Demandez votre devis gratuit
           </h2>
           <p className="mt-5 text-lg text-[#0F172A]/70 max-w-xl mx-auto">
-            D\u00e9crivez votre projet et recevez un devis d\u00e9taill\u00e9 sous 24h.
+            Décrivez votre projet et recevez un devis détaillé sous 24h.
             Sans engagement.
           </p>
           <div className="mt-12 bg-[#0F172A]/10 backdrop-blur-sm border border-[#0F172A]/15 rounded-2xl p-8 sm:p-12">
@@ -495,7 +495,7 @@ export default function ElectricienDemo() {
               </div>
               <div>
                 <label className="block text-sm font-medium text-[#0F172A]/80 mb-2.5 text-left">
-                  T\u00e9l\u00e9phone
+                  Téléphone
                 </label>
                 <input
                   type="tel"
@@ -509,11 +509,11 @@ export default function ElectricienDemo() {
                 </label>
                 <select className="w-full px-4 py-3.5 rounded-xl bg-[#0F172A]/10 border border-[#0F172A]/15 text-[#0F172A] focus:outline-none focus:border-[#0F172A]/40 transition-colors duration-300">
                   <option value="">Choisir un service</option>
-                  <option value="installation">Installation \u00e9lectrique</option>
-                  <option value="depannage">D\u00e9pannage</option>
+                  <option value="installation">Installation électrique</option>
+                  <option value="depannage">Dépannage</option>
                   <option value="domotique">Domotique</option>
                   <option value="solaire">Panneaux solaires</option>
-                  <option value="controle">Contr\u00f4le & S\u00e9curit\u00e9</option>
+                  <option value="controle">Contrôle & Sécurité</option>
                   <option value="borne">Borne de recharge</option>
                 </select>
               </div>
@@ -534,7 +534,7 @@ export default function ElectricienDemo() {
                 <textarea
                   rows={4}
                   className="w-full px-4 py-3.5 rounded-xl bg-[#0F172A]/10 border border-[#0F172A]/15 text-[#0F172A] placeholder-[#0F172A]/30 focus:outline-none focus:border-[#0F172A]/40 transition-colors duration-300 resize-none"
-                  placeholder="D\u00e9crivez votre projet ou probl\u00e8me \u00e9lectrique..."
+                  placeholder="Décrivez votre projet ou problème électrique..."
                 />
               </div>
             </div>
@@ -568,21 +568,21 @@ export default function ElectricienDemo() {
                   </svg>
                 </div>
                 <span className="text-xl font-bold text-white">
-                  \u00c9lec-Pro Savoy
+                  Élec-Pro Savoy
                 </span>
               </div>
               <p className="text-sm leading-relaxed max-w-md">
-                Votre \u00e9lectricien agr\u00e9\u00e9 \u00e0 Yverdon-les-Bains. Installation,
-                d\u00e9pannage, domotique et \u00e9nergie solaire pour particuliers et
+                Votre électricien agréé à Yverdon-les-Bains. Installation,
+                dépannage, domotique et énergie solaire pour particuliers et
                 entreprises dans tout le Nord Vaudois.
               </p>
             </div>
             <div>
-              <h4 className="text-white font-semibold mb-5 text-sm tracking-wide uppercase">Disponibilit\u00e9</h4>
+              <h4 className="text-white font-semibold mb-5 text-sm tracking-wide uppercase">Disponibilité</h4>
               <ul className="space-y-3 text-sm">
-                <li>Lun-Ven : 7h00 \u2013 18h00</li>
-                <li>Samedi : 8h00 \u2013 12h00</li>
-                <li>Dimanche : Ferm\u00e9</li>
+                <li>Lun-Ven : 7h00 – 18h00</li>
+                <li>Samedi : 8h00 – 12h00</li>
+                <li>Dimanche : Fermé</li>
                 <li className="text-yellow-500 font-semibold">Urgences : 7j/7</li>
               </ul>
             </div>
@@ -611,8 +611,8 @@ export default function ElectricienDemo() {
           </div>
           <div className="border-t border-gray-800 mt-16 pt-8 text-sm text-center text-gray-500">
             <p>
-              &copy; {new Date().getFullYear()} \u00c9lec-Pro Savoy &mdash; Tous droits
-              r\u00e9serv\u00e9s.
+              &copy; {new Date().getFullYear()} Élec-Pro Savoy &mdash; Tous droits
+              réservés.
             </p>
           </div>
         </div>
