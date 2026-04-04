@@ -344,6 +344,8 @@ export default function Home() {
               <a
                 key={realisation.metier}
                 href={realisation.href}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="group relative flex flex-col justify-end rounded-2xl overflow-hidden h-48 sm:h-56 shadow-md hover:shadow-xl hover:scale-[1.03] transition-all duration-300"
               >
                 <div
