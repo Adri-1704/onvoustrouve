@@ -13,16 +13,13 @@ export default function Home() {
             </div>
             <div className="hidden md:flex items-center gap-8 text-sm font-medium text-gray-600">
               <a href="#metiers" className="hover:text-primary transition-colors">
-                Métiers
+                Réalisations
               </a>
               <a
                 href="#comment-ca-marche"
                 className="hover:text-primary transition-colors"
               >
                 Comment ça marche
-              </a>
-              <a href="#realisations" className="hover:text-primary transition-colors">
-                Réalisations
               </a>
               <a href="#tarifs" className="hover:text-primary transition-colors">
                 Tarifs
@@ -96,57 +93,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Section Métiers */}
-      <section id="metiers" className="py-20 sm:py-28 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">
-              Un site adapté à <span className="text-primary">votre métier</span>
-            </h2>
-            <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
-              Quel que soit votre domaine, nous avons la solution parfaite pour
-              vous rendre visible en ligne.
-            </p>
-          </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
-            {[
-              { emoji: "🍽️", name: "Restaurants", desc: "Carte, réservations, avis" },
-              { emoji: "✂️", name: "Coiffeurs", desc: "Galerie, prise de RDV" },
-              { emoji: "🔧", name: "Artisans", desc: "Portfolio, devis en ligne" },
-              { emoji: "⚖️", name: "Avocats", desc: "Domaines, consultations" },
-              { emoji: "🏥", name: "Médecins", desc: "Spécialités, agenda" },
-              { emoji: "🛍️", name: "Boutiques", desc: "Produits, promotions" },
-              { emoji: "🚗", name: "Garages", desc: "Services, rendez-vous" },
-              { emoji: "💪", name: "Coaches", desc: "Programmes, témoignages" },
-              { emoji: "🏠", name: "Immobilier", desc: "Biens, estimations" },
-              { emoji: "📸", name: "Photographes", desc: "Portfolio, tarifs" },
-              { emoji: "🎨", name: "Architectes", desc: "Projets, réalisations" },
-              { emoji: "🦷", name: "Dentistes", desc: "Soins, urgences" },
-            ].map((metier) => (
-              <div
-                key={metier.name}
-                className="group relative flex flex-col items-center p-6 sm:p-8 rounded-2xl border border-gray-100 bg-white hover:border-primary/20 hover:shadow-lg hover:shadow-blue-500/5 transition-all duration-300 cursor-default"
-              >
-                <span className="text-4xl sm:text-5xl mb-4 group-hover:scale-110 transition-transform duration-300">
-                  {metier.emoji}
-                </span>
-                <h3 className="font-semibold text-gray-900 text-base sm:text-lg">
-                  {metier.name}
-                </h3>
-                <p className="text-sm text-gray-500 mt-1 text-center">
-                  {metier.desc}
-                </p>
-              </div>
-            ))}
-          </div>
-          <p className="text-center mt-10 text-gray-500">
-            Et bien d&apos;autres métiers...{" "}
-            <a href="#tarifs" className="text-primary font-medium hover:underline">
-              Contactez-nous
-            </a>
-          </p>
-        </div>
-      </section>
 
       {/* Comment ça marche */}
       <section
@@ -244,7 +190,7 @@ export default function Home() {
       </section>
 
       {/* Nos réalisations */}
-      <section id="realisations" className="py-20 sm:py-28 bg-white">
+      <section id="metiers" className="py-20 sm:py-28 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">
@@ -674,14 +620,6 @@ export default function Home() {
                     className="hover:text-white transition-colors"
                   >
                     Comment ça marche
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#realisations"
-                    className="hover:text-white transition-colors"
-                  >
-                    Réalisations
                   </a>
                 </li>
                 <li>
