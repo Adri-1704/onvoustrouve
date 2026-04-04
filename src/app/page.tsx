@@ -44,7 +44,7 @@ export default function Home() {
       {/* Hero */}
       <section className="relative overflow-hidden bg-gradient-to-b from-accent to-white">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-100/40 via-transparent to-transparent" />
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-24 sm:pt-28 sm:pb-32">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-20 sm:pt-20 sm:pb-24">
           <div className="text-center max-w-4xl mx-auto">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary text-primary text-sm font-medium mb-8">
               <span className="relative flex h-2 w-2">
@@ -97,10 +97,10 @@ export default function Home() {
       {/* Comment ça marche */}
       <section
         id="comment-ca-marche"
-        className="py-20 sm:py-28 bg-gradient-to-b from-gray-50 to-white"
+        className="py-14 sm:py-20 bg-gradient-to-b from-gray-50 to-white"
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
+          <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">
               Simple comme{" "}
               <span className="text-primary">1, 2, 3</span>
@@ -190,9 +190,9 @@ export default function Home() {
       </section>
 
       {/* Nos réalisations */}
-      <section id="metiers" className="py-20 sm:py-28 bg-white">
+      <section id="metiers" className="py-14 sm:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
+          <div className="text-center mb-10">
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">
               Nos <span className="text-primary">réalisations</span>
             </h2>
@@ -332,9 +332,9 @@ export default function Home() {
       </section>
 
       {/* Section Pricing */}
-      <section id="tarifs" className="py-20 sm:py-28 bg-white">
+      <section id="tarifs" className="py-14 sm:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
+          <div className="text-center mb-10">
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">
               Des tarifs <span className="text-primary">transparents</span>
             </h2>
@@ -497,10 +497,10 @@ export default function Home() {
       {/* Témoignages */}
       <section
         id="temoignages"
-        className="py-20 sm:py-28 bg-gradient-to-b from-gray-50 to-white"
+        className="py-14 sm:py-20 bg-gradient-to-b from-gray-50 to-white"
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
+          <div className="text-center mb-10">
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">
               Ils nous font <span className="text-primary">confiance</span>
             </h2>
@@ -562,7 +562,7 @@ export default function Home() {
       </section>
 
       {/* CTA final */}
-      <section className="py-20 sm:py-28 bg-primary">
+      <section className="py-14 sm:py-20 bg-primary">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold text-white">
             Prêt à être trouvé en ligne ?
