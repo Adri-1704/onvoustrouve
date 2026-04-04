@@ -332,7 +332,7 @@ export default function Home() {
                     {plan.desc}
                   </p>
                 </div>
-                <div className="mb-8">
+                <div className="mb-4">
                   <span
                     className={`text-5xl font-extrabold ${
                       plan.popular ? "text-white" : "text-gray-900"
@@ -348,6 +348,13 @@ export default function Home() {
                     CHF/mois
                   </span>
                 </div>
+                <p
+                  className={`text-sm mb-8 ${
+                    plan.popular ? "text-blue-200" : "text-gray-500"
+                  }`}
+                >
+                  + 395 CHF de mise en place (unique)
+                </p>
                 <ul className="flex-1 space-y-3 mb-8">
                   {plan.features.map((feature) => (
                     <li key={feature} className="flex items-start gap-3">
@@ -390,8 +397,8 @@ export default function Home() {
             ))}
           </div>
           <p className="text-center mt-10 text-sm text-gray-500">
-            Tous les prix sont en francs suisses (CHF), hors TVA. Pas de frais
-            cachés.
+            Tous les prix sont en francs suisses (CHF), hors TVA. Frais de mise
+            en place uniques de 395 CHF inclus dans chaque offre.
           </p>
         </div>
       </section>
