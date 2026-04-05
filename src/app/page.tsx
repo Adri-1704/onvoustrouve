@@ -104,7 +104,7 @@ export default function Home() {
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">
               Comment ça <span className="text-primary">marche ?</span>
             </h2>
-            <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
+            <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto mb-8">
               Obtenir votre site professionnel n&apos;a jamais été aussi facile.
             </p>
           </div>
@@ -175,7 +175,7 @@ export default function Home() {
                 <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-secondary mb-6">
                   {item.icon}
                 </div>
-                <div className="absolute -top-8 left-1/2 -translate-x-1/2 -translate-y-full text-7xl font-extrabold text-gray-100 select-none pointer-events-none">
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 text-7xl font-extrabold text-gray-100 select-none pointer-events-none">
                   {item.step}
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">
