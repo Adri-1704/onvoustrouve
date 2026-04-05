@@ -233,9 +233,9 @@ export default function CoiffeurDemo() {
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             {[
               { label: "Balayage blond", img: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=800&q=80", span: "" },
-              { label: "Coupe courte moderne", img: "https://images.unsplash.com/photo-1492106087820-71f1a00d2b11?w=800&q=80", span: "row-span-2" },
-              { label: "Coloration cuivré", img: "https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=800&q=80", span: "" },
-              { label: "Chignon de mariée", img: "https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?w=800&q=80", span: "" },
+              { label: "Coupe courte moderne", img: "https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=800&q=80", span: "row-span-2" },
+              { label: "Coloration cuivré", img: "https://images.unsplash.com/photo-1559599101-f09722fb4948?w=800&q=80", span: "" },
+              { label: "Chignon de mariée", img: "https://images.unsplash.com/photo-1596178060671-7a80dc8059ea?w=800&q=80", span: "" },
               { label: "Ombré hair", img: "https://images.unsplash.com/photo-1580618672591-eb180b1a973f?w=800&q=80", span: "" },
               { label: "Coupe homme tendance", img: "https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?w=800&q=80", span: "" },
             ].map((item, i) => (
