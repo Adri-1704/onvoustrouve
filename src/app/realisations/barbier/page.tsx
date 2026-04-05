@@ -296,12 +296,12 @@ export default function BarbierDemo() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             {[
-              { label: "Fade classique", img: "https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=800&q=80" },
+              { label: "Fade classique", img: "https://images.unsplash.com/photo-1585747860874-f7133cb0e2c8?w=800&q=80" },
               { label: "Barbe sculptée", img: "https://images.unsplash.com/photo-1622286342621-4bd786c2447c?w=800&q=80" },
               { label: "Pompadour moderne", img: "https://images.unsplash.com/photo-1599351431202-1e0f0137899a?w=800&q=80" },
               { label: "Rasage au coupe-chou", img: "https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=800&q=80" },
-              { label: "Undercut texturé", img: "https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=800&q=80" },
-              { label: "Buzz cut design", img: "https://images.unsplash.com/photo-1599351431202-1e0f0137899a?w=800&q=80" },
+              { label: "Undercut texturé", img: "https://images.unsplash.com/photo-1596728325488-58c87691e9af?w=800&q=80" },
+              { label: "Buzz cut design", img: "https://images.unsplash.com/photo-1599351431613-18ef1fdd27e1?w=800&q=80" },
             ].map((item, i) => (
               <div
                 key={i}

@@ -148,15 +148,15 @@ export default function PhotographePage() {
                 },
                 {
                   cat: "Préparatifs",
-                  img: "https://images.unsplash.com/photo-1554048612-b6a482bc67e5?w=800&q=80",
+                  img: "https://images.unsplash.com/photo-1606216794079-73f85bbd57d5?w=800&q=80",
                 },
                 {
                   cat: "Couple",
-                  img: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=800&q=80",
+                  img: "https://images.unsplash.com/photo-1529634597503-139d3726fed5?w=800&q=80",
                 },
                 {
                   cat: "Réception",
-                  img: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80",
+                  img: "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=800&q=80",
                 },
               ].map((item, i) => (
                 <div
@@ -206,27 +206,27 @@ export default function PhotographePage() {
               {[
                 {
                   cat: "Studio",
-                  img: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=800&q=80",
+                  img: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=800&q=80",
                 },
                 {
                   cat: "Extérieur",
-                  img: "https://images.unsplash.com/photo-1554048612-b6a482bc67e5?w=800&q=80",
+                  img: "https://images.unsplash.com/photo-1529634597503-139d3726fed5?w=800&q=80",
                 },
                 {
                   cat: "Famille",
-                  img: "https://images.unsplash.com/photo-1519741497674-611481863552?w=800&q=80",
+                  img: "https://images.unsplash.com/photo-1511895426328-dc8714191300?w=800&q=80",
                 },
                 {
                   cat: "Grossesse",
-                  img: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=800&q=80",
+                  img: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800&q=80",
                 },
                 {
                   cat: "Nouveau-né",
-                  img: "https://images.unsplash.com/photo-1554048612-b6a482bc67e5?w=800&q=80",
+                  img: "https://images.unsplash.com/photo-1519689680058-324335c77eba?w=800&q=80",
                 },
                 {
                   cat: "Artistique",
-                  img: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80",
+                  img: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=800&q=80",
                 },
               ].map((item) => (
                 <div
@@ -263,15 +263,15 @@ export default function PhotographePage() {
               {[
                 {
                   cat: "Portraits professionnels",
-                  img: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=800&q=80",
+                  img: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=800&q=80",
                 },
                 {
                   cat: "Événements d'entreprise",
-                  img: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80",
+                  img: "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=800&q=80",
                 },
                 {
                   cat: "Architecture & Intérieur",
-                  img: "https://images.unsplash.com/photo-1554048612-b6a482bc67e5?w=800&q=80",
+                  img: "https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=800&q=80",
                 },
               ].map((item) => (
                 <div
@@ -316,7 +316,7 @@ export default function PhotographePage() {
             <div className="relative">
               <div className="aspect-[4/5] overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1554048612-b6a482bc67e5?w=800&q=80"
+                  src="https://images.unsplash.com/photo-1606216794079-73f85bbd57d5?w=800&q=80"
                   alt="Claire Bonvin, photographe professionnelle"
                   className="w-full h-full object-cover"
                 />

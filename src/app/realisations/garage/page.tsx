@@ -315,12 +315,12 @@ export default function GaragePage() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             {[
-              { label: "Atelier mécanique", img: "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=800&q=80" },
+              { label: "Atelier mécanique", img: "https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=800&q=80" },
               { label: "Réparation moteur", img: "https://images.unsplash.com/photo-1530046339160-ce3e530c7d2f?w=800&q=80" },
               { label: "Mécanicien au travail", img: "https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=800&q=80" },
               { label: "Diagnostic électronique", img: "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=800&q=80" },
-              { label: "Service pneus", img: "https://images.unsplash.com/photo-1530046339160-ce3e530c7d2f?w=800&q=80" },
-              { label: "Finition & contrôle", img: "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=800&q=80" },
+              { label: "Service pneus", img: "https://images.unsplash.com/photo-1581783898323-3df9d25e1a3c?w=800&q=80" },
+              { label: "Finition & contrôle", img: "https://images.unsplash.com/photo-1625047509248-ec889cbff17f?w=800&q=80" },
             ].map((item, i) => (
               <div
                 key={i}

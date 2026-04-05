@@ -283,7 +283,7 @@ export default function VeterinaireDemo() {
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
             {[
               {
-                src: "https://images.unsplash.com/photo-1628009368231-7bb7cfcb0def?w=800&q=80",
+                src: "https://images.unsplash.com/photo-1526336024174-e58f5cdd8e13?w=800&q=80",
                 alt: "Veterinaire avec un chien",
               },
               {

@@ -413,7 +413,7 @@ export default function RestaurantDemo() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             {[
-              { img: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&q=80", label: "La salle principale", aspect: "aspect-[4/3]" },
+              { img: "https://images.unsplash.com/photo-1550966871-3ed3cdb51f3a?w=800&q=80", label: "La salle principale", aspect: "aspect-[4/3]" },
               { img: "https://images.unsplash.com/photo-1559339352-11d035aa65de?w=800&q=80", label: "Ambiance chaleureuse", aspect: "aspect-square" },
               { img: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80", label: "Nos créations", aspect: "aspect-square" },
               { img: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&q=80", label: "Produits du terroir", aspect: "aspect-square" },
@@ -631,7 +631,7 @@ export default function RestaurantDemo() {
               </div>
               <div className="mt-6 h-48 rounded-xl overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=800&q=80"
+                  src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=800&q=80"
                   alt="Ambiance chaleureuse du restaurant avec vue sur le lac"
                   className="w-full h-full object-cover"
                 />

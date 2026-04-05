@@ -267,12 +267,12 @@ export default function FleuristeDemo() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             {[
-              { label: "Bouquet champetre", img: "https://images.unsplash.com/photo-1487530811176-3780de880c2d?w=800&q=80", span: "" },
+              { label: "Bouquet champetre", img: "https://images.unsplash.com/photo-1563241527-3004b7be0ffd?w=800&q=80", span: "" },
               { label: "Roses anciennes", img: "https://images.unsplash.com/photo-1490750967868-88aa4f44baee?w=800&q=80", span: "row-span-2" },
-              { label: "Décoration de table", img: "https://images.unsplash.com/photo-1455659817273-f96807779a8a?w=800&q=80", span: "" },
+              { label: "Décoration de table", img: "https://images.unsplash.com/photo-1567696153798-9111f9cd3d0d?w=800&q=80", span: "" },
               { label: "Composition de deuil", img: "https://images.unsplash.com/photo-1561181286-d3fee7d55364?w=800&q=80", span: "" },
-              { label: "Bouquet de mariée", img: "https://images.unsplash.com/photo-1487530811176-3780de880c2d?w=800&q=80", span: "" },
-              { label: "Plantes d’intérieur", img: "https://images.unsplash.com/photo-1455659817273-f96807779a8a?w=800&q=80", span: "" },
+              { label: "Bouquet de mariée", img: "https://images.unsplash.com/photo-1522748906645-95d8adfd52c7?w=800&q=80", span: "" },
+              { label: "Plantes d’intérieur", img: "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=800&q=80", span: "" },
             ].map((item, i) => (
               <div
                 key={i}

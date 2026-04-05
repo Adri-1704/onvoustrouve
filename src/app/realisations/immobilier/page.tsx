@@ -266,7 +266,7 @@ export default function ImmobilierDemo() {
                 price: "CHF 3'850'000",
                 surface: "320 m2",
                 rooms: "7 pieces",
-                image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80",
+                image: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&q=80",
                 badge: "Exclusivite",
               },
               {

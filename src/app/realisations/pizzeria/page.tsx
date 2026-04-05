@@ -295,9 +295,9 @@ export default function PizzeriaDemo() {
               { label: "Pizza Margherita", img: "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=800&q=80" },
               { label: "Notre four a bois", img: "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800&q=80" },
               { label: "Ambiance du restaurant", img: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&q=80" },
-              { label: "Pizza Tartufo Nero", img: "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=800&q=80" },
-              { label: "Preparation artisanale", img: "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=800&q=80" },
-              { label: "Terrasse d'ete", img: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&q=80" },
+              { label: "Pizza Tartufo Nero", img: "https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?w=800&q=80" },
+              { label: "Preparation artisanale", img: "https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?w=800&q=80" },
+              { label: "Terrasse d'ete", img: "https://images.unsplash.com/photo-1559925393-8be0ec4767c8?w=800&q=80" },
             ].map((item, i) => (
               <div
                 key={i}
@@ -370,7 +370,7 @@ export default function PizzeriaDemo() {
               <div className="relative">
                 <div className="w-full aspect-square rounded-2xl overflow-hidden border border-stone-800">
                   <img
-                    src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800&q=80"
+                    src="https://images.unsplash.com/photo-1593504049359-74330189a345?w=800&q=80"
                     alt="Preparation de pizza artisanale"
                     className="w-full h-full object-cover"
                   />

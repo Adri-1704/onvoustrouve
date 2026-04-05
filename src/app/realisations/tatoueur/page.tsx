@@ -257,10 +257,10 @@ export default function TatoueurDemo() {
             {[
               { label: "Realisme noir & gris", img: "https://images.unsplash.com/photo-1611501275019-9b5cda994e8d?w=800&q=80" },
               { label: "Neo-traditionnel", img: "https://images.unsplash.com/photo-1598371839696-5c5bb1bcdaf4?w=800&q=80" },
-              { label: "Geometrie sacree", img: "https://images.unsplash.com/photo-1590246814883-57c511e76bfd?w=800&q=80" },
-              { label: "Japanese sleeve", img: "https://images.unsplash.com/photo-1611501275019-9b5cda994e8d?w=800&q=80" },
-              { label: "Dotwork mandala", img: "https://images.unsplash.com/photo-1598371839696-5c5bb1bcdaf4?w=800&q=80" },
-              { label: "Lettering custom", img: "https://images.unsplash.com/photo-1590246814883-57c511e76bfd?w=800&q=80" },
+              { label: "Geometrie sacree", img: "https://images.unsplash.com/photo-1565058379802-bbe93b2f703a?w=800&q=80" },
+              { label: "Japanese sleeve", img: "https://images.unsplash.com/photo-1612459284270-27b3a394be29?w=800&q=80" },
+              { label: "Dotwork mandala", img: "https://images.unsplash.com/photo-1581922819941-6ab31ab79afc?w=800&q=80" },
+              { label: "Lettering custom", img: "https://images.unsplash.com/photo-1598524588066-e68ac808ae9d?w=800&q=80" },
             ].map((item, i) => (
               <div
                 key={i}

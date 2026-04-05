@@ -169,7 +169,7 @@ export default function BoulangeriePage() {
                 name: "Pain de seigle",
                 desc: "Seigle valaisan melange a notre levain maison. Dense, parfume, parfait avec le fromage.",
                 price: "CHF 6.20",
-                img: "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=800&q=80",
+                img: "https://images.unsplash.com/photo-1586444248879-bc604cbff877?w=800&q=80",
               },
               {
                 name: "Croissant pur beurre",
@@ -181,7 +181,7 @@ export default function BoulangeriePage() {
                 name: "Pain aux noix",
                 desc: "Noix du Perigord incorporees dans notre pate au levain. Un classique indemodable.",
                 price: "CHF 7.50",
-                img: "https://images.unsplash.com/photo-1568254183919-78a4f43a2877?w=800&q=80",
+                img: "https://images.unsplash.com/photo-1549931319-a545753467c8?w=800&q=80",
               },
               {
                 name: "Petit pain au lait",
@@ -238,19 +238,19 @@ export default function BoulangeriePage() {
                 name: "Foret-Noire",
                 desc: "Genoise chocolat, chantilly, griottes. Notre recette secrete depuis 3 generations.",
                 price: "Des CHF 32.--",
-                img: "https://images.unsplash.com/photo-1517433670267-08bbd4be890f?w=800&q=80",
+                img: "https://images.unsplash.com/photo-1612203985729-70726954388c?w=800&q=80",
               },
               {
                 name: "Mille-feuille",
                 desc: "Feuilletage caramelise, creme diplomate a la vanille Bourbon de Madagascar.",
                 price: "CHF 6.50 / piece",
-                img: "https://images.unsplash.com/photo-1530610476181-d83430b64dcd?w=800&q=80",
+                img: "https://images.unsplash.com/photo-1517686469429-8bae29a2f60e?w=800&q=80",
               },
               {
                 name: "Meringues a la double creme",
                 desc: "Meringues cuites lentement, servies avec la double creme de la Gruyere.",
                 price: "CHF 8.-- / portion",
-                img: "https://images.unsplash.com/photo-1483695028939-5bb13f8648b0?w=800&q=80",
+                img: "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=800&q=80",
               },
             ].map((item) => (
               <div
@@ -293,12 +293,12 @@ export default function BoulangeriePage() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             {[
-              { label: "Pains au levain", img: "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=800&q=80", span: "" },
-              { label: "Notre fournil", img: "https://images.unsplash.com/photo-1517433670267-08bbd4be890f?w=800&q=80", span: "row-span-2" },
-              { label: "Croissants du matin", img: "https://images.unsplash.com/photo-1530610476181-d83430b64dcd?w=800&q=80", span: "" },
-              { label: "Baguettes tradition", img: "https://images.unsplash.com/photo-1568254183919-78a4f43a2877?w=800&q=80", span: "" },
-              { label: "Patisseries fines", img: "https://images.unsplash.com/photo-1483695028939-5bb13f8648b0?w=800&q=80", span: "" },
-              { label: "Le boulanger a l'oeuvre", img: "https://images.unsplash.com/photo-1608198093002-ad4e005484ec?w=800&q=80", span: "" },
+              { label: "Pains au levain", img: "https://images.unsplash.com/photo-1597079910443-1d0f75a8e156?w=800&q=80", span: "" },
+              { label: "Notre fournil", img: "https://images.unsplash.com/photo-1590137876181-2a5a7e340de2?w=800&q=80", span: "row-span-2" },
+              { label: "Croissants du matin", img: "https://images.unsplash.com/photo-1623334044303-241021148842?w=800&q=80", span: "" },
+              { label: "Baguettes tradition", img: "https://images.unsplash.com/photo-1597079910443-1d0f75a8e156?w=800&q=80", span: "" },
+              { label: "Patisseries fines", img: "https://images.unsplash.com/photo-1589367920969-ab8e050bbb04?w=800&q=80", span: "" },
+              { label: "Le boulanger a l'oeuvre", img: "https://images.unsplash.com/photo-1590137876181-2a5a7e340de2?w=800&q=80", span: "" },
             ].map((item, i) => (
               <div
                 key={i}

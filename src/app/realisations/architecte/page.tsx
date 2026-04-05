@@ -155,7 +155,7 @@ export default function ArchitectePage() {
                 year: "2024",
                 desc: "Villa contemporaine de 280m2 intégrée dans la pente alpine. Grandes baies vitrées offrant une vue panoramique sur les Alpes. Matériaux : béton brut, bois de mélèze local, pierre naturelle.",
                 tags: ["Résidentiel", "Neuf", "280m2"],
-                img: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
+                img: "https://images.unsplash.com/photo-1486325212027-8a9f81f9e988?w=800&q=80",
               },
               {
                 num: "02",

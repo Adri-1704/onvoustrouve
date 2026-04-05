@@ -275,7 +275,7 @@ export default function PlombierDemo() {
             {[
               { img: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&q=80", title: "Salle de bain moderne", desc: "Rénovation complète, Fribourg" },
               { img: "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&q=80", title: "Installation chauffage", desc: "Système haute efficacité, Bulle" },
-              { img: "https://images.unsplash.com/photo-1585704032915-c3400ca199e7?w=800&q=80", title: "Réparation urgente", desc: "Dépannage fuite, Villars-sur-Glâne" },
+              { img: "https://images.unsplash.com/photo-1585128792020-803d29415281?w=800&q=80", title: "Réparation urgente", desc: "Dépannage fuite, Villars-sur-Glâne" },
             ].map((item) => (
               <div key={item.title} className="group rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg transition-all duration-300">
                 <div className="h-56 overflow-hidden">
@@ -337,7 +337,7 @@ export default function PlombierDemo() {
             </div>
             <div className="h-96 rounded-2xl overflow-hidden shadow-lg">
               <img
-                src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&q=80"
+                src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&q=80"
                 alt="Salle de bain moderne renovee par Plomberie Muller et Fils"
                 className="w-full h-full object-cover"
               />
