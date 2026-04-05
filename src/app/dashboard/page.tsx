@@ -198,23 +198,99 @@ function Modal({ open, onClose, title, children }: { open: boolean; onClose: () 
 // ═══════════════════════════════════════════════════════════════════════════
 // OVERVIEW TAB
 // ═══════════════════════════════════════════════════════════════════════════
-function OverviewTab({ clients, factures }: { clients: Client[]; factures: Facture[] }) {
+function OverviewTab({ clients, factures, token }: { clients: Client[]; factures: Facture[]; token: string }) {
+  const [relancing, setRelancing] = useState<string | null>(null);
+  const [relanceMsg, setRelanceMsg] = useState('');
+
   const actifs = clients.filter((c) => c.statut === 'actif').length;
   const revenusMensuels = clients
     .filter((c) => c.statut === 'actif')
     .reduce((sum, c) => sum + (PRIX_ABONNEMENTS[c.abonnement] || 0), 0);
   const impayees = factures.filter((f) => f.statut === 'envoyee').length;
 
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  const overdueFactures = factures.filter((f) => {
+    if (f.statut === 'payee' || f.statut === 'annulee') return false;
+    if (!f.date_echeance) return false;
+    return new Date(f.date_echeance) < today;
+  });
+
   const recentFactures = [...factures].sort((a, b) => new Date(b.created_at || '').getTime() - new Date(a.created_at || '').getTime()).slice(0, 5);
+
+  const sendRelance = async (f: Facture) => {
+    const client = clients.find((c) => c.id === f.client_id);
+    if (!client?.email) return;
+    setRelancing(f.id);
+    setRelanceMsg('');
+    try {
+      await api('/relance', token, {
+        method: 'POST',
+        body: JSON.stringify({
+          facture_id: f.id,
+          client_email: client.email,
+          client_nom: client.nom,
+          numero: f.numero || f.id.slice(0, 8),
+          montant: f.montant,
+          date_echeance: f.date_echeance,
+        }),
+      });
+      setRelanceMsg(`Relance envoyee a ${client.email}`);
+    } catch {
+      setRelanceMsg('Erreur lors de l\'envoi de la relance');
+    } finally {
+      setRelancing(null);
+      setTimeout(() => setRelanceMsg(''), 4000);
+    }
+  };
 
   return (
     <div className="space-y-8">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      {relanceMsg && (
+        <div className={`p-3 rounded-lg text-sm font-medium ${relanceMsg.startsWith('Erreur') ? 'bg-red-50 text-red-700' : 'bg-green-50 text-green-700'}`}>
+          {relanceMsg}
+        </div>
+      )}
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
         <StatCard label="Total clients" value={clients.length} />
         <StatCard label="Clients actifs" value={actifs} />
-        <StatCard label="Revenus mensuels estimes" value={formatCHF(revenusMensuels)} sub="Basé sur les abonnements actifs" />
+        <StatCard label="Revenus mensuels estimes" value={formatCHF(revenusMensuels)} sub="Base sur les abonnements actifs" />
         <StatCard label="Factures impayees" value={impayees} sub={impayees > 0 ? 'En attente de paiement' : 'Tout est en ordre'} />
+        <div className="bg-white rounded-xl border-2 border-red-200 p-6">
+          <p className="text-sm text-red-500 mb-1">Factures en retard</p>
+          <p className="text-3xl font-bold text-red-600">{overdueFactures.length}</p>
+          {overdueFactures.length > 0 && <p className="text-xs text-red-400 mt-1">Echeance depassee</p>}
+        </div>
       </div>
+
+      {overdueFactures.length > 0 && (
+        <div className="bg-white rounded-xl border-2 border-red-200 p-6">
+          <h3 className="text-base font-semibold text-red-700 mb-4">Factures en retard ({overdueFactures.length})</h3>
+          <ul className="space-y-3">
+            {overdueFactures.map((f) => {
+              const client = clients.find((c) => c.id === f.client_id);
+              return (
+                <li key={f.id} className="flex items-center justify-between text-sm bg-red-50 rounded-lg px-4 py-3">
+                  <div className="flex items-center gap-4">
+                    <span className="font-medium text-gray-900">Facture {f.numero || f.id.slice(0, 8)}</span>
+                    <span className="text-gray-500">{f.client_nom || client?.nom || 'Client'}</span>
+                    <span className="font-medium">{formatCHF(f.montant)}</span>
+                    <span className="text-red-600 text-xs">Echeance: {formatDate(f.date_echeance)}</span>
+                  </div>
+                  <button
+                    onClick={() => sendRelance(f)}
+                    disabled={relancing === f.id || !client?.email}
+                    className="px-3 py-1.5 bg-orange-500 text-white text-xs font-medium rounded-lg hover:bg-orange-600 disabled:opacity-50 transition flex items-center gap-1.5"
+                  >
+                    {relancing === f.id ? '...' : 'Relancer'}
+                  </button>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+      )}
 
       <div className="bg-white rounded-xl border border-gray-200 p-6">
         <h3 className="text-base font-semibold text-gray-900 mb-4">Activite recente</h3>
@@ -331,11 +407,12 @@ function ClientDetail({ client, token, factures, onClose, onRefresh }: { client:
   const clientFactures = factures.filter((f) => f.client_id === client.id);
 
   const toggleStatut = async () => {
+    if (client.statut === 'actif' && !confirm(`Voulez-vous vraiment désactiver le compte de ${client.nom} ?`)) return;
     setToggling(true);
     try {
       await api(`/clients/${client.id}`, token, {
         method: 'PUT',
-        body: JSON.stringify({ statut: client.statut === 'actif' ? 'inactif' : 'actif' }),
+        body: JSON.stringify({ is_active: client.statut !== 'actif' }),
       });
       onRefresh();
     } catch {
@@ -392,17 +469,17 @@ function ClientDetail({ client, token, factures, onClose, onRefresh }: { client:
         </div>
       </div>
 
-      <div className="flex gap-3">
+      <div className="flex gap-3 flex-wrap">
         <button
           onClick={toggleStatut}
           disabled={toggling}
-          className={`px-4 py-2 text-sm font-medium rounded-lg transition ${
+          className={`px-5 py-2.5 text-sm font-semibold rounded-lg transition ${
             client.statut === 'actif'
-              ? 'bg-red-50 text-red-700 hover:bg-red-100'
-              : 'bg-green-50 text-green-700 hover:bg-green-100'
+              ? 'bg-red-600 text-white hover:bg-red-700'
+              : 'bg-green-600 text-white hover:bg-green-700'
           } disabled:opacity-50`}
         >
-          {toggling ? '...' : client.statut === 'actif' ? 'Desactiver' : 'Activer'}
+          {toggling ? '...' : client.statut === 'actif' ? 'Desactiver le compte' : 'Reactiver le compte'}
         </button>
         <button
           onClick={() => genererFacture('mise_en_place')}
@@ -524,12 +601,23 @@ function ClientsTab({ clients, factures, token, onRefresh }: { clients: Client[]
 // ═══════════════════════════════════════════════════════════════════════════
 // FACTURES TAB
 // ═══════════════════════════════════════════════════════════════════════════
-function FacturesTab({ factures, token, onRefresh }: { factures: Facture[]; token: string; onRefresh: () => void }) {
+function FacturesTab({ factures, clients, token, onRefresh }: { factures: Facture[]; clients: Client[]; token: string; onRefresh: () => void }) {
   const [filter, setFilter] = useState<string>('all');
   const [selectedFacture, setSelectedFacture] = useState<Facture | null>(null);
   const [updatingStatut, setUpdatingStatut] = useState(false);
+  const [relancing, setRelancing] = useState<string | null>(null);
+  const [relanceMsg, setRelanceMsg] = useState('');
 
   const filtered = filter === 'all' ? factures : factures.filter((f) => f.statut === filter);
+
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+
+  const isOverdue = (f: Facture) => {
+    if (f.statut === 'payee' || f.statut === 'annulee') return false;
+    if (!f.date_echeance) return false;
+    return new Date(f.date_echeance) < today;
+  };
 
   const updateStatut = async (id: string, statut: string) => {
     setUpdatingStatut(true);
@@ -544,11 +632,43 @@ function FacturesTab({ factures, token, onRefresh }: { factures: Facture[]; toke
     }
   };
 
+  const sendRelance = async (f: Facture) => {
+    const client = clients.find((c) => c.id === f.client_id);
+    if (!client?.email) return;
+    setRelancing(f.id);
+    setRelanceMsg('');
+    try {
+      await api('/relance', token, {
+        method: 'POST',
+        body: JSON.stringify({
+          facture_id: f.id,
+          client_email: client.email,
+          client_nom: client.nom,
+          numero: f.numero || f.id.slice(0, 8),
+          montant: f.montant,
+          date_echeance: f.date_echeance,
+        }),
+      });
+      setRelanceMsg(`Relance envoyee a ${client.email}`);
+    } catch {
+      setRelanceMsg('Erreur lors de l\'envoi de la relance');
+    } finally {
+      setRelancing(null);
+      setTimeout(() => setRelanceMsg(''), 4000);
+    }
+  };
+
   return (
     <div className="space-y-4">
-      <div className="flex items-center justify-between">
+      {relanceMsg && (
+        <div className={`p-3 rounded-lg text-sm font-medium ${relanceMsg.startsWith('Erreur') ? 'bg-red-50 text-red-700' : 'bg-green-50 text-green-700'}`}>
+          {relanceMsg}
+        </div>
+      )}
+
+      <div className="flex items-center justify-between flex-wrap gap-2">
         <h2 className="text-lg font-semibold text-gray-900">Factures ({filtered.length})</h2>
-        <div className="flex gap-2">
+        <div className="flex gap-2 flex-wrap">
           {['all', 'brouillon', 'envoyee', 'payee', 'annulee'].map((s) => (
             <button
               key={s}
@@ -575,6 +695,12 @@ function FacturesTab({ factures, token, onRefresh }: { factures: Facture[]; toke
               <div><span className="text-gray-500">Date echeance:</span> <span className="font-medium">{formatDate(selectedFacture.date_echeance)}</span></div>
             </div>
 
+            {isOverdue(selectedFacture) && (
+              <div className="bg-red-50 border border-red-200 rounded-lg p-3 text-sm text-red-700 font-medium">
+                Cette facture est en retard de paiement
+              </div>
+            )}
+
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-2">Changer le statut</label>
               <div className="flex gap-2">
@@ -591,7 +717,7 @@ function FacturesTab({ factures, token, onRefresh }: { factures: Facture[]; toke
               </div>
             </div>
 
-            <div className="pt-2">
+            <div className="flex gap-3 pt-2">
               <a
                 href={`/dashboard/facture/${selectedFacture.id}`}
                 target="_blank"
@@ -600,6 +726,15 @@ function FacturesTab({ factures, token, onRefresh }: { factures: Facture[]; toke
               >
                 Voir / Imprimer
               </a>
+              {(selectedFacture.statut === 'envoyee' || isOverdue(selectedFacture)) && (
+                <button
+                  onClick={() => sendRelance(selectedFacture)}
+                  disabled={relancing === selectedFacture.id}
+                  className="inline-flex items-center gap-2 px-4 py-2 bg-orange-500 text-white text-sm font-medium rounded-lg hover:bg-orange-600 disabled:opacity-50 transition"
+                >
+                  {relancing === selectedFacture.id ? 'Envoi...' : 'Envoyer une relance'}
+                </button>
+              )}
             </div>
           </div>
         )}
@@ -625,17 +760,33 @@ function FacturesTab({ factures, token, onRefresh }: { factures: Facture[]; toke
               </tr>
             ) : (
               filtered.map((f) => (
-                <tr key={f.id} className="border-b border-gray-100 hover:bg-gray-50 cursor-pointer transition" onClick={() => setSelectedFacture(f)}>
-                  <td className="px-4 py-3 font-medium text-gray-900">{f.numero || f.id.slice(0, 8)}</td>
+                <tr key={f.id} className={`border-b border-gray-100 hover:bg-gray-50 cursor-pointer transition ${isOverdue(f) ? 'bg-red-50/50' : ''}`} onClick={() => setSelectedFacture(f)}>
+                  <td className="px-4 py-3 font-medium text-gray-900">
+                    {f.numero || f.id.slice(0, 8)}
+                    {isOverdue(f) && <span className="ml-1.5 inline-block w-2 h-2 rounded-full bg-red-500" title="En retard" />}
+                  </td>
                   <td className="px-4 py-3 text-gray-500">{f.client_nom || '—'}</td>
                   <td className="px-4 py-3 capitalize">{f.type.replace('_', ' ')}</td>
                   <td className="px-4 py-3 font-medium">{formatCHF(f.montant)}</td>
-                  <td className="px-4 py-3"><Badge text={f.statut} colors={STATUT_FACTURE_COLORS[f.statut] || ''} /></td>
+                  <td className="px-4 py-3">
+                    <Badge text={isOverdue(f) ? 'en retard' : f.statut} colors={isOverdue(f) ? 'bg-red-100 text-red-700' : STATUT_FACTURE_COLORS[f.statut] || ''} />
+                  </td>
                   <td className="px-4 py-3 text-gray-500">{formatDate(f.date_emission || f.created_at)}</td>
                   <td className="px-4 py-3">
-                    <button className="text-blue-600 hover:underline text-xs" onClick={(e) => { e.stopPropagation(); setSelectedFacture(f); }}>
-                      Detail
-                    </button>
+                    <div className="flex items-center gap-2">
+                      <button className="text-blue-600 hover:underline text-xs" onClick={(e) => { e.stopPropagation(); setSelectedFacture(f); }}>
+                        Detail
+                      </button>
+                      {(f.statut === 'envoyee' || isOverdue(f)) && (
+                        <button
+                          className="text-orange-600 hover:underline text-xs font-medium"
+                          disabled={relancing === f.id}
+                          onClick={(e) => { e.stopPropagation(); sendRelance(f); }}
+                        >
+                          {relancing === f.id ? '...' : 'Relancer'}
+                        </button>
+                      )}
+                    </div>
                   </td>
                 </tr>
               ))
@@ -744,9 +895,9 @@ export default function DashboardPage() {
           </div>
         ) : (
           <>
-            {tab === 'overview' && <OverviewTab clients={clients} factures={factures} />}
+            {tab === 'overview' && <OverviewTab clients={clients} factures={factures} token={token} />}
             {tab === 'clients' && <ClientsTab clients={clients} factures={factures} token={token} onRefresh={fetchData} />}
-            {tab === 'factures' && <FacturesTab factures={factures} token={token} onRefresh={fetchData} />}
+            {tab === 'factures' && <FacturesTab factures={factures} clients={clients} token={token} onRefresh={fetchData} />}
           </>
         )}
       </main>
