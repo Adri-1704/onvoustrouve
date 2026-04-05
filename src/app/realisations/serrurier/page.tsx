@@ -128,7 +128,7 @@ export default function SerrurierDemo() {
               <div className="relative">
                 <div className="w-full aspect-[4/5] rounded-[2.5rem] overflow-hidden shadow-2xl shadow-orange-900/20 border border-stone-800">
                   <img
-                    src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=800&q=80"
+                    src="https://images.unsplash.com/photo-1621274147744-cfb5694bb233?w=800&q=80"
                     alt="Serrurier Securi-Cle Muller a Lucerne"
                     className="w-full h-full object-cover"
                   />

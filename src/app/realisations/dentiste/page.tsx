@@ -399,7 +399,7 @@ export default function DentisteDemo() {
                 role: "Médecin-dentiste SSO",
                 specialty: "Pédodontie, Soins conservateurs",
                 formation: "Univ. de Berne, 2014",
-                img: "https://images.unsplash.com/photo-1594824476967-48c8b964ac31?w=400&q=80",
+                img: "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=400&q=80",
               },
             ].map((member) => (
               <div key={member.name} className="group text-center">

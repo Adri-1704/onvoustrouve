@@ -441,7 +441,7 @@ export default function PhysiotherapeuteDemo() {
                 role: "Receptionniste",
                 specialty: "Accueil, Administration",
                 formation: "CFC Employe de commerce",
-                img: "https://images.unsplash.com/photo-1594824476967-48c8b964ac31?w=400&q=80",
+                img: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&q=80",
               },
             ].map((member) => (
               <div key={member.name} className="group text-center">

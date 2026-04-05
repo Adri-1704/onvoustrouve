@@ -130,7 +130,7 @@ export default function TatoueurDemo() {
               <div className="relative">
                 <div className="w-full aspect-[3/4] border border-zinc-800 overflow-hidden relative">
                   <img
-                    src="https://images.unsplash.com/photo-1590246814883-57c511e76bfd?w=800&q=80"
+                    src="https://images.unsplash.com/photo-1542396601-dca920ea2807?w=800&q=80"
                     alt="Black Ink Studio Bale"
                     className="w-full h-full object-cover"
                   />
@@ -256,11 +256,11 @@ export default function TatoueurDemo() {
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             {[
               { label: "Realisme noir & gris", img: "https://images.unsplash.com/photo-1611501275019-9b5cda994e8d?w=800&q=80" },
-              { label: "Neo-traditionnel", img: "https://images.unsplash.com/photo-1598371839696-5c5bb1bcdaf4?w=800&q=80" },
+              { label: "Neo-traditionnel", img: "https://images.unsplash.com/photo-1530046339160-ce3e530c7d2f?w=800&q=80" },
               { label: "Geometrie sacree", img: "https://images.unsplash.com/photo-1565058379802-bbe93b2f703a?w=800&q=80" },
-              { label: "Japanese sleeve", img: "https://images.unsplash.com/photo-1612459284270-27b3a394be29?w=800&q=80" },
+              { label: "Japanese sleeve", img: "https://images.unsplash.com/photo-1568515045052-f9a854d70bfd?w=800&q=80" },
               { label: "Dotwork mandala", img: "https://images.unsplash.com/photo-1581922819941-6ab31ab79afc?w=800&q=80" },
-              { label: "Lettering custom", img: "https://images.unsplash.com/photo-1598524588066-e68ac808ae9d?w=800&q=80" },
+              { label: "Lettering custom", img: "https://images.unsplash.com/photo-1550537687-c91072c4792d?w=800&q=80" },
             ].map((item, i) => (
               <div
                 key={i}

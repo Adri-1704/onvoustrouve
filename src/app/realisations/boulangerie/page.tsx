@@ -169,7 +169,7 @@ export default function BoulangeriePage() {
                 name: "Pain de seigle",
                 desc: "Seigle valaisan melange a notre levain maison. Dense, parfume, parfait avec le fromage.",
                 price: "CHF 6.20",
-                img: "https://images.unsplash.com/photo-1586444248879-bc604cbff877?w=800&q=80",
+                img: "https://images.unsplash.com/photo-1517433670267-08bbd4be890f?w=800&q=80",
               },
               {
                 name: "Croissant pur beurre",
@@ -181,7 +181,7 @@ export default function BoulangeriePage() {
                 name: "Pain aux noix",
                 desc: "Noix du Perigord incorporees dans notre pate au levain. Un classique indemodable.",
                 price: "CHF 7.50",
-                img: "https://images.unsplash.com/photo-1549931319-a545753467c8?w=800&q=80",
+                img: "https://images.unsplash.com/photo-1483695028939-5bb13f8648b0?w=800&q=80",
               },
               {
                 name: "Petit pain au lait",
@@ -244,7 +244,7 @@ export default function BoulangeriePage() {
                 name: "Mille-feuille",
                 desc: "Feuilletage caramelise, creme diplomate a la vanille Bourbon de Madagascar.",
                 price: "CHF 6.50 / piece",
-                img: "https://images.unsplash.com/photo-1517686469429-8bae29a2f60e?w=800&q=80",
+                img: "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=800&q=80",
               },
               {
                 name: "Meringues a la double creme",
@@ -293,12 +293,12 @@ export default function BoulangeriePage() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             {[
-              { label: "Pains au levain", img: "https://images.unsplash.com/photo-1597079910443-1d0f75a8e156?w=800&q=80", span: "" },
-              { label: "Notre fournil", img: "https://images.unsplash.com/photo-1590137876181-2a5a7e340de2?w=800&q=80", span: "row-span-2" },
+              { label: "Pains au levain", img: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80", span: "" },
+              { label: "Notre fournil", img: "https://images.unsplash.com/photo-1507048331197-7d4ac70811cf?w=800&q=80", span: "row-span-2" },
               { label: "Croissants du matin", img: "https://images.unsplash.com/photo-1623334044303-241021148842?w=800&q=80", span: "" },
-              { label: "Baguettes tradition", img: "https://images.unsplash.com/photo-1597079910443-1d0f75a8e156?w=800&q=80", span: "" },
+              { label: "Baguettes tradition", img: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80", span: "" },
               { label: "Patisseries fines", img: "https://images.unsplash.com/photo-1589367920969-ab8e050bbb04?w=800&q=80", span: "" },
-              { label: "Le boulanger a l'oeuvre", img: "https://images.unsplash.com/photo-1590137876181-2a5a7e340de2?w=800&q=80", span: "" },
+              { label: "Le boulanger a l'oeuvre", img: "https://images.unsplash.com/photo-1507048331197-7d4ac70811cf?w=800&q=80", span: "" },
             ].map((item, i) => (
               <div
                 key={i}
