@@ -415,10 +415,10 @@ export default function BoucherieDemo() {
             {[
               { img: "https://images.unsplash.com/photo-1588168333986-5078d3ae3976?w=800&q=80", label: "Notre boucher a l'oeuvre", aspect: "aspect-[4/3]" },
               { img: "https://images.unsplash.com/photo-1603048297172-c92544798d5a?w=800&q=80", label: "Boeuf de qualite superieure", aspect: "aspect-square" },
-              { img: "https://images.unsplash.com/photo-1528711832515-0bed20acbc66?w=800&q=80", label: "Plateau de charcuterie", aspect: "aspect-square" },
+              { img: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&q=80", label: "Plateau de charcuterie", aspect: "aspect-square" },
               { img: "https://images.unsplash.com/photo-1560781290-7dc94c0f8f4f?w=800&q=80", label: "Notre comptoir", aspect: "aspect-square" },
               { img: "https://images.unsplash.com/photo-1599921841143-819065a55cc6?w=800&q=80", label: "Saucisses artisanales", aspect: "aspect-square" },
-              { img: "https://images.unsplash.com/photo-1542901031-ec5eeb518e57?w=800&q=80", label: "L'interieur de la boutique", aspect: "aspect-[4/3]" },
+              { img: "https://images.unsplash.com/photo-1466637574441-749b8f19452f?w=800&q=80", label: "L'interieur de la boutique", aspect: "aspect-[4/3]" },
             ].map((item, i) => (
               <div
                 key={i}
