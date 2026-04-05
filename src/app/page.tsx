@@ -19,7 +19,7 @@ export default function Home() {
                 href="#comment-ca-marche"
                 className="hover:text-primary transition-colors"
               >
-                Comment ça marche
+                Comment ça marche ?
               </a>
               <a href="#tarifs" className="hover:text-primary transition-colors">
                 Tarifs
@@ -86,7 +86,7 @@ export default function Home() {
                 href="#comment-ca-marche"
                 className="inline-flex items-center justify-center px-8 py-4 rounded-full border-2 border-gray-200 text-gray-700 text-lg font-semibold hover:border-primary hover:text-primary transition-colors"
               >
-                Comment ça marche
+                Comment ça marche ?
               </a>
             </div>
           </div>
@@ -684,7 +684,7 @@ export default function Home() {
                     href="#comment-ca-marche"
                     className="hover:text-white transition-colors"
                   >
-                    Comment ça marche
+                    Comment ça marche ?
                   </a>
                 </li>
                 <li>
