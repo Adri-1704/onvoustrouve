@@ -24,7 +24,7 @@ export async function POST(request: Request) {
 
     const resend = getResend()
     await resend.emails.send({
-      from: 'OnVousTrouve.ch <contact@onvoustrouve.ch>',
+      from: 'OnVousTrouve.ch <contact@lateliersuisse.ch>',
       to: client_email,
       subject: `Rappel de paiement - Facture ${numero}`,
       html: `
