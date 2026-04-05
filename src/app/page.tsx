@@ -102,8 +102,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">
-              Simple comme{" "}
-              <span className="text-primary">1, 2, 3</span>
+              Comment ça <span className="text-primary">marche ?</span>
             </h2>
             <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
               Obtenir votre site professionnel n&apos;a jamais été aussi facile.
