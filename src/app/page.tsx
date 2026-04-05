@@ -216,11 +216,11 @@ export default function Home() {
                 emoji: "🔧",
               },
               {
-                name: "Cabinet Renaud & Associés",
-                metier: "Avocat",
-                href: "/realisations/avocat",
-                gradient: "from-blue-950 via-blue-900 to-blue-800",
-                emoji: "⚖️",
+                name: "Boucherie Gasser",
+                metier: "Boucherie",
+                href: "/realisations/boucherie",
+                gradient: "from-red-800 via-red-700 to-amber-700",
+                emoji: "🥩",
               },
               {
                 name: "Centre Dentaire du Léman",
