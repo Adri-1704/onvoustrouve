@@ -1,16 +1,16 @@
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 bg-white font-sans">
+    <div id="top" className="flex flex-col flex-1 bg-white font-sans scroll-smooth">
       {/* Navigation */}
       <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            <div className="flex items-center gap-2">
+            <a href="#top" className="flex items-center gap-2">
               <span className="text-2xl font-bold text-primary">
                 OnVousTrouve
               </span>
               <span className="text-sm text-primary-light font-medium">.ch</span>
-            </div>
+            </a>
             <div className="hidden md:flex items-center gap-8 text-sm font-medium text-gray-600">
               <a href="#metiers" className="hover:text-primary transition-colors">
                 Réalisations
