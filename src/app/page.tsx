@@ -171,11 +171,11 @@ export default function Home() {
                 ),
               },
             ].map((item) => (
-              <div key={item.step} className="relative text-center">
+              <div key={item.step} className="relative text-center pt-4">
                 <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-secondary mb-6">
                   {item.icon}
                 </div>
-                <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 text-7xl font-extrabold text-gray-100 select-none pointer-events-none">
+                <div className="absolute top-10 left-1/2 -translate-x-1/2 text-8xl font-extrabold text-gray-200 select-none pointer-events-none -z-10">
                   {item.step}
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">
