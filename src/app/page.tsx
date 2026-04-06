@@ -13,13 +13,13 @@ export default function Home() {
             </a>
             <div className="hidden md:flex items-center gap-10 text-sm font-medium text-gray-600">
               <a href="#metiers" className="hover:text-primary transition-colors">
-                Realisations
+                Réalisations
               </a>
               <a
                 href="#comment-ca-marche"
                 className="hover:text-primary transition-colors"
               >
-                Comment ca marche ?
+                Comment ça marche ?
               </a>
               <a href="#tarifs" className="hover:text-primary transition-colors">
                 Tarifs
@@ -28,7 +28,7 @@ export default function Home() {
                 href="#temoignages"
                 className="hover:text-primary transition-colors"
               >
-                Temoignages
+                Témoignages
               </a>
               <a href="#faq" className="hover:text-primary transition-colors">
                 FAQ
@@ -50,10 +50,10 @@ export default function Home() {
                 <span className="hamburger-bar"></span>
               </label>
               <div className="mobile-menu absolute right-0 top-full mt-2 w-56 bg-white rounded-2xl shadow-xl border border-gray-100 flex flex-col px-4">
-                <a href="#metiers" className="py-2.5 text-sm font-medium text-gray-700 hover:text-primary transition-colors">Realisations</a>
-                <a href="#comment-ca-marche" className="py-2.5 text-sm font-medium text-gray-700 hover:text-primary transition-colors">Comment ca marche ?</a>
+                <a href="#metiers" className="py-2.5 text-sm font-medium text-gray-700 hover:text-primary transition-colors">Réalisations</a>
+                <a href="#comment-ca-marche" className="py-2.5 text-sm font-medium text-gray-700 hover:text-primary transition-colors">Comment ça marche ?</a>
                 <a href="#tarifs" className="py-2.5 text-sm font-medium text-gray-700 hover:text-primary transition-colors">Tarifs</a>
-                <a href="#temoignages" className="py-2.5 text-sm font-medium text-gray-700 hover:text-primary transition-colors">Temoignages</a>
+                <a href="#temoignages" className="py-2.5 text-sm font-medium text-gray-700 hover:text-primary transition-colors">Témoignages</a>
                 <a href="#faq" className="py-2.5 text-sm font-medium text-gray-700 hover:text-primary transition-colors">FAQ</a>
                 <a href="#tarifs" className="my-2 text-center py-2.5 rounded-full bg-primary text-white text-sm font-semibold">Commencer</a>
               </div>
@@ -73,20 +73,20 @@ export default function Home() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-24 sm:pt-28 sm:pb-32">
           <div className="text-center max-w-4xl mx-auto animate-fade-in-up">
             <h1 className="text-4xl sm:text-5xl lg:text-7xl font-extrabold tracking-tight text-gray-900 leading-tight">
-              Votre metier merite
+              Votre métier mérite
               <br />
-              <span className="gradient-text">d&apos;etre trouve en ligne</span>
+              <span className="gradient-text">d&apos;être trouvé en ligne</span>
             </h1>
             <p className="mt-6 text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed animate-fade-in-up animate-delay-200">
-              Nous creons votre site web professionnel cle en main. Vous vous
-              concentrez sur votre metier, on s&apos;occupe de tout le reste.
+              Nous créons votre site web professionnel clé en main. Vous vous
+              concentrez sur votre métier, on s&apos;occupe de tout le reste.
             </p>
             <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up animate-delay-300">
               <a
                 href="#tarifs"
                 className="inline-flex items-center justify-center px-10 py-5 rounded-full bg-primary text-white text-lg font-bold hover:bg-primary-dark transition-all shadow-xl shadow-blue-500/25 hover:shadow-blue-500/40 hover:scale-105"
               >
-                Decouvrir nos offres
+                Découvrir nos offres
                 <svg
                   className="ml-2 w-5 h-5"
                   fill="none"
@@ -105,7 +105,7 @@ export default function Home() {
                 href="#comment-ca-marche"
                 className="inline-flex items-center justify-center px-10 py-5 rounded-full border-2 border-gray-200 text-gray-700 text-lg font-semibold hover:border-primary hover:text-primary transition-all hover:shadow-lg"
               >
-                Comment ca marche ?
+                Comment ça marche ?
               </a>
             </div>
 
@@ -113,15 +113,15 @@ export default function Home() {
             <div className="mt-10 flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-gray-500 animate-fade-in animate-delay-500">
               <span className="flex items-center gap-1.5">
                 <svg className="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
-                20+ metiers couverts
+                20+ métiers couverts
               </span>
               <span className="flex items-center gap-1.5">
                 <svg className="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
-                Sites livres en 7 jours
+                Sites livrés en 7 jours
               </span>
               <span className="flex items-center gap-1.5">
                 <svg className="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
-                Base en Suisse
+                Basé en Suisse
               </span>
             </div>
           </div>
@@ -171,7 +171,7 @@ export default function Home() {
       </section>
 
 
-      {/* Comment ca marche */}
+      {/* Comment ça marche */}
       <section
         id="comment-ca-marche"
         className="py-16 sm:py-24 bg-gradient-to-b from-gray-50 to-white"
@@ -182,15 +182,15 @@ export default function Home() {
               Comment ca <span className="gradient-text">marche ?</span>
             </h2>
             <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
-              Obtenir votre site professionnel n&apos;a jamais ete aussi facile.
+              Obtenir votre site professionnel n&apos;a jamais été aussi facile.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8 lg:gap-12 steps-connector">
             {[
               {
                 step: "01",
-                title: "Choisissez votre metier",
-                desc: "Selectionnez votre domaine d'activite et l'offre qui correspond a vos besoins.",
+                title: "Choisissez votre métier",
+                desc: "Sélectionnez votre domaine d'activité et l'offre qui correspond à vos besoins.",
                 icon: (
                   <svg
                     className="w-8 h-8 text-primary"
@@ -210,8 +210,8 @@ export default function Home() {
               },
               {
                 step: "02",
-                title: "On cree votre site",
-                desc: "Notre equipe concoit un site sur mesure avec votre contenu, vos couleurs et votre identite.",
+                title: "On crée votre site",
+                desc: "Notre équipe conçoit un site sur mesure avec votre contenu, vos couleurs et votre identité.",
                 icon: (
                   <svg
                     className="w-8 h-8 text-primary"
@@ -231,8 +231,8 @@ export default function Home() {
               },
               {
                 step: "03",
-                title: "Vous etes en ligne",
-                desc: "Votre site est publie, optimise pour Google et pret a attirer vos futurs clients.",
+                title: "Vous êtes en ligne",
+                desc: "Votre site est publié, optimisé pour Google et prêt à attirer vos futurs clients.",
                 icon: (
                   <svg
                     className="w-8 h-8 text-primary"
@@ -270,7 +270,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Nos realisations */}
+      {/* Nos réalisations */}
       <section id="metiers" className="py-16 sm:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 animate-fade-in-up">
@@ -278,10 +278,10 @@ export default function Home() {
               20 exemples
             </span>
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">
-              Nos <span className="gradient-text">realisations</span>
+              Nos <span className="gradient-text">réalisations</span>
             </h2>
             <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
-              Decouvrez des exemples de sites crees pour nos clients
+              Découvrez des exemples de sites créés pour nos clients
             </p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
@@ -289,140 +289,140 @@ export default function Home() {
               {
                 name: "Le Comptoir du Lac",
                 metier: "Restaurant",
-                href: "/realisations/restaurant",
+                href: "/réalisations/restaurant",
                 gradient: "from-red-900 via-red-700 to-amber-800",
                 emoji: "🍽️",
               },
               {
-                name: "Salon Elegance",
+                name: "Salon Élégance",
                 metier: "Coiffeur",
-                href: "/realisations/coiffeur",
+                href: "/réalisations/coiffeur",
                 gradient: "from-pink-400 via-rose-300 to-yellow-300",
                 emoji: "✂️",
               },
               {
-                name: "Plomberie Muller & Fils",
+                name: "Plomberie Müller & Fils",
                 metier: "Plombier",
-                href: "/realisations/plombier",
+                href: "/réalisations/plombier",
                 gradient: "from-blue-600 via-blue-400 to-orange-400",
                 emoji: "🔧",
               },
               {
                 name: "Boucherie Gasser",
                 metier: "Boucherie",
-                href: "/realisations/boucherie",
+                href: "/réalisations/boucherie",
                 gradient: "from-red-800 via-red-700 to-amber-700",
                 emoji: "🥩",
               },
               {
-                name: "Centre Dentaire du Leman",
+                name: "Centre Dentaire du Léman",
                 metier: "Dentiste",
-                href: "/realisations/dentiste",
+                href: "/réalisations/dentiste",
                 gradient: "from-sky-300 via-cyan-400 to-blue-400",
                 emoji: "🦷",
               },
               {
                 name: "Boulangerie Artisanale Favre",
                 metier: "Boulangerie",
-                href: "/realisations/boulangerie",
+                href: "/réalisations/boulangerie",
                 gradient: "from-amber-100 via-yellow-200 to-amber-700",
                 emoji: "🥖",
               },
               {
                 name: "Garage Central Steiner",
                 metier: "Garage",
-                href: "/realisations/garage",
+                href: "/réalisations/garage",
                 gradient: "from-gray-600 via-gray-500 to-red-600",
                 emoji: "🚗",
               },
               {
                 name: "FitPulse Coaching",
                 metier: "Coach sportif",
-                href: "/realisations/coach",
+                href: "/réalisations/coach",
                 gradient: "from-green-500 via-emerald-600 to-gray-900",
                 emoji: "💪",
               },
               {
-                name: "Studio Lumiere",
+                name: "Studio Lumière",
                 metier: "Photographe",
-                href: "/realisations/photographe",
+                href: "/réalisations/photographe",
                 gradient: "from-gray-900 via-gray-800 to-yellow-500",
                 emoji: "📸",
               },
               {
                 name: "Atelier Bonvin Architecture",
                 metier: "Architecte",
-                href: "/realisations/architecte",
+                href: "/réalisations/architecte",
                 gradient: "from-white via-gray-200 to-gray-900",
                 emoji: "🏛️",
               },
               {
                 name: "Barber House",
                 metier: "Barbier",
-                href: "/realisations/barbier",
+                href: "/réalisations/barbier",
                 gradient: "from-neutral-950 via-neutral-800 to-amber-700",
                 emoji: "💈",
               },
               {
                 name: "Cave du Valais",
-                metier: "Cave a vin",
-                href: "/realisations/cave-a-vin",
+                metier: "Cave à vin",
+                href: "/réalisations/cave-a-vin",
                 gradient: "from-rose-950 via-red-900 to-amber-800",
                 emoji: "🍷",
               },
               {
                 name: "Fleurs & Jardins Rossi",
                 metier: "Fleuriste",
-                href: "/realisations/fleuriste",
+                href: "/réalisations/fleuriste",
                 gradient: "from-green-600 via-emerald-400 to-pink-300",
                 emoji: "💐",
               },
               {
-                name: "Elec-Pro Savoy",
-                metier: "Electricien",
-                href: "/realisations/electricien",
+                name: "Élec-Pro Savoy",
+                metier: "Électricien",
+                href: "/réalisations/electricien",
                 gradient: "from-slate-900 via-blue-900 to-yellow-500",
                 emoji: "⚡",
               },
               {
-                name: "Clinique Veterinaire des Alpes",
-                metier: "Veterinaire",
-                href: "/realisations/veterinaire",
+                name: "Clinique Vétérinaire des Alpes",
+                metier: "Vétérinaire",
+                href: "/réalisations/veterinaire",
                 gradient: "from-teal-600 via-teal-400 to-emerald-300",
                 emoji: "🐾",
               },
               {
                 name: "Helvetia Immobilier",
                 metier: "Agent immobilier",
-                href: "/realisations/immobilier",
+                href: "/réalisations/immobilier",
                 gradient: "from-slate-900 via-slate-800 to-amber-600",
                 emoji: "🏠",
               },
               {
                 name: "La Vera Pizza",
                 metier: "Pizzeria",
-                href: "/realisations/pizzeria",
+                href: "/réalisations/pizzeria",
                 gradient: "from-red-900 via-red-700 to-orange-500",
                 emoji: "🍕",
               },
               {
                 name: "Black Ink Studio",
                 metier: "Tatoueur",
-                href: "/realisations/tatoueur",
+                href: "/réalisations/tatoueur",
                 gradient: "from-zinc-950 via-zinc-900 to-red-700",
                 emoji: "🎨",
               },
               {
                 name: "PhysioVita",
-                metier: "Physiotherapeute",
-                href: "/realisations/physiotherapeute",
+                metier: "Physiothérapeute",
+                href: "/réalisations/physiotherapeute",
                 gradient: "from-blue-500 via-blue-400 to-sky-300",
                 emoji: "🦴",
               },
               {
-                name: "Securi-Cle Muller",
+                name: "Sécuri-Clé Müller",
                 metier: "Serrurier",
-                href: "/realisations/serrurier",
+                href: "/réalisations/serrurier",
                 gradient: "from-stone-900 via-stone-700 to-orange-600",
                 emoji: "🔑",
               },
@@ -494,17 +494,17 @@ export default function Home() {
               {
                 name: "Starter",
                 price: "49",
-                desc: "L'essentiel pour etre visible en ligne",
+                desc: "L'essentiel pour être visible en ligne",
                 features: [
                   "Site vitrine 1 page",
                   "Design professionnel sur mesure",
-                  "100% adapte mobile & tablette",
+                  "100% adapté mobile & tablette",
                   "Formulaire de contact",
-                  "Hebergement & nom de domaine inclus",
-                  "Certificat SSL (site securise)",
-                  "Fiche Google My Business optimisee",
+                  "Hébergement & nom de domaine inclus",
+                  "Certificat SSL (site sécurisé)",
+                  "Fiche Google My Business optimisée",
                   "QR code avis Google inclus",
-                  "Mises a jour de securite",
+                  "Mises à jour de sécurité",
                 ],
                 cta: "Choisir Starter",
                 popular: false,
@@ -513,18 +513,18 @@ export default function Home() {
               {
                 name: "Pro",
                 price: "69",
-                desc: "La solution complete pour se demarquer",
+                desc: "La solution complète pour se démarquer",
                 features: [
                   "Tout le Starter, plus :",
-                  "Site jusqu'a 5 pages",
-                  "Design premium personnalise",
-                  "Optimisation SEO complete",
-                  "Integration Google Maps",
+                  "Site jusqu'à 5 pages",
+                  "Design premium personnalisé",
+                  "Optimisation SEO complète",
+                  "Intégration Google Maps",
                   "Galerie photos professionnelle",
-                  "Blog SEO auto-genere (2 articles/mois)",
-                  "Collecte d'avis Google automatisee",
+                  "Blog SEO auto-généré (2 articles/mois)",
+                  "Collecte d'avis Google automatisée",
                   "Statistiques de visite mensuelles",
-                  "Etude de concurrence locale",
+                  "Étude de concurrence locale",
                   "Support prioritaire",
                 ],
                 cta: "Choisir Pro",
@@ -537,16 +537,16 @@ export default function Home() {
                 desc: "Tout inclus pour les professionnels exigeants",
                 features: [
                   "Tout le Pro, plus :",
-                  "Site illimite en pages",
+                  "Site illimité en pages",
                   "Design haut de gamme",
-                  "SEO avance & strategie de mots-cles",
-                  "Blog SEO auto-genere (4 articles/mois)",
-                  "Systeme de reservation en ligne",
-                  "Integration reseaux sociaux",
+                  "SEO avancé & stratégie de mots-clés",
+                  "Blog SEO auto-généré (4 articles/mois)",
+                  "Système de réservation en ligne",
+                  "Intégration réseaux sociaux",
                   "Rapport de performance mensuel",
-                  "Modifications illimitees",
-                  "Maintenance & mises a jour incluses",
-                  "Support dedie 7j/7",
+                  "Modifications illimitées",
+                  "Maintenance & mises à jour incluses",
+                  "Support dédié 7j/7",
                 ],
                 cta: "Choisir Premium",
                 popular: false,
@@ -656,13 +656,13 @@ export default function Home() {
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
               </svg>
-              Satisfait ou rembourse 30 jours
+              Satisfait ou remboursé 30 jours
             </div>
           </div>
         </div>
       </section>
 
-      {/* Temoignages */}
+      {/* Témoignages */}
       <section
         id="temoignages"
         className="py-16 sm:py-24 bg-white"
@@ -673,7 +673,7 @@ export default function Home() {
               Ils nous font <span className="gradient-text">confiance</span>
             </h2>
             <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
-              Decouvrez ce que nos clients disent de leur experience avec
+              Découvrez ce que nos clients disent de leur expérience avec
               OnVousTrouve.
             </p>
             {/* Google rating */}
@@ -697,11 +697,11 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                name: "Marc Zurcher",
+                name: "Marc Zürcher",
                 initials: "MZ",
                 color: "bg-blue-500",
                 role: "Restaurant Le Vieux-Bourg, Lausanne",
-                text: "En deux semaines, mon restaurant avait un site magnifique. Les reservations en ligne ont augmente de 40%. Je recommande sans hesiter.",
+                text: "En deux semaines, mon restaurant avait un site magnifique. Les réservations en ligne ont augmenté de 40%. Je recommande sans hésiter.",
                 stars: 5,
                 delay: "",
               },
@@ -709,17 +709,17 @@ export default function Home() {
                 name: "Sophie Favre",
                 initials: "SF",
                 color: "bg-pink-500",
-                role: "Salon Coiffure Elegance, Geneve",
-                text: "Je n'y connaissais rien en informatique. L'equipe a tout gere pour moi. Mon site est superbe et mes clientes adorent prendre rendez-vous en ligne.",
+                role: "Salon Coiffure Élégance, Genève",
+                text: "Je n'y connaissais rien en informatique. L'équipe a tout géré pour moi. Mon site est superbe et mes clientes adorent prendre rendez-vous en ligne.",
                 stars: 5,
                 delay: "animate-delay-200",
               },
               {
-                name: "Thomas Brugger",
+                name: "Thomas Brügger",
                 initials: "TB",
                 color: "bg-emerald-500",
-                role: "Menuiserie Brugger & Fils, Fribourg",
-                text: "Le meilleur investissement pour mon atelier. Je recois des demandes de devis chaque semaine via le formulaire du site. Tres professionnel.",
+                role: "Menuiserie Brügger & Fils, Fribourg",
+                text: "Le meilleur investissement pour mon atelier. Je reçois des demandes de devis chaque semaine via le formulaire du site. Très professionnel.",
                 stars: 5,
                 delay: "animate-delay-400",
               },
@@ -775,27 +775,27 @@ export default function Home() {
             {[
               {
                 q: "Combien de temps faut-il pour avoir mon site ?",
-                a: "En general, votre site est en ligne sous 7 jours ouvres apres reception de vos contenus.",
+                a: "En général, votre site est en ligne sous 7 jours ouvrés après réception de vos contenus.",
               },
               {
                 q: "Puis-je modifier mon site moi-meme ?",
-                a: "Oui, vous accedez a un panneau d'administration simple pour modifier vos textes, images, horaires et services.",
+                a: "Oui, vous accédez à un panneau d'administration simple pour modifier vos textes, images, horaires et services.",
               },
               {
-                q: "Que se passe-t-il si je resilie ?",
-                a: "Pas d'engagement. Vous pouvez resilier a tout moment. Votre site sera desactive a la fin de la periode payee.",
+                q: "Que se passe-t-il si je résilie ?",
+                a: "Pas d'engagement. Vous pouvez résilier à tout moment. Votre site sera désactivé à la fin de la période payée.",
               },
               {
-                q: "Mon site sera-t-il bien reference sur Google ?",
-                a: "Oui. Tous nos sites sont optimises pour le SEO local. Les offres Pro et Premium incluent un blog SEO auto-genere.",
+                q: "Mon site sera-t-il bien référencé sur Google ?",
+                a: "Oui. Tous nos sites sont optimisés pour le SEO local. Les offres Pro et Premium incluent un blog SEO auto-généré.",
               },
               {
                 q: "Les frais de mise en place, c'est quoi ?",
-                a: "C'est un frais unique de 395 CHF qui couvre la creation sur mesure de votre site : design, contenu, configuration et mise en ligne.",
+                a: "C'est un frais unique de 395 CHF qui couvre la création sur mesure de votre site : design, contenu, configuration et mise en ligne.",
               },
               {
                 q: "Proposez-vous un service de maintenance ?",
-                a: "Oui. L'hebergement, le SSL et les mises a jour de securite sont inclus dans tous les abonnements. L'offre Premium inclut une maintenance complete.",
+                a: "Oui. L'hébergement, le SSL et les mises à jour de sécurité sont inclus dans tous les abonnements. L'offre Premium inclut une maintenance complète.",
               },
             ].map((item) => (
               <details
@@ -836,14 +836,14 @@ export default function Home() {
         </div>
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center animate-fade-in-up">
           <p className="text-blue-200 font-medium mb-4 text-lg">
-            Votre concurrent est deja en ligne. Et vous ?
+            Votre concurrent est déjà en ligne. Et vous ?
           </p>
           <h2 className="text-3xl sm:text-5xl font-bold text-white leading-tight">
-            Pret a etre trouve en ligne ?
+            Prêt à être trouvé en ligne ?
           </h2>
           <p className="mt-4 text-lg text-blue-200 max-w-2xl mx-auto">
-            Rejoignez les professionnels qui ont fait le choix de la visibilite.
-            Votre site peut etre en ligne des la semaine prochaine.
+            Rejoignez les professionnels qui ont fait le choix de la visibilité.
+            Votre site peut être en ligne dès la semaine prochaine.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
             <div className="flex flex-col items-center">
@@ -875,9 +875,9 @@ export default function Home() {
               </span>
               <span className="text-sm text-blue-400 font-medium">.ch</span>
               <p className="mt-4 text-sm leading-relaxed max-w-md">
-                Nous aidons les professionnels suisses a developper leur
-                presence en ligne avec des sites web modernes, rapides et
-                efficaces. Bases en Suisse, pour la Suisse.
+                Nous aidons les professionnels suisses à développer leur
+                présence en ligne avec des sites web modernes, rapides et
+                efficaces. Basés en Suisse, pour la Suisse.
               </p>
               <p className="mt-3 text-sm text-gray-500">
                 Le Bouveret, Valais, Suisse
@@ -891,7 +891,7 @@ export default function Home() {
                     href="#metiers"
                     className="hover:text-white transition-colors"
                   >
-                    Realisations
+                    Réalisations
                   </a>
                 </li>
                 <li>
@@ -899,7 +899,7 @@ export default function Home() {
                     href="#comment-ca-marche"
                     className="hover:text-white transition-colors"
                   >
-                    Comment ca marche ?
+                    Comment ça marche ?
                   </a>
                 </li>
                 <li>
@@ -915,7 +915,7 @@ export default function Home() {
                     href="#temoignages"
                     className="hover:text-white transition-colors"
                   >
-                    Temoignages
+                    Témoignages
                   </a>
                 </li>
                 <li>
@@ -950,7 +950,7 @@ export default function Home() {
                 </li>
                 <li>
                   <a href="#" className="hover:text-white transition-colors">
-                    Politique de confidentialite
+                    Politique de confidentialité
                   </a>
                 </li>
                 <li>
@@ -964,7 +964,7 @@ export default function Home() {
           <div className="border-t border-gray-800 mt-12 pt-8 text-sm text-center space-y-2">
             <p>
               &copy; {new Date().getFullYear()} OnVousTrouve.ch — Tous droits
-              reserves.
+              réservés.
             </p>
             <p className="text-gray-600 text-xs">
               Made with ❤️ in Switzerland
