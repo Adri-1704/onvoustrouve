@@ -4,22 +4,22 @@ export default function Home() {
       {/* Navigation */}
       <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
+          <div className="flex justify-between items-center h-20">
             <a href="#top" className="flex items-center gap-2">
               <span className="text-2xl font-bold text-primary">
                 OnVousTrouve
               </span>
               <span className="text-sm text-primary-light font-medium">.ch</span>
             </a>
-            <div className="hidden md:flex items-center gap-8 text-sm font-medium text-gray-600">
+            <div className="hidden md:flex items-center gap-10 text-sm font-medium text-gray-600">
               <a href="#metiers" className="hover:text-primary transition-colors">
-                Réalisations
+                Realisations
               </a>
               <a
                 href="#comment-ca-marche"
                 className="hover:text-primary transition-colors"
               >
-                Comment ça marche ?
+                Comment ca marche ?
               </a>
               <a href="#tarifs" className="hover:text-primary transition-colors">
                 Tarifs
@@ -28,39 +28,65 @@ export default function Home() {
                 href="#temoignages"
                 className="hover:text-primary transition-colors"
               >
-                Témoignages
+                Temoignages
+              </a>
+              <a href="#faq" className="hover:text-primary transition-colors">
+                FAQ
               </a>
             </div>
             <a
               href="#tarifs"
-              className="hidden sm:inline-flex items-center px-5 py-2.5 rounded-full bg-primary text-white text-sm font-semibold hover:bg-primary-dark transition-colors"
+              className="hidden sm:inline-flex items-center px-6 py-3 rounded-full bg-primary text-white text-sm font-semibold hover:bg-primary-dark transition-all hover:shadow-lg hover:shadow-blue-500/25"
             >
               Commencer
             </a>
+
+            {/* Mobile hamburger menu */}
+            <div className="md:hidden relative">
+              <input type="checkbox" id="mobile-nav" className="mobile-menu-toggle sr-only" />
+              <label htmlFor="mobile-nav" className="hamburger-label cursor-pointer p-2" aria-label="Menu">
+                <span className="hamburger-bar"></span>
+                <span className="hamburger-bar"></span>
+                <span className="hamburger-bar"></span>
+              </label>
+              <div className="mobile-menu absolute right-0 top-full mt-2 w-56 bg-white rounded-2xl shadow-xl border border-gray-100 flex flex-col px-4">
+                <a href="#metiers" className="py-2.5 text-sm font-medium text-gray-700 hover:text-primary transition-colors">Realisations</a>
+                <a href="#comment-ca-marche" className="py-2.5 text-sm font-medium text-gray-700 hover:text-primary transition-colors">Comment ca marche ?</a>
+                <a href="#tarifs" className="py-2.5 text-sm font-medium text-gray-700 hover:text-primary transition-colors">Tarifs</a>
+                <a href="#temoignages" className="py-2.5 text-sm font-medium text-gray-700 hover:text-primary transition-colors">Temoignages</a>
+                <a href="#faq" className="py-2.5 text-sm font-medium text-gray-700 hover:text-primary transition-colors">FAQ</a>
+                <a href="#tarifs" className="my-2 text-center py-2.5 rounded-full bg-primary text-white text-sm font-semibold">Commencer</a>
+              </div>
+            </div>
           </div>
         </div>
       </nav>
 
       {/* Hero */}
       <section className="relative overflow-hidden bg-gradient-to-b from-accent to-white">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-100/40 via-transparent to-transparent" />
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-20 sm:pt-20 sm:pb-24">
-          <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-gray-900 leading-tight">
-              Votre métier mérite
+        {/* Animated background orbs */}
+        <div className="hero-orb hero-orb-1" />
+        <div className="hero-orb hero-orb-2" />
+        <div className="hero-orb hero-orb-3" />
+        {/* Subtle grid */}
+        <div className="absolute inset-0 hero-grid" />
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-24 sm:pt-28 sm:pb-32">
+          <div className="text-center max-w-4xl mx-auto animate-fade-in-up">
+            <h1 className="text-4xl sm:text-5xl lg:text-7xl font-extrabold tracking-tight text-gray-900 leading-tight">
+              Votre metier merite
               <br />
-              <span className="text-primary">d&apos;être trouvé en ligne</span>
+              <span className="gradient-text">d&apos;etre trouve en ligne</span>
             </h1>
-            <p className="mt-6 text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
-              Nous créons votre site web professionnel clé en main. Vous vous
-              concentrez sur votre métier, on s&apos;occupe de tout le reste.
+            <p className="mt-6 text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed animate-fade-in-up animate-delay-200">
+              Nous creons votre site web professionnel cle en main. Vous vous
+              concentrez sur votre metier, on s&apos;occupe de tout le reste.
             </p>
-            <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up animate-delay-300">
               <a
                 href="#tarifs"
-                className="inline-flex items-center justify-center px-8 py-4 rounded-full bg-primary text-white text-lg font-semibold hover:bg-primary-dark transition-colors shadow-lg shadow-blue-500/25"
+                className="inline-flex items-center justify-center px-10 py-5 rounded-full bg-primary text-white text-lg font-bold hover:bg-primary-dark transition-all shadow-xl shadow-blue-500/25 hover:shadow-blue-500/40 hover:scale-105"
               >
-                Découvrir nos offres
+                Decouvrir nos offres
                 <svg
                   className="ml-2 w-5 h-5"
                   fill="none"
@@ -77,36 +103,94 @@ export default function Home() {
               </a>
               <a
                 href="#comment-ca-marche"
-                className="inline-flex items-center justify-center px-8 py-4 rounded-full border-2 border-gray-200 text-gray-700 text-lg font-semibold hover:border-primary hover:text-primary transition-colors"
+                className="inline-flex items-center justify-center px-10 py-5 rounded-full border-2 border-gray-200 text-gray-700 text-lg font-semibold hover:border-primary hover:text-primary transition-all hover:shadow-lg"
               >
-                Comment ça marche ?
+                Comment ca marche ?
               </a>
+            </div>
+
+            {/* Trust indicators */}
+            <div className="mt-10 flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-gray-500 animate-fade-in animate-delay-500">
+              <span className="flex items-center gap-1.5">
+                <svg className="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
+                20+ metiers couverts
+              </span>
+              <span className="flex items-center gap-1.5">
+                <svg className="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
+                Sites livres en 7 jours
+              </span>
+              <span className="flex items-center gap-1.5">
+                <svg className="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
+                Base en Suisse
+              </span>
+            </div>
+          </div>
+
+          {/* Device mockup frames */}
+          <div className="mt-16 flex items-end justify-center gap-4 sm:gap-6 animate-fade-in-up animate-delay-500">
+            {/* Phone */}
+            <div className="device-frame w-16 sm:w-20 h-28 sm:h-36 rounded-xl shadow-2xl">
+              <div className="absolute inset-[3px] rounded-[9px] bg-gradient-to-br from-blue-50 to-blue-100 z-10 flex flex-col items-center justify-center gap-1 p-1">
+                <div className="w-3/4 h-1.5 rounded bg-primary/20"></div>
+                <div className="w-1/2 h-1 rounded bg-primary/10"></div>
+                <div className="w-full h-6 sm:h-8 mt-1 rounded bg-gradient-to-br from-primary/10 to-primary/5"></div>
+                <div className="w-3/4 h-1 rounded bg-primary/10"></div>
+                <div className="w-3/4 h-1 rounded bg-primary/10"></div>
+              </div>
+            </div>
+            {/* Desktop */}
+            <div className="device-frame w-48 sm:w-72 h-32 sm:h-44 rounded-xl shadow-2xl">
+              <div className="absolute inset-[3px] rounded-[9px] bg-gradient-to-br from-blue-50 to-white z-10 flex flex-col p-2 sm:p-3 gap-1.5">
+                <div className="flex gap-1">
+                  <div className="w-1.5 h-1.5 rounded-full bg-red-300"></div>
+                  <div className="w-1.5 h-1.5 rounded-full bg-yellow-300"></div>
+                  <div className="w-1.5 h-1.5 rounded-full bg-green-300"></div>
+                </div>
+                <div className="w-2/3 h-2 rounded bg-primary/20"></div>
+                <div className="w-1/3 h-1.5 rounded bg-primary/10"></div>
+                <div className="flex gap-2 mt-1 flex-1">
+                  <div className="flex-1 rounded bg-gradient-to-br from-primary/10 to-primary/5"></div>
+                  <div className="flex-1 rounded bg-gradient-to-br from-primary/5 to-primary/10"></div>
+                </div>
+              </div>
+            </div>
+            {/* Tablet */}
+            <div className="device-frame w-24 sm:w-32 h-32 sm:h-40 rounded-xl shadow-2xl">
+              <div className="absolute inset-[3px] rounded-[9px] bg-gradient-to-br from-blue-50 to-blue-100 z-10 flex flex-col p-2 gap-1">
+                <div className="w-2/3 h-1.5 rounded bg-primary/20"></div>
+                <div className="w-1/2 h-1 rounded bg-primary/10"></div>
+                <div className="w-full h-10 sm:h-14 mt-1 rounded bg-gradient-to-br from-primary/10 to-primary/5"></div>
+                <div className="flex gap-1 mt-1">
+                  <div className="flex-1 h-4 sm:h-6 rounded bg-primary/8"></div>
+                  <div className="flex-1 h-4 sm:h-6 rounded bg-primary/8"></div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
 
-      {/* Comment ça marche */}
+      {/* Comment ca marche */}
       <section
         id="comment-ca-marche"
-        className="py-14 sm:py-20 bg-gradient-to-b from-gray-50 to-white"
+        className="py-16 sm:py-24 bg-gradient-to-b from-gray-50 to-white"
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
+          <div className="text-center mb-16 animate-fade-in-up">
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">
-              Comment ça <span className="text-primary">marche ?</span>
+              Comment ca <span className="gradient-text">marche ?</span>
             </h2>
-            <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto mb-8">
-              Obtenir votre site professionnel n&apos;a jamais été aussi facile.
+            <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
+              Obtenir votre site professionnel n&apos;a jamais ete aussi facile.
             </p>
           </div>
-          <div className="grid md:grid-cols-3 gap-8 lg:gap-12">
+          <div className="grid md:grid-cols-3 gap-8 lg:gap-12 steps-connector">
             {[
               {
                 step: "01",
-                title: "Choisissez votre métier",
-                desc: "Sélectionnez votre domaine d'activité et l'offre qui correspond à vos besoins.",
+                title: "Choisissez votre metier",
+                desc: "Selectionnez votre domaine d'activite et l'offre qui correspond a vos besoins.",
                 icon: (
                   <svg
                     className="w-8 h-8 text-primary"
@@ -122,11 +206,12 @@ export default function Home() {
                     />
                   </svg>
                 ),
+                delay: "",
               },
               {
                 step: "02",
-                title: "On crée votre site",
-                desc: "Notre équipe conçoit un site sur mesure avec votre contenu, vos couleurs et votre identité.",
+                title: "On cree votre site",
+                desc: "Notre equipe concoit un site sur mesure avec votre contenu, vos couleurs et votre identite.",
                 icon: (
                   <svg
                     className="w-8 h-8 text-primary"
@@ -142,11 +227,12 @@ export default function Home() {
                     />
                   </svg>
                 ),
+                delay: "animate-delay-200",
               },
               {
                 step: "03",
-                title: "Vous êtes en ligne",
-                desc: "Votre site est publié, optimisé pour Google et prêt à attirer vos futurs clients.",
+                title: "Vous etes en ligne",
+                desc: "Votre site est publie, optimise pour Google et pret a attirer vos futurs clients.",
                 icon: (
                   <svg
                     className="w-8 h-8 text-primary"
@@ -162,34 +248,40 @@ export default function Home() {
                     />
                   </svg>
                 ),
+                delay: "animate-delay-400",
               },
             ].map((item) => (
-              <div key={item.step} className="relative text-center pt-4">
+              <div key={item.step} className={`relative text-center pt-4 animate-fade-in-up ${item.delay}`}>
                 <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-secondary mb-6">
                   {item.icon}
                 </div>
                 <div className="absolute top-10 left-1/2 -translate-x-1/2 text-8xl font-extrabold text-primary/10 select-none pointer-events-none z-0">
                   {item.step}
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">
-                  {item.title}
-                </h3>
-                <p className="text-gray-600 leading-relaxed">{item.desc}</p>
+                <div className="relative border-l-4 border-primary/30 pl-4 text-left mt-2 ml-4 sm:ml-8">
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">
+                    {item.title}
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed">{item.desc}</p>
+                </div>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Nos réalisations */}
-      <section id="metiers" className="py-14 sm:py-20 bg-white">
+      {/* Nos realisations */}
+      <section id="metiers" className="py-16 sm:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-10">
+          <div className="text-center mb-12 animate-fade-in-up">
+            <span className="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-semibold mb-4">
+              20 exemples
+            </span>
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">
-              Nos <span className="text-primary">réalisations</span>
+              Nos <span className="gradient-text">realisations</span>
             </h2>
             <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
-              Découvrez des exemples de sites créés pour nos clients
+              Decouvrez des exemples de sites crees pour nos clients
             </p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
@@ -202,14 +294,14 @@ export default function Home() {
                 emoji: "🍽️",
               },
               {
-                name: "Salon Élégance",
+                name: "Salon Elegance",
                 metier: "Coiffeur",
                 href: "/realisations/coiffeur",
                 gradient: "from-pink-400 via-rose-300 to-yellow-300",
                 emoji: "✂️",
               },
               {
-                name: "Plomberie Müller & Fils",
+                name: "Plomberie Muller & Fils",
                 metier: "Plombier",
                 href: "/realisations/plombier",
                 gradient: "from-blue-600 via-blue-400 to-orange-400",
@@ -223,7 +315,7 @@ export default function Home() {
                 emoji: "🥩",
               },
               {
-                name: "Centre Dentaire du Léman",
+                name: "Centre Dentaire du Leman",
                 metier: "Dentiste",
                 href: "/realisations/dentiste",
                 gradient: "from-sky-300 via-cyan-400 to-blue-400",
@@ -251,7 +343,7 @@ export default function Home() {
                 emoji: "💪",
               },
               {
-                name: "Studio Lumière",
+                name: "Studio Lumiere",
                 metier: "Photographe",
                 href: "/realisations/photographe",
                 gradient: "from-gray-900 via-gray-800 to-yellow-500",
@@ -273,7 +365,7 @@ export default function Home() {
               },
               {
                 name: "Cave du Valais",
-                metier: "Cave à vin",
+                metier: "Cave a vin",
                 href: "/realisations/cave-a-vin",
                 gradient: "from-rose-950 via-red-900 to-amber-800",
                 emoji: "🍷",
@@ -286,15 +378,15 @@ export default function Home() {
                 emoji: "💐",
               },
               {
-                name: "Élec-Pro Savoy",
-                metier: "Électricien",
+                name: "Elec-Pro Savoy",
+                metier: "Electricien",
                 href: "/realisations/electricien",
                 gradient: "from-slate-900 via-blue-900 to-yellow-500",
                 emoji: "⚡",
               },
               {
-                name: "Clinique Vétérinaire des Alpes",
-                metier: "Vétérinaire",
+                name: "Clinique Veterinaire des Alpes",
+                metier: "Veterinaire",
                 href: "/realisations/veterinaire",
                 gradient: "from-teal-600 via-teal-400 to-emerald-300",
                 emoji: "🐾",
@@ -322,13 +414,13 @@ export default function Home() {
               },
               {
                 name: "PhysioVita",
-                metier: "Physiothérapeute",
+                metier: "Physiotherapeute",
                 href: "/realisations/physiotherapeute",
                 gradient: "from-blue-500 via-blue-400 to-sky-300",
                 emoji: "🦴",
               },
               {
-                name: "Sécuri-Clé Müller",
+                name: "Securi-Cle Muller",
                 metier: "Serrurier",
                 href: "/realisations/serrurier",
                 gradient: "from-stone-900 via-stone-700 to-orange-600",
@@ -340,7 +432,7 @@ export default function Home() {
                 href={realisation.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group relative flex flex-col justify-end rounded-2xl overflow-hidden h-48 sm:h-56 shadow-md hover:shadow-xl hover:scale-[1.03] transition-all duration-300"
+                className="realization-card group relative flex flex-col justify-end rounded-2xl overflow-hidden h-48 sm:h-56 shadow-md"
               >
                 <div
                   className={`absolute inset-0 bg-gradient-to-br ${realisation.gradient}`}
@@ -380,56 +472,64 @@ export default function Home() {
       </section>
 
       {/* Section Pricing */}
-      <section id="tarifs" className="py-14 sm:py-20 bg-white">
+      <section id="tarifs" className="py-16 sm:py-24 bg-gradient-to-b from-gray-50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-10">
+          <div className="text-center mb-12 animate-fade-in-up">
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">
-              Des tarifs <span className="text-primary">transparents</span>
+              Des tarifs <span className="gradient-text">transparents</span>
             </h2>
             <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
               Sans engagement. Sans surprise. Choisissez l&apos;offre qui vous
               convient.
             </p>
+            <div className="mt-4 inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gray-100 text-sm text-gray-600 font-medium">
+              <svg className="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+              </svg>
+              Facturation mensuelle
+            </div>
           </div>
           <div className="grid md:grid-cols-3 gap-8 lg:gap-10 max-w-5xl mx-auto">
             {[
               {
                 name: "Starter",
                 price: "49",
-                desc: "L'essentiel pour être visible en ligne",
+                desc: "L'essentiel pour etre visible en ligne",
                 features: [
                   "Site vitrine 1 page",
                   "Design professionnel sur mesure",
-                  "100% adapté mobile & tablette",
+                  "100% adapte mobile & tablette",
                   "Formulaire de contact",
-                  "Hébergement & nom de domaine inclus",
-                  "Certificat SSL (site sécurisé)",
-                  "Fiche Google My Business optimisée",
+                  "Hebergement & nom de domaine inclus",
+                  "Certificat SSL (site securise)",
+                  "Fiche Google My Business optimisee",
                   "QR code avis Google inclus",
-                  "Mises à jour de sécurité",
+                  "Mises a jour de securite",
                 ],
                 cta: "Choisir Starter",
                 popular: false,
+                delay: "",
               },
               {
                 name: "Pro",
                 price: "69",
-                desc: "La solution complète pour se démarquer",
+                desc: "La solution complete pour se demarquer",
                 features: [
                   "Tout le Starter, plus :",
-                  "Site jusqu'à 5 pages",
-                  "Design premium personnalisé",
-                  "Optimisation SEO complète",
-                  "Intégration Google Maps",
+                  "Site jusqu'a 5 pages",
+                  "Design premium personnalise",
+                  "Optimisation SEO complete",
+                  "Integration Google Maps",
                   "Galerie photos professionnelle",
-                  "Blog SEO auto-généré (2 articles/mois)",
-                  "Collecte d'avis Google automatisée",
+                  "Blog SEO auto-genere (2 articles/mois)",
+                  "Collecte d'avis Google automatisee",
                   "Statistiques de visite mensuelles",
-                  "Étude de concurrence locale",
+                  "Etude de concurrence locale",
                   "Support prioritaire",
                 ],
                 cta: "Choisir Pro",
                 popular: true,
+                delay: "animate-delay-100",
               },
               {
                 name: "Premium",
@@ -437,31 +537,32 @@ export default function Home() {
                 desc: "Tout inclus pour les professionnels exigeants",
                 features: [
                   "Tout le Pro, plus :",
-                  "Site illimité en pages",
+                  "Site illimite en pages",
                   "Design haut de gamme",
-                  "SEO avancé & stratégie de mots-clés",
-                  "Blog SEO auto-généré (4 articles/mois)",
-                  "Système de réservation en ligne",
-                  "Intégration réseaux sociaux",
+                  "SEO avance & strategie de mots-cles",
+                  "Blog SEO auto-genere (4 articles/mois)",
+                  "Systeme de reservation en ligne",
+                  "Integration reseaux sociaux",
                   "Rapport de performance mensuel",
-                  "Modifications illimitées",
-                  "Maintenance & mises à jour incluses",
-                  "Support dédié 7j/7",
+                  "Modifications illimitees",
+                  "Maintenance & mises a jour incluses",
+                  "Support dedie 7j/7",
                 ],
                 cta: "Choisir Premium",
                 popular: false,
+                delay: "animate-delay-200",
               },
             ].map((plan) => (
               <div
                 key={plan.name}
-                className={`relative flex flex-col rounded-3xl p-8 lg:p-10 ${
+                className={`relative flex flex-col rounded-3xl p-8 lg:p-10 animate-fade-in-up ${plan.delay} ${
                   plan.popular
-                    ? "bg-primary text-white shadow-2xl shadow-blue-500/25 ring-1 ring-primary scale-105"
-                    : "bg-white border border-gray-200 hover:border-primary/30 hover:shadow-lg transition-all"
+                    ? "bg-primary text-white shadow-2xl shadow-blue-500/25 ring-1 ring-primary scale-105 plan-glow"
+                    : "bg-white border border-gray-200 hover:border-primary/30 hover:shadow-xl transition-all"
                 }`}
               >
                 {plan.popular && (
-                  <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-yellow-400 text-yellow-900 text-xs font-bold uppercase tracking-wide">
+                  <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-5 py-1.5 rounded-full bg-yellow-400 text-yellow-900 text-xs font-bold uppercase tracking-wide shadow-lg">
                     Le plus populaire
                   </div>
                 )}
@@ -534,10 +635,10 @@ export default function Home() {
                 </ul>
                 <a
                   href="mailto:contact@onvoustrouve.ch"
-                  className={`block text-center py-3.5 px-6 rounded-full font-semibold text-sm transition-colors ${
+                  className={`block text-center py-4 px-6 rounded-full font-semibold text-sm transition-all ${
                     plan.popular
-                      ? "bg-white text-primary hover:bg-blue-50"
-                      : "bg-primary text-white hover:bg-primary-dark"
+                      ? "bg-white text-primary hover:bg-blue-50 hover:shadow-lg"
+                      : "bg-primary text-white hover:bg-primary-dark hover:shadow-lg"
                   }`}
                 >
                   {plan.cta}
@@ -549,48 +650,83 @@ export default function Home() {
             Tous les prix sont en francs suisses (CHF), hors TVA. Frais de mise
             en place uniques de 395 CHF inclus dans chaque offre.
           </p>
+          {/* Guarantee badge */}
+          <div className="text-center mt-6">
+            <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-green-50 border border-green-200 text-green-700 text-sm font-medium">
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+              </svg>
+              Satisfait ou rembourse 30 jours
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* Témoignages */}
+      {/* Temoignages */}
       <section
         id="temoignages"
-        className="py-14 sm:py-20 bg-gradient-to-b from-gray-50 to-white"
+        className="py-16 sm:py-24 bg-white"
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-10">
+          <div className="text-center mb-12 animate-fade-in-up">
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">
-              Ils nous font <span className="text-primary">confiance</span>
+              Ils nous font <span className="gradient-text">confiance</span>
             </h2>
             <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
-              Découvrez ce que nos clients disent de leur expérience avec
+              Decouvrez ce que nos clients disent de leur experience avec
               OnVousTrouve.
             </p>
+            {/* Google rating */}
+            <div className="mt-4 inline-flex items-center gap-2">
+              <div className="flex gap-0.5">
+                {[1, 2, 3, 4, 5].map((i) => (
+                  <svg
+                    key={i}
+                    className="w-5 h-5 text-yellow-400"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                ))}
+              </div>
+              <span className="text-sm font-semibold text-gray-700">4.9/5</span>
+              <span className="text-sm text-gray-500">sur Google</span>
+            </div>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                name: "Marc Zürcher",
+                name: "Marc Zurcher",
+                initials: "MZ",
+                color: "bg-blue-500",
                 role: "Restaurant Le Vieux-Bourg, Lausanne",
-                text: "En deux semaines, mon restaurant avait un site magnifique. Les réservations en ligne ont augmenté de 40%. Je recommande sans hésiter.",
+                text: "En deux semaines, mon restaurant avait un site magnifique. Les reservations en ligne ont augmente de 40%. Je recommande sans hesiter.",
                 stars: 5,
+                delay: "",
               },
               {
                 name: "Sophie Favre",
-                role: "Salon Coiffure Élégance, Genève",
-                text: "Je n'y connaissais rien en informatique. L'équipe a tout géré pour moi. Mon site est superbe et mes clientes adorent prendre rendez-vous en ligne.",
+                initials: "SF",
+                color: "bg-pink-500",
+                role: "Salon Coiffure Elegance, Geneve",
+                text: "Je n'y connaissais rien en informatique. L'equipe a tout gere pour moi. Mon site est superbe et mes clientes adorent prendre rendez-vous en ligne.",
                 stars: 5,
+                delay: "animate-delay-200",
               },
               {
-                name: "Thomas Brügger",
-                role: "Menuiserie Brügger & Fils, Fribourg",
-                text: "Le meilleur investissement pour mon atelier. Je reçois des demandes de devis chaque semaine via le formulaire du site. Très professionnel.",
+                name: "Thomas Brugger",
+                initials: "TB",
+                color: "bg-emerald-500",
+                role: "Menuiserie Brugger & Fils, Fribourg",
+                text: "Le meilleur investissement pour mon atelier. Je recois des demandes de devis chaque semaine via le formulaire du site. Tres professionnel.",
                 stars: 5,
+                delay: "animate-delay-400",
               },
             ].map((testimonial) => (
               <div
                 key={testimonial.name}
-                className="flex flex-col p-8 rounded-2xl bg-white border border-gray-100 shadow-sm"
+                className={`testimonial-quote relative flex flex-col p-8 rounded-2xl bg-white border border-gray-100 shadow-sm hover:shadow-lg transition-shadow animate-fade-in-up ${testimonial.delay}`}
               >
                 <div className="flex gap-1 mb-4">
                   {Array.from({ length: testimonial.stars }).map((_, i) => (
@@ -607,11 +743,16 @@ export default function Home() {
                 <p className="flex-1 text-gray-600 leading-relaxed italic mb-6">
                   &ldquo;{testimonial.text}&rdquo;
                 </p>
-                <div>
-                  <p className="font-semibold text-gray-900">
-                    {testimonial.name}
-                  </p>
-                  <p className="text-sm text-gray-500">{testimonial.role}</p>
+                <div className="flex items-center gap-3">
+                  <div className={`w-10 h-10 rounded-full ${testimonial.color} flex items-center justify-center text-white text-sm font-bold`}>
+                    {testimonial.initials}
+                  </div>
+                  <div>
+                    <p className="font-semibold text-gray-900">
+                      {testimonial.name}
+                    </p>
+                    <p className="text-sm text-gray-500">{testimonial.role}</p>
+                  </div>
                 </div>
               </div>
             ))}
@@ -619,26 +760,104 @@ export default function Home() {
         </div>
       </section>
 
+      {/* FAQ */}
+      <section id="faq" className="py-16 sm:py-24 bg-gradient-to-b from-gray-50 to-white">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12 animate-fade-in-up">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">
+              Questions <span className="gradient-text">frequentes</span>
+            </h2>
+            <p className="mt-4 text-lg text-gray-600">
+              Tout ce que vous devez savoir avant de vous lancer.
+            </p>
+          </div>
+          <div className="space-y-4 animate-fade-in-up animate-delay-200">
+            {[
+              {
+                q: "Combien de temps faut-il pour avoir mon site ?",
+                a: "En general, votre site est en ligne sous 7 jours ouvres apres reception de vos contenus.",
+              },
+              {
+                q: "Puis-je modifier mon site moi-meme ?",
+                a: "Oui, vous accedez a un panneau d'administration simple pour modifier vos textes, images, horaires et services.",
+              },
+              {
+                q: "Que se passe-t-il si je resilie ?",
+                a: "Pas d'engagement. Vous pouvez resilier a tout moment. Votre site sera desactive a la fin de la periode payee.",
+              },
+              {
+                q: "Mon site sera-t-il bien reference sur Google ?",
+                a: "Oui. Tous nos sites sont optimises pour le SEO local. Les offres Pro et Premium incluent un blog SEO auto-genere.",
+              },
+              {
+                q: "Les frais de mise en place, c'est quoi ?",
+                a: "C'est un frais unique de 395 CHF qui couvre la creation sur mesure de votre site : design, contenu, configuration et mise en ligne.",
+              },
+              {
+                q: "Proposez-vous un service de maintenance ?",
+                a: "Oui. L'hebergement, le SSL et les mises a jour de securite sont inclus dans tous les abonnements. L'offre Premium inclut une maintenance complete.",
+              },
+            ].map((item) => (
+              <details
+                key={item.q}
+                className="faq-item group rounded-2xl border border-gray-200 bg-white hover:border-primary/30 transition-colors"
+              >
+                <summary className="flex items-center justify-between p-6 text-left font-semibold text-gray-900">
+                  <span className="pr-4">{item.q}</span>
+                  <svg
+                    className="faq-chevron w-5 h-5 shrink-0 text-gray-400"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </summary>
+                <div className="px-6 pb-6 text-gray-600 leading-relaxed">
+                  {item.a}
+                </div>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CTA final */}
-      <section className="py-14 sm:py-20 bg-primary">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold text-white">
-            Prêt à être trouvé en ligne ?
+      <section className="py-16 sm:py-24 bg-primary relative overflow-hidden">
+        {/* Background decoration */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-0 left-0 w-72 h-72 bg-white rounded-full -translate-x-1/2 -translate-y-1/2"></div>
+          <div className="absolute bottom-0 right-0 w-96 h-96 bg-white rounded-full translate-x-1/3 translate-y-1/3"></div>
+        </div>
+        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center animate-fade-in-up">
+          <p className="text-blue-200 font-medium mb-4 text-lg">
+            Votre concurrent est deja en ligne. Et vous ?
+          </p>
+          <h2 className="text-3xl sm:text-5xl font-bold text-white leading-tight">
+            Pret a etre trouve en ligne ?
           </h2>
           <p className="mt-4 text-lg text-blue-200 max-w-2xl mx-auto">
-            Rejoignez les professionnels qui ont fait le choix de la visibilité.
-            Votre site peut être en ligne dès la semaine prochaine.
+            Rejoignez les professionnels qui ont fait le choix de la visibilite.
+            Votre site peut etre en ligne des la semaine prochaine.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="mailto:contact@onvoustrouve.ch"
-              className="inline-flex items-center justify-center px-8 py-4 rounded-full bg-white text-primary text-lg font-semibold hover:bg-blue-50 transition-colors"
-            >
-              Demander un devis gratuit
-            </a>
+            <div className="flex flex-col items-center">
+              <a
+                href="mailto:contact@onvoustrouve.ch"
+                className="cta-pulse inline-flex items-center justify-center px-10 py-5 rounded-full bg-white text-primary text-lg font-bold hover:bg-blue-50 transition-all shadow-xl hover:shadow-2xl"
+              >
+                Demander un devis gratuit
+              </a>
+              <span className="text-blue-300 text-sm mt-3">Devis gratuit en 2 minutes</span>
+            </div>
             <a
               href="tel:+41000000000"
-              className="inline-flex items-center justify-center px-8 py-4 rounded-full border-2 border-white/30 text-white text-lg font-semibold hover:bg-white/10 transition-colors"
+              className="inline-flex items-center justify-center px-10 py-5 rounded-full border-2 border-white/30 text-white text-lg font-semibold hover:bg-white/10 transition-all"
             >
               Nous appeler
             </a>
@@ -656,9 +875,12 @@ export default function Home() {
               </span>
               <span className="text-sm text-blue-400 font-medium">.ch</span>
               <p className="mt-4 text-sm leading-relaxed max-w-md">
-                Nous aidons les professionnels suisses à développer leur
-                présence en ligne avec des sites web modernes, rapides et
-                efficaces. Basés en Suisse, pour la Suisse.
+                Nous aidons les professionnels suisses a developper leur
+                presence en ligne avec des sites web modernes, rapides et
+                efficaces. Bases en Suisse, pour la Suisse.
+              </p>
+              <p className="mt-3 text-sm text-gray-500">
+                Le Bouveret, Valais, Suisse
               </p>
             </div>
             <div>
@@ -669,7 +891,7 @@ export default function Home() {
                     href="#metiers"
                     className="hover:text-white transition-colors"
                   >
-                    Métiers
+                    Realisations
                   </a>
                 </li>
                 <li>
@@ -677,7 +899,7 @@ export default function Home() {
                     href="#comment-ca-marche"
                     className="hover:text-white transition-colors"
                   >
-                    Comment ça marche ?
+                    Comment ca marche ?
                   </a>
                 </li>
                 <li>
@@ -693,7 +915,15 @@ export default function Home() {
                     href="#temoignages"
                     className="hover:text-white transition-colors"
                   >
-                    Témoignages
+                    Temoignages
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#faq"
+                    className="hover:text-white transition-colors"
+                  >
+                    FAQ
                   </a>
                 </li>
               </ul>
@@ -709,18 +939,18 @@ export default function Home() {
                     contact@onvoustrouve.ch
                   </a>
                 </li>
-                <li>Suisse</li>
+                <li>Le Bouveret, Valais, Suisse</li>
               </ul>
-              <h4 className="text-white font-semibold mt-6 mb-4">Légal</h4>
+              <h4 className="text-white font-semibold mt-6 mb-4">Legal</h4>
               <ul className="space-y-2 text-sm">
                 <li>
                   <a href="#" className="hover:text-white transition-colors">
-                    Mentions légales
+                    Mentions legales
                   </a>
                 </li>
                 <li>
                   <a href="#" className="hover:text-white transition-colors">
-                    Politique de confidentialité
+                    Politique de confidentialite
                   </a>
                 </li>
                 <li>
@@ -731,10 +961,13 @@ export default function Home() {
               </ul>
             </div>
           </div>
-          <div className="border-t border-gray-800 mt-12 pt-8 text-sm text-center">
+          <div className="border-t border-gray-800 mt-12 pt-8 text-sm text-center space-y-2">
             <p>
               &copy; {new Date().getFullYear()} OnVousTrouve.ch — Tous droits
-              réservés.
+              reserves.
+            </p>
+            <p className="text-gray-600 text-xs">
+              Made with ❤️ in Switzerland
             </p>
           </div>
         </div>
