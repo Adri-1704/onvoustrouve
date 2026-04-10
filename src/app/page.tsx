@@ -866,6 +866,33 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Founder */}
+      <section className="bg-white px-6 py-20">
+        <div className="mx-auto max-w-4xl">
+          <div className="grid items-center gap-12 md:grid-cols-2">
+            <div className="flex justify-center">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/adrien.webp" alt="Adrien Haubrich" className="h-64 w-64 rounded-2xl object-cover shadow-lg" />
+            </div>
+            <div>
+              <p className="mb-2 text-sm font-medium uppercase tracking-wider text-blue-600">Votre interlocuteur</p>
+              <h2 className="mb-4 text-3xl font-bold text-gray-900">Adrien Haubrich</h2>
+              <p className="mb-4 text-gray-600 leading-relaxed">
+                Entrepreneur digital basé au Bouveret en Valais, j&apos;accompagne les commerçants suisses dans leur visibilité en ligne depuis 2017. Je sais ce que c&apos;est de gérer un commerce et de ne pas avoir le temps pour internet.
+              </p>
+              <p className="mb-6 text-gray-600 leading-relaxed">
+                C&apos;est pour ça que j&apos;ai créé OnVousTrouve — un service simple, clé en main, à prix fixe. Vous vous occupez de vos clients, je m&apos;occupe de votre site.
+              </p>
+              <div className="flex flex-wrap gap-3">
+                <span className="rounded-full bg-blue-100 px-4 py-1.5 text-sm font-medium text-blue-700">Basé en Suisse</span>
+                <span className="rounded-full bg-blue-100 px-4 py-1.5 text-sm font-medium text-blue-700">Le Bouveret, Valais</span>
+                <span className="rounded-full bg-blue-100 px-4 py-1.5 text-sm font-medium text-blue-700">20+ sites livrés</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="bg-gray-900 text-gray-400">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
