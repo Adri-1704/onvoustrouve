@@ -878,7 +878,7 @@ export default function Home() {
               <p className="mb-2 text-sm font-medium uppercase tracking-wider text-blue-600">Votre interlocuteur</p>
               <h2 className="mb-4 text-3xl font-bold text-gray-900">Adrien Haubrich</h2>
               <p className="mb-4 text-gray-600 leading-relaxed">
-                Entrepreneur digital basé au Bouveret en Valais, j&apos;accompagne les commerçants suisses dans leur visibilité en ligne depuis 2017. Je sais ce que c&apos;est de gérer un commerce et de ne pas avoir le temps pour internet.
+                Entrepreneur digital basé au Bouveret en Valais, j&apos;accompagne les commerçants suisses dans leur visibilité en ligne depuis plus de 20 ans. Je sais ce que c&apos;est de gérer un commerce et de ne pas avoir le temps pour internet.
               </p>
               <p className="mb-6 text-gray-600 leading-relaxed">
                 C&apos;est pour ça que j&apos;ai créé OnVousTrouve — un service simple, clé en main, à prix fixe. Vous vous occupez de vos clients, je m&apos;occupe de votre site.
