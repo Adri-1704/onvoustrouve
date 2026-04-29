@@ -1,3 +1,29 @@
+import { RealisationsGrid, type Realisation } from "./_components/RealisationsGrid";
+import { ContactForm } from "./_components/ContactForm";
+
+const REALISATIONS: Realisation[] = [
+  { name: "Le Comptoir du Lac", metier: "Restaurant", href: "/realisations/restaurant", gradient: "from-red-900 via-red-700 to-amber-800", emoji: "🍽️" },
+  { name: "Salon Élégance", metier: "Coiffeur", href: "/realisations/coiffeur", gradient: "from-pink-400 via-rose-300 to-yellow-300", emoji: "✂️" },
+  { name: "Plomberie Müller & Fils", metier: "Plombier", href: "/realisations/plombier", gradient: "from-blue-600 via-blue-400 to-orange-400", emoji: "🔧" },
+  { name: "Boucherie Gasser", metier: "Boucherie", href: "/realisations/boucherie", gradient: "from-red-800 via-red-700 to-amber-700", emoji: "🥩" },
+  { name: "Centre Dentaire du Léman", metier: "Dentiste", href: "/realisations/dentiste", gradient: "from-sky-300 via-cyan-400 to-blue-400", emoji: "🦷" },
+  { name: "Boulangerie Artisanale Favre", metier: "Boulangerie", href: "/realisations/boulangerie", gradient: "from-amber-100 via-yellow-200 to-amber-700", emoji: "🥖" },
+  { name: "Garage Central Steiner", metier: "Garage", href: "/realisations/garage", gradient: "from-gray-600 via-gray-500 to-red-600", emoji: "🚗" },
+  { name: "FitPulse Coaching", metier: "Coach sportif", href: "/realisations/coach", gradient: "from-green-500 via-emerald-600 to-gray-900", emoji: "💪" },
+  { name: "Studio Lumière", metier: "Photographe", href: "/realisations/photographe", gradient: "from-gray-900 via-gray-800 to-yellow-500", emoji: "📸" },
+  { name: "Atelier Bonvin Architecture", metier: "Architecte", href: "/realisations/architecte", gradient: "from-white via-gray-200 to-gray-900", emoji: "🏛️" },
+  { name: "Barber House", metier: "Barbier", href: "/realisations/barbier", gradient: "from-neutral-950 via-neutral-800 to-amber-700", emoji: "💈" },
+  { name: "Cave du Valais", metier: "Cave à vin", href: "/realisations/cave-a-vin", gradient: "from-rose-950 via-red-900 to-amber-800", emoji: "🍷" },
+  { name: "Fleurs & Jardins Rossi", metier: "Fleuriste", href: "/realisations/fleuriste", gradient: "from-green-600 via-emerald-400 to-pink-300", emoji: "💐" },
+  { name: "Élec-Pro Savoy", metier: "Électricien", href: "/realisations/electricien", gradient: "from-slate-900 via-blue-900 to-yellow-500", emoji: "⚡" },
+  { name: "Clinique Vétérinaire des Alpes", metier: "Vétérinaire", href: "/realisations/veterinaire", gradient: "from-teal-600 via-teal-400 to-emerald-300", emoji: "🐾" },
+  { name: "Helvetia Immobilier", metier: "Agent immobilier", href: "/realisations/immobilier", gradient: "from-slate-900 via-slate-800 to-amber-600", emoji: "🏠" },
+  { name: "La Vera Pizza", metier: "Pizzeria", href: "/realisations/pizzeria", gradient: "from-red-900 via-red-700 to-orange-500", emoji: "🍕" },
+  { name: "Black Ink Studio", metier: "Tatoueur", href: "/realisations/tatoueur", gradient: "from-zinc-950 via-zinc-900 to-red-700", emoji: "🎨" },
+  { name: "PhysioVita", metier: "Physiothérapeute", href: "/realisations/physiotherapeute", gradient: "from-blue-500 via-blue-400 to-sky-300", emoji: "🦴" },
+  { name: "Sécuri-Clé Müller", metier: "Serrurier", href: "/realisations/serrurier", gradient: "from-stone-900 via-stone-700 to-orange-600", emoji: "🔑" },
+];
+
 export default function Home() {
   return (
     <div id="top" className="flex flex-col flex-1 bg-white font-sans scroll-smooth">
@@ -284,190 +310,7 @@ export default function Home() {
               Découvrez des exemples de sites créés pour nos clients
             </p>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
-            {[
-              {
-                name: "Le Comptoir du Lac",
-                metier: "Restaurant",
-                href: "/realisations/restaurant",
-                gradient: "from-red-900 via-red-700 to-amber-800",
-                emoji: "🍽️",
-              },
-              {
-                name: "Salon Élégance",
-                metier: "Coiffeur",
-                href: "/realisations/coiffeur",
-                gradient: "from-pink-400 via-rose-300 to-yellow-300",
-                emoji: "✂️",
-              },
-              {
-                name: "Plomberie Müller & Fils",
-                metier: "Plombier",
-                href: "/realisations/plombier",
-                gradient: "from-blue-600 via-blue-400 to-orange-400",
-                emoji: "🔧",
-              },
-              {
-                name: "Boucherie Gasser",
-                metier: "Boucherie",
-                href: "/realisations/boucherie",
-                gradient: "from-red-800 via-red-700 to-amber-700",
-                emoji: "🥩",
-              },
-              {
-                name: "Centre Dentaire du Léman",
-                metier: "Dentiste",
-                href: "/realisations/dentiste",
-                gradient: "from-sky-300 via-cyan-400 to-blue-400",
-                emoji: "🦷",
-              },
-              {
-                name: "Boulangerie Artisanale Favre",
-                metier: "Boulangerie",
-                href: "/realisations/boulangerie",
-                gradient: "from-amber-100 via-yellow-200 to-amber-700",
-                emoji: "🥖",
-              },
-              {
-                name: "Garage Central Steiner",
-                metier: "Garage",
-                href: "/realisations/garage",
-                gradient: "from-gray-600 via-gray-500 to-red-600",
-                emoji: "🚗",
-              },
-              {
-                name: "FitPulse Coaching",
-                metier: "Coach sportif",
-                href: "/realisations/coach",
-                gradient: "from-green-500 via-emerald-600 to-gray-900",
-                emoji: "💪",
-              },
-              {
-                name: "Studio Lumière",
-                metier: "Photographe",
-                href: "/realisations/photographe",
-                gradient: "from-gray-900 via-gray-800 to-yellow-500",
-                emoji: "📸",
-              },
-              {
-                name: "Atelier Bonvin Architecture",
-                metier: "Architecte",
-                href: "/realisations/architecte",
-                gradient: "from-white via-gray-200 to-gray-900",
-                emoji: "🏛️",
-              },
-              {
-                name: "Barber House",
-                metier: "Barbier",
-                href: "/realisations/barbier",
-                gradient: "from-neutral-950 via-neutral-800 to-amber-700",
-                emoji: "💈",
-              },
-              {
-                name: "Cave du Valais",
-                metier: "Cave à vin",
-                href: "/realisations/cave-a-vin",
-                gradient: "from-rose-950 via-red-900 to-amber-800",
-                emoji: "🍷",
-              },
-              {
-                name: "Fleurs & Jardins Rossi",
-                metier: "Fleuriste",
-                href: "/realisations/fleuriste",
-                gradient: "from-green-600 via-emerald-400 to-pink-300",
-                emoji: "💐",
-              },
-              {
-                name: "Élec-Pro Savoy",
-                metier: "Électricien",
-                href: "/realisations/electricien",
-                gradient: "from-slate-900 via-blue-900 to-yellow-500",
-                emoji: "⚡",
-              },
-              {
-                name: "Clinique Vétérinaire des Alpes",
-                metier: "Vétérinaire",
-                href: "/realisations/veterinaire",
-                gradient: "from-teal-600 via-teal-400 to-emerald-300",
-                emoji: "🐾",
-              },
-              {
-                name: "Helvetia Immobilier",
-                metier: "Agent immobilier",
-                href: "/realisations/immobilier",
-                gradient: "from-slate-900 via-slate-800 to-amber-600",
-                emoji: "🏠",
-              },
-              {
-                name: "La Vera Pizza",
-                metier: "Pizzeria",
-                href: "/realisations/pizzeria",
-                gradient: "from-red-900 via-red-700 to-orange-500",
-                emoji: "🍕",
-              },
-              {
-                name: "Black Ink Studio",
-                metier: "Tatoueur",
-                href: "/realisations/tatoueur",
-                gradient: "from-zinc-950 via-zinc-900 to-red-700",
-                emoji: "🎨",
-              },
-              {
-                name: "PhysioVita",
-                metier: "Physiothérapeute",
-                href: "/realisations/physiotherapeute",
-                gradient: "from-blue-500 via-blue-400 to-sky-300",
-                emoji: "🦴",
-              },
-              {
-                name: "Sécuri-Clé Müller",
-                metier: "Serrurier",
-                href: "/realisations/serrurier",
-                gradient: "from-stone-900 via-stone-700 to-orange-600",
-                emoji: "🔑",
-              },
-            ].map((realisation) => (
-              <a
-                key={realisation.metier}
-                href={realisation.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="realization-card group relative flex flex-col justify-end rounded-2xl overflow-hidden h-48 sm:h-56 shadow-md"
-              >
-                <div
-                  className={`absolute inset-0 bg-gradient-to-br ${realisation.gradient}`}
-                />
-                <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors" />
-                <div className="relative p-4 sm:p-5">
-                  <span className="text-2xl sm:text-3xl mb-2 block">
-                    {realisation.emoji}
-                  </span>
-                  <h3 className="text-white font-bold text-sm sm:text-base leading-tight">
-                    {realisation.name}
-                  </h3>
-                  <p className="text-white/80 text-xs sm:text-sm mt-1">
-                    {realisation.metier}
-                  </p>
-                  <span className="inline-flex items-center gap-1 text-white/70 text-xs mt-2 group-hover:text-white transition-colors">
-                    Voir le site
-                    <svg
-                      className="w-3 h-3 group-hover:translate-x-1 transition-transform"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M17 8l4 4m0 0l-4 4m4-4H3"
-                      />
-                    </svg>
-                  </span>
-                </div>
-              </a>
-            ))}
-          </div>
+          <RealisationsGrid realisations={REALISATIONS} />
         </div>
       </section>
 
@@ -827,41 +670,78 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA final */}
-      <section className="py-16 sm:py-24 bg-primary relative overflow-hidden">
-        {/* Background decoration */}
+      {/* Contact section — formulaire + WhatsApp */}
+      <section id="contact" className="py-16 sm:py-24 bg-primary relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-0 left-0 w-72 h-72 bg-white rounded-full -translate-x-1/2 -translate-y-1/2"></div>
           <div className="absolute bottom-0 right-0 w-96 h-96 bg-white rounded-full translate-x-1/3 translate-y-1/3"></div>
         </div>
-        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center animate-fade-in-up">
-          <p className="text-blue-200 font-medium mb-4 text-lg">
-            Votre concurrent est déjà en ligne. Et vous ?
-          </p>
-          <h2 className="text-3xl sm:text-5xl font-bold text-white leading-tight">
-            Prêt à être trouvé en ligne ?
-          </h2>
-          <p className="mt-4 text-lg text-blue-200 max-w-2xl mx-auto">
-            Rejoignez les professionnels qui ont fait le choix de la visibilité.
-            Votre site peut être en ligne dès la semaine prochaine.
-          </p>
-          <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="https://wa.me/41794517496?text=Bonjour%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20vos%20services%20de%20cr%C3%A9ation%20de%20site%20web."
-              target="_blank"
-              rel="noopener noreferrer"
-              className="cta-pulse inline-flex items-center justify-center gap-3 px-10 py-5 rounded-full bg-[#25D366] text-white text-lg font-bold hover:bg-[#1fb855] transition-all shadow-xl hover:shadow-2xl"
-            >
-              <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-              Contactez-nous sur WhatsApp
-            </a>
-            <a
-              href="tel:+41794517496"
-              className="inline-flex items-center justify-center gap-2 px-10 py-5 rounded-full border-2 border-white/30 text-white text-lg font-semibold hover:bg-white/10 transition-all"
-            >
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
-              +41 79 451 74 96
-            </a>
+        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 animate-fade-in-up">
+          <div className="text-center mb-12">
+            <p className="text-blue-200 font-medium mb-3 text-base sm:text-lg">
+              Votre concurrent est déjà en ligne. Et vous ?
+            </p>
+            <h2 className="text-3xl sm:text-5xl font-bold text-white leading-tight">
+              Prêt à être trouvé en ligne ?
+            </h2>
+            <p className="mt-4 text-base sm:text-lg text-blue-200 max-w-2xl mx-auto">
+              Choisissez le canal qui vous convient. Réponse sous 24h ouvrées.
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-6 items-stretch">
+            {/* Formulaire */}
+            <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-2xl">
+              <h3 className="text-xl font-bold text-gray-900 mb-1">Écrivez-nous</h3>
+              <p className="text-sm text-gray-500 mb-6">
+                On vous répond par email avec une proposition adaptée à votre activité.
+              </p>
+              <ContactForm />
+            </div>
+
+            {/* Alternatives */}
+            <div className="flex flex-col gap-4">
+              <a
+                href="https://wa.me/41794517496?text=Bonjour%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20vos%20services%20de%20cr%C3%A9ation%20de%20site%20web."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="cta-pulse inline-flex items-center justify-center gap-3 px-6 py-5 rounded-2xl bg-[#25D366] text-white text-base sm:text-lg font-bold hover:bg-[#1fb855] transition-all shadow-xl hover:shadow-2xl"
+              >
+                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                <span className="flex flex-col items-start">
+                  <span>Discuter sur WhatsApp</span>
+                  <span className="text-xs font-normal opacity-90">Réponse rapide</span>
+                </span>
+              </a>
+              <a
+                href="tel:+41794517496"
+                className="inline-flex items-center justify-center gap-3 px-6 py-5 rounded-2xl bg-white/10 border-2 border-white/30 text-white text-base sm:text-lg font-semibold hover:bg-white/20 transition-all backdrop-blur-sm"
+              >
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
+                <span className="flex flex-col items-start">
+                  <span>+41 79 451 74 96</span>
+                  <span className="text-xs font-normal opacity-90">Lun-Ven 9h-18h</span>
+                </span>
+              </a>
+              <a
+                href="mailto:contact@onvoustrouve.ch"
+                className="inline-flex items-center justify-center gap-3 px-6 py-5 rounded-2xl bg-white/10 border-2 border-white/30 text-white text-base sm:text-lg font-semibold hover:bg-white/20 transition-all backdrop-blur-sm"
+              >
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+                <span className="flex flex-col items-start">
+                  <span>contact@onvoustrouve.ch</span>
+                  <span className="text-xs font-normal opacity-90">Email direct</span>
+                </span>
+              </a>
+              <div className="mt-auto bg-white/10 backdrop-blur-sm rounded-2xl p-5 border border-white/20">
+                <p className="text-white text-sm font-medium mb-1">
+                  Garantie satisfait ou remboursé
+                </p>
+                <p className="text-blue-100 text-xs">
+                  30 jours pour changer d&apos;avis. Sans engagement.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -961,10 +841,31 @@ export default function Home() {
               <ul className="space-y-2 text-sm">
                 <li>
                   <a
-                    href="https://wa.me/41794517496?text=Bonjour%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20l%27offre%20OnVousTrouve." target="_blank" rel="noopener noreferrer"
+                    href="mailto:contact@onvoustrouve.ch"
                     className="hover:text-white transition-colors"
                   >
                     contact@onvoustrouve.ch
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://wa.me/41794517496?text=Bonjour%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20l%27offre%20OnVousTrouve."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-white transition-colors inline-flex items-center gap-1"
+                  >
+                    WhatsApp
+                    <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="tel:+41794517496"
+                    className="hover:text-white transition-colors"
+                  >
+                    +41 79 451 74 96
                   </a>
                 </li>
                 <li>Le Bouveret, Valais, Suisse</li>
